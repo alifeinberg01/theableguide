@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Google Fonts ─────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ─── CSS Custom Properties ─────────────────────────────────────── */
+:root {
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+
+  /* Brand tokens */
+  --color-navy:    #1E3A5C;
+  --color-teal:    #0891B2;
+  --color-terra:   #C8603A;
+  --color-sage:    #4A7C59;
+  --color-amber:   #F59E0B;
+  --color-cream:   #FEFDF8;
+  --color-cloud:   #F0F7FF;
+  --color-charcoal:#1E293B;
+}
+
+/* ─── Base Resets ────────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-sans text-charcoal bg-cream;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  ::selection {
+    @apply bg-teal/20 text-navy;
+  }
+
+  /* Focus ring for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-teal;
+  }
+}
+
+/* ─── Component Utilities ────────────────────────────────────────── */
+@layer components {
+  .container-site {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .heading-xl {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight;
+  }
+
+  .heading-lg {
+    @apply font-display text-3xl md:text-4xl font-bold leading-tight;
+  }
+
+  .heading-md {
+    @apply font-display text-2xl md:text-3xl font-semibold;
+  }
+
+  .heading-sm {
+    @apply font-display text-xl md:text-2xl font-semibold;
+  }
+
+  .body-lg {
+    @apply font-sans text-lg leading-relaxed;
+  }
+
+  .body-md {
+    @apply font-sans text-base leading-relaxed;
+  }
+
+  .label-tag {
+    @apply inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest;
+  }
+
+  /* Card styles */
+  .card-base {
+    @apply bg-white rounded-2xl shadow-card transition-shadow duration-300;
+  }
+
+  .card-hover {
+    @apply hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300;
+  }
+
+  /* Button base */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-terra text-white hover:bg-terra-700 focus-visible:outline-terra px-6 py-3 text-sm;
+  }
+
+  .btn-secondary {
+    @apply btn bg-navy text-white hover:bg-navy-700 focus-visible:outline-navy px-6 py-3 text-sm;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-navy text-navy hover:bg-navy hover:text-white focus-visible:outline-navy px-6 py-3 text-sm;
+  }
+
+  .btn-ghost {
+    @apply btn text-navy hover:bg-navy/10 focus-visible:outline-navy px-4 py-2 text-sm;
+  }
+
+  .btn-teal {
+    @apply btn bg-teal text-white hover:bg-teal-700 focus-visible:outline-teal px-6 py-3 text-sm;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold;
+  }
+
+  .badge-navy  { @apply badge bg-navy/10 text-navy; }
+  .badge-teal  { @apply badge bg-teal/10 text-teal-700; }
+  .badge-terra { @apply badge bg-terra/10 text-terra-700; }
+  .badge-sage  { @apply badge bg-sage/10 text-sage-700; }
+  .badge-amber { @apply badge bg-amber/10 text-amber-700; }
+
+  /* Section divider */
+  .divider {
+    @apply w-16 h-1 rounded-full bg-terra;
+  }
+
+  /* Gradient overlays */
+  .hero-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(30, 58, 92, 0.82) 0%,
+      rgba(8, 145, 178, 0.55) 60%,
+      rgba(200, 96, 58, 0.30) 100%
+    );
+  }
+
+  .section-gradient {
+    background: linear-gradient(180deg, #FEFDF8 0%, #F0F7FF 100%);
+  }
+
+  /* Prose styles for blog / guide content */
+  .prose-guide {
+    @apply max-w-prose mx-auto font-sans text-charcoal;
+  }
+
+  .prose-guide h2 {
+    @apply heading-md text-navy mt-10 mb-4;
+  }
+
+  .prose-guide h3 {
+    @apply font-display text-xl font-semibold text-navy mt-8 mb-3;
+  }
+
+  .prose-guide p {
+    @apply body-md text-charcoal-light mb-4;
+  }
+
+  .prose-guide ul {
+    @apply list-disc list-inside space-y-2 mb-4 text-charcoal-light;
+  }
+
+  .prose-guide ol {
+    @apply list-decimal list-inside space-y-2 mb-4 text-charcoal-light;
+  }
+
+  .prose-guide strong {
+    @apply font-semibold text-charcoal;
+  }
+
+  .prose-guide a {
+    @apply text-teal underline underline-offset-2 hover:text-teal-700;
+  }
+
+  .prose-guide blockquote {
+    @apply border-l-4 border-terra pl-4 italic text-charcoal-muted my-6;
+  }
+
+  .prose-guide img {
+    @apply rounded-2xl shadow-card my-8 w-full object-cover;
+  }
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: #F0F7FF; }
+::-webkit-scrollbar-thumb  { background: #A9C1DF; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #1E3A5C; }
+
+/* ─── Print ──────────────────────────────────────────────────────── */
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; color: black; }
+}
