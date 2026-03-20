@@ -7,14 +7,15 @@ import { blogPosts, getBlogPostBySlug } from "@/data/blog-posts";
 import { formatDate } from "@/lib/utils";
 import Badge from "@/components/ui/Badge";
 
-interface Props { params: { slug: string } }
+interface Props { params: Promise<{ slug: string }> }
 
 export async function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = getBlogPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = getBlogPostBySlug(slug);
   if (!post) return {};
   return {
     title: post.title,
@@ -27,8 +28,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function BlogPostPage({ params }: Props) {
-  const post = getBlogPostBySlug(params.slug);
+export default async function BlogPostPage({ params }: Props) {
+  const { slug } = await params;
+  const post = getBlogPostBySlug(slug);
   if (!post) notFound();
 
   // Convert markdown-like content to simple HTML paragraphs

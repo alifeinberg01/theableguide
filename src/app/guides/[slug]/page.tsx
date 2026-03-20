@@ -9,7 +9,7 @@ import Badge from "@/components/ui/Badge";
 import BuyButton from "@/components/guides/BuyButton";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -17,7 +17,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const guide = getGuideBySlug(params.slug);
+  const { slug } = await params;
+  const guide = getGuideBySlug(slug);
   if (!guide) return {};
   return {
     title: guide.title,
@@ -30,8 +31,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function GuidePage({ params }: Props) {
-  const guide = getGuideBySlug(params.slug);
+export default async function GuidePage({ params }: Props) {
+  const { slug } = await params;
+  const guide = getGuideBySlug(slug);
   if (!guide) notFound();
 
   const isFree = guide.price === "free";
