@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Clock, Tag, CheckCircle, ArrowLeft, ShoppingCart, Gift } from "lucide-react";
-import { guides, getGuideBySlug } from "@/data/guides";
+import { getPublishedGuides, getGuideBySlug } from "@/lib/firestore/guides";
 import { formatPrice } from "@/lib/utils";
 import Badge from "@/components/ui/Badge";
 import BuyButton from "@/components/guides/BuyButton";
@@ -12,13 +12,16 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+export const dynamic = "force-dynamic";
+
 export async function generateStaticParams() {
+  const guides = await getPublishedGuides();
   return guides.map((g) => ({ slug: g.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const guide = getGuideBySlug(slug);
+  const guide = await getGuideBySlug(slug);
   if (!guide) return {};
   return {
     title: guide.title,
@@ -33,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function GuidePage({ params }: Props) {
   const { slug } = await params;
-  const guide = getGuideBySlug(slug);
+  const guide = await getGuideBySlug(slug);
   if (!guide) notFound();
 
   const isFree = guide.price === "free";

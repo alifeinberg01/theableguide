@@ -3,19 +3,22 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar } from "lucide-react";
-import { blogPosts, getBlogPostBySlug } from "@/data/blog-posts";
+import { getPublishedPosts, getPostBySlug } from "@/lib/firestore/blog";
 import { formatDate } from "@/lib/utils";
 import Badge from "@/components/ui/Badge";
 
 interface Props { params: Promise<{ slug: string }> }
 
+export const dynamic = "force-dynamic";
+
 export async function generateStaticParams() {
-  return blogPosts.map((p) => ({ slug: p.slug }));
+  const posts = await getPublishedPosts();
+  return posts.map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
+  const post = await getPostBySlug(slug);
   if (!post) return {};
   return {
     title: post.title,
@@ -30,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
+  const post = await getPostBySlug(slug);
   if (!post) notFound();
 
   // Convert markdown-like content to simple HTML paragraphs

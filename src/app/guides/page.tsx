@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Clock, Tag, Filter } from "lucide-react";
-import { guides } from "@/data/guides";
+import { getPublishedGuides } from "@/lib/firestore/guides";
 import { formatPrice } from "@/lib/utils";
 import Badge from "@/components/ui/Badge";
 import SectionLabel from "@/components/ui/SectionLabel";
@@ -22,7 +22,10 @@ const categories = [
   { id: "national-park",label: "National Parks" },
 ];
 
-export default function GuidesPage() {
+export const dynamic = "force-dynamic";
+
+export default async function GuidesPage() {
+  const guides = await getPublishedGuides();
   return (
     <>
       {/* Hero */}

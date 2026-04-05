@@ -46,6 +46,10 @@ export interface Guide {
   highlights: string[];
   includes: string[];
   destination: string;
+  // CMS fields (set when guide is managed via admin panel)
+  pdfUrl?: string;       // Firebase Storage public URL for the downloadable PDF
+  status?: "published" | "draft";
+  updatedAt?: string;
 }
 
 // ─── Blog ────────────────────────────────────────────────────────────────────
@@ -72,6 +76,9 @@ export interface BlogPost {
   publishedAt: string;
   readTime: number;
   featured: boolean;
+  // CMS fields
+  status?: "published" | "draft";
+  updatedAt?: string;
 }
 
 // ─── FAQ ─────────────────────────────────────────────────────────────────────
@@ -140,4 +147,18 @@ export interface CartItem {
 export interface CheckoutSession {
   sessionId: string;
   url: string;
+}
+
+// ─── Orders ───────────────────────────────────────────────────────────────────
+
+export interface Order {
+  id: string;            // Stripe checkout session ID
+  email: string;
+  name: string;
+  guideId: string;
+  guideTitle: string;
+  amountTotal: number;   // in cents
+  currency: string;
+  stripeSessionId: string;
+  createdAt: string;     // ISO timestamp
 }

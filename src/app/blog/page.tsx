@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Clock, ArrowRight } from "lucide-react";
-import { blogPosts } from "@/data/blog-posts";
+import { getPublishedPosts } from "@/lib/firestore/blog";
 import { formatDate } from "@/lib/utils";
 import Badge from "@/components/ui/Badge";
 import SectionLabel from "@/components/ui/SectionLabel";
@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     "Practical travel tips, real family stories, gear reviews, and destination guides for families raising children with autism and sensory differences.",
 };
 
-export default function BlogPage() {
+export const dynamic = "force-dynamic";
+
+export default async function BlogPage() {
+  const blogPosts = await getPublishedPosts();
   const [hero, ...rest] = blogPosts;
 
   return (
