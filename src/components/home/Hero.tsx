@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-family-theme-park.jpg"
+          src="https://images.unsplash.com/photo-1575783970733-1aaedde1db74?w=1600&q=80"
           alt="Happy family with child wearing Mickey ears at a theme park"
           fill
           priority

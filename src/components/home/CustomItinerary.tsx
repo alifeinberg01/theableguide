@@ -20,7 +20,7 @@ export default function CustomItinerary() {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden h-[480px] shadow-card-hover">
               <Image
-                src="/images/custom-itinerary-planning.jpg"
+                src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80"
                 alt="Family reviewing a detailed travel plan together at home"
                 fill
                 className="object-cover"

@@ -68,7 +68,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-[480px] rounded-3xl overflow-hidden shadow-card-hover">
               <Image
-                src="/images/about-family-adventure.jpg"
+                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80"
                 alt="Family with special needs child enjoying an outdoor adventure together"
                 fill
                 className="object-cover"

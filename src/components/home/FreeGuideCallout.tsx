@@ -58,7 +58,7 @@ export default function FreeGuideCallout() {
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative w-full max-w-sm aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/free-guide-preview.jpg"
+                src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?w=800&q=80"
                 alt="Preview of the Sensory-Friendly Travel Starter Guide — a family at an outdoor destination"
                 fill
                 className="object-cover"

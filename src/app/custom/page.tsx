@@ -56,7 +56,7 @@ export default function CustomPage() {
 
             <div className="relative h-[440px] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/custom-itinerary-planning.jpg"
+                src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80"
                 alt="Family reviewing a custom travel plan at home"
                 fill
                 className="object-cover"
