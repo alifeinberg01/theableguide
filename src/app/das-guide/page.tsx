@@ -68,15 +68,15 @@ export default function DASGuidePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy pt-32 pb-0 overflow-hidden">
-        <div className="container-site py-12">
+      <section className="bg-terra-50 pt-[calc(72px+64px)] pb-16 border-b border-border overflow-hidden">
+        <div className="container-site">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <SectionLabel className="mb-4 text-white/60" color="teal">Free Resource</SectionLabel>
-              <h1 className="heading-xl text-white mb-4">
-                The Complete DAS Guide
+              <SectionLabel className="mb-4" color="teal">Free Resource</SectionLabel>
+              <h1 className="heading-xl text-charcoal mb-4">
+                The Complete <em className="italic text-terra">DAS Guide</em>
               </h1>
-              <p className="body-lg text-white/75 mb-6">
+              <p className="body-lg text-charcoal-muted mb-6">
                 Disney&apos;s Disability Access Service explained — who qualifies,
                 how to register, and how to use it to give your child the best
                 possible theme park experience.
@@ -99,16 +99,13 @@ export default function DASGuidePage() {
             </div>
           </div>
         </div>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
-          <path d="M0 40V20C360 0 720 40 1080 20C1260 10 1380 28 1440 32V40H0Z" fill="#FEFDF8" />
-        </svg>
       </section>
 
       {/* What is DAS */}
       <section className="section-padding bg-cream">
         <div className="container-site max-w-4xl">
           <SectionLabel className="mb-4" color="terra">What is DAS?</SectionLabel>
-          <h2 className="heading-lg text-navy mb-6">Understanding Disney&apos;s Disability Access Service</h2>
+          <h2 className="heading-lg text-charcoal mb-6">Understanding Disney&apos;s Disability Access Service</h2>
           <div className="space-y-4 body-md text-charcoal-muted mb-10">
             <p>
               Disney&apos;s Disability Access Service (DAS) is an accommodation designed for guests
@@ -131,25 +128,25 @@ export default function DASGuidePage() {
           </div>
 
           {/* Who qualifies */}
-          <div className="bg-teal/5 border border-teal/20 rounded-2xl p-8 mb-12">
-            <h3 className="font-display font-semibold text-teal-700 text-xl mb-4">Who Qualifies for DAS?</h3>
+          <div className="bg-dust/5 border border-dust/20 rounded-2xl p-8 mb-12">
+            <h3 className="font-display font-medium text-dust-700 text-xl mb-4">Who Qualifies for DAS?</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <p className="font-semibold text-navy mb-3">Typically Qualifies:</p>
+                <p className="font-medium text-charcoal mb-3">Typically Qualifies:</p>
                 <ul className="space-y-2">
                   {["Autism spectrum disorder", "Intellectual disability with behavioral dysregulation in queue environments", "ADHD with severe impulse control challenges in wait situations", "Other developmental disabilities causing functional difficulty with conventional queuing"].map((item) => (
                     <li key={item} className="flex items-start gap-2 text-sm text-charcoal">
-                      <CheckCircle className="w-4 h-4 text-sage mt-0.5 shrink-0" /> {item}
+                      <CheckCircle className="w-4 h-4 text-sage-600 mt-0.5 shrink-0" /> {item}
                     </li>
                   ))}
                 </ul>
               </div>
               <div>
-                <p className="font-semibold text-navy mb-3">Directed to Other Accommodations:</p>
+                <p className="font-medium text-charcoal mb-3">Directed to Other Accommodations:</p>
                 <ul className="space-y-2">
                   {["Mobility impairments (wheelchair-accessible queues)", "Visual impairments (audio description devices)", "Hearing impairments (handheld captioning)", "Medical conditions that primarily cause physical limitations"].map((item) => (
                     <li key={item} className="flex items-start gap-2 text-sm text-charcoal">
-                      <AlertCircle className="w-4 h-4 text-amber mt-0.5 shrink-0" /> {item}
+                      <AlertCircle className="w-4 h-4 text-amber-600 mt-0.5 shrink-0" /> {item}
                     </li>
                   ))}
                 </ul>
@@ -158,18 +155,18 @@ export default function DASGuidePage() {
           </div>
 
           {/* Steps */}
-          <h2 className="heading-lg text-navy mb-8">How to Register for DAS</h2>
+          <h2 className="heading-lg text-charcoal mb-8">How to Register for DAS</h2>
           <div className="space-y-6 mb-12">
             {steps.map((step) => (
               <div key={step.step} className="card-base p-6 flex gap-5">
-                <div className="w-12 h-12 rounded-2xl bg-navy flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-charcoal flex items-center justify-center shrink-0">
                   <step.icon className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-charcoal-muted uppercase tracking-widest mb-1">
+                  <p className="text-xs font-medium text-charcoal-muted uppercase tracking-widest mb-1">
                     Step {step.step}
                   </p>
-                  <h3 className="font-display font-semibold text-navy text-lg mb-2">{step.title}</h3>
+                  <h3 className="font-display font-medium text-charcoal text-lg mb-2">{step.title}</h3>
                   <p className="text-charcoal-muted text-sm leading-relaxed">{step.description}</p>
                 </div>
               </div>
@@ -177,19 +174,19 @@ export default function DASGuidePage() {
           </div>
 
           {/* Pro Tips */}
-          <h2 className="heading-lg text-navy mb-8">DAS Pro Tips</h2>
+          <h2 className="heading-lg text-charcoal mb-8">DAS Pro Tips</h2>
           <div className="space-y-5">
             {tips.map((tip) => (
               <div key={tip.title} className="card-base p-6 border-l-4 border-terra">
-                <h3 className="font-semibold text-navy text-lg mb-2">{tip.title}</h3>
+                <h3 className="font-medium text-charcoal text-lg mb-2">{tip.title}</h3>
                 <p className="text-charcoal-muted text-sm leading-relaxed">{tip.body}</p>
               </div>
             ))}
           </div>
 
           {/* Upgrade CTA */}
-          <div className="mt-16 bg-navy rounded-3xl p-10 text-center">
-            <h3 className="font-display font-bold text-white text-2xl mb-3">
+          <div className="mt-16 bg-charcoal rounded-3xl p-10 text-center">
+            <h3 className="font-display font-medium text-white text-2xl mb-3">
               Ready for the Full Disney World or Disneyland Guide?
             </h3>
             <p className="text-white/70 mb-8">
@@ -200,7 +197,7 @@ export default function DASGuidePage() {
               <Link href="/guides/disney-world-sensory-guide" className="btn-primary px-8 py-4">
                 Disney World Guide — $24
               </Link>
-              <Link href="/guides/disneyland-accessibility-guide" className="btn bg-white/15 border border-white/25 text-white hover:bg-white/25 rounded-full px-8 py-4 font-semibold">
+              <Link href="/guides/disneyland-accessibility-guide" className="btn bg-white/15 border border-white/25 text-white hover:bg-white/25 rounded-full px-8 py-4 font-medium">
                 Disneyland Guide — $22
               </Link>
             </div>

@@ -12,11 +12,11 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantMap: Record<Variant, string> = {
-  primary:   "bg-terra text-white hover:bg-terra-700 focus-visible:outline-terra",
-  secondary: "bg-navy text-white hover:bg-navy-700 focus-visible:outline-navy",
-  teal:      "bg-teal text-white hover:bg-teal-700 focus-visible:outline-teal",
-  outline:   "border-2 border-navy text-navy hover:bg-navy hover:text-white focus-visible:outline-navy",
-  ghost:     "text-navy hover:bg-navy/10 focus-visible:outline-navy",
+  primary:   "bg-terra text-white hover:bg-terra-600 hover:-translate-y-0.5 hover:shadow-pill focus-visible:outline-terra",
+  secondary: "bg-transparent text-charcoal border-[1.5px] border-border hover:border-terra hover:text-terra focus-visible:outline-terra",
+  teal:      "bg-dust text-white hover:bg-dust-600 focus-visible:outline-dust",
+  outline:   "border-[1.5px] border-charcoal text-charcoal hover:bg-charcoal hover:text-white focus-visible:outline-charcoal",
+  ghost:     "text-terra hover:bg-terra-50 focus-visible:outline-terra",
 };
 
 const sizeMap: Record<Size, string> = {

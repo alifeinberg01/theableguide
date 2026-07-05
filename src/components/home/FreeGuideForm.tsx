@@ -35,10 +35,10 @@ export default function FreeGuideForm() {
   if (status === "success") {
     return (
       <div className="card-base p-10 text-center">
-        <div className="w-16 h-16 rounded-full bg-sage/15 flex items-center justify-center mx-auto mb-4">
-          <CheckCircle className="w-8 h-8 text-sage" />
+        <div className="w-16 h-16 rounded-full bg-sage-100 flex items-center justify-center mx-auto mb-4">
+          <CheckCircle className="w-8 h-8 text-sage-600" />
         </div>
-        <h3 className="font-display font-bold text-navy text-2xl mb-2">You&apos;re all set!</h3>
+        <h3 className="font-display font-medium text-charcoal text-2xl mb-2">You&apos;re all set!</h3>
         <p className="text-charcoal-muted">{message}</p>
       </div>
     );
@@ -48,7 +48,7 @@ export default function FreeGuideForm() {
     <div className="card-base p-8">
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="name" className="block text-sm font-semibold text-navy mb-1.5">
+          <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-1.5">
             First Name
           </label>
           <input
@@ -58,12 +58,12 @@ export default function FreeGuideForm() {
             placeholder="Your first name"
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
-            className="w-full px-4 py-3 rounded-xl border border-navy/20 text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors"
+            className="w-full px-4 py-3 rounded-xl border border-border text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-terra transition-colors"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-semibold text-navy mb-1.5">
+          <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-1.5">
             Email Address
           </label>
           <input
@@ -73,7 +73,7 @@ export default function FreeGuideForm() {
             placeholder="your@email.com"
             value={form.email}
             onChange={(e) => setForm({ ...form, email: e.target.value })}
-            className="w-full px-4 py-3 rounded-xl border border-navy/20 text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal transition-colors"
+            className="w-full px-4 py-3 rounded-xl border border-border text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-terra transition-colors"
           />
         </div>
 

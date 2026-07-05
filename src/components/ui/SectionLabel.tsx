@@ -8,9 +8,9 @@ interface SectionLabelProps {
 
 const colorMap = {
   terra: "text-terra",
-  teal:  "text-teal",
-  sage:  "text-sage",
-  navy:  "text-navy",
+  teal:  "text-dust",
+  sage:  "text-sage-700",
+  navy:  "text-charcoal",
 };
 
 export default function SectionLabel({ children, className, color = "terra" }: SectionLabelProps) {

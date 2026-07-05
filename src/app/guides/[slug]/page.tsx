@@ -44,7 +44,7 @@ export default async function GuidePage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-24 pb-0 bg-navy overflow-hidden">
+      <section className="relative pt-[calc(72px+48px)] pb-0 bg-terra overflow-hidden">
         <div className="container-site py-12">
           <Link href="/guides" className="inline-flex items-center gap-2 text-white/60 hover:text-white text-sm mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" /> Back to Guides
@@ -76,14 +76,14 @@ export default async function GuidePage({ params }: Props) {
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <p className="text-white/60 text-sm">Guide Price</p>
-                    <p className="font-display font-bold text-3xl text-white">
+                    <p className="font-display font-medium text-3xl text-white">
                       {formatPrice(guide.price)}
                     </p>
                   </div>
                   {!isFree && (
                     <div className="text-right">
                       <p className="text-white/60 text-xs">Lifetime updates included</p>
-                      <p className="text-sage text-sm font-semibold">30-day guarantee</p>
+                      <p className="text-sage-200 text-sm font-medium">30-day guarantee</p>
                     </div>
                   )}
                 </div>
@@ -130,17 +130,17 @@ export default async function GuidePage({ params }: Props) {
             <div className="lg:col-span-2 space-y-12">
               {/* Description */}
               <div>
-                <h2 className="heading-md text-navy mb-4">About This Guide</h2>
+                <h2 className="heading-md text-charcoal mb-4">About This Guide</h2>
                 <p className="body-md text-charcoal-muted">{guide.description}</p>
               </div>
 
               {/* Highlights */}
               <div>
-                <h2 className="heading-md text-navy mb-4">What You&apos;ll Learn</h2>
+                <h2 className="heading-md text-charcoal mb-4">What You&apos;ll Learn</h2>
                 <ul className="space-y-3">
                   {guide.highlights.map((h) => (
                     <li key={h} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-sage mt-0.5 shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-sage-600 mt-0.5 shrink-0" />
                       <span className="text-charcoal">{h}</span>
                     </li>
                   ))}
@@ -150,7 +150,7 @@ export default async function GuidePage({ params }: Props) {
               {/* Sections */}
               {guide.sections.map((section) => (
                 <div key={section.title} className="space-y-4">
-                  <h2 className="heading-md text-navy">{section.title}</h2>
+                  <h2 className="heading-md text-charcoal">{section.title}</h2>
                   <p className="body-md text-charcoal-muted">{section.content}</p>
 
                   {section.image && (
@@ -166,14 +166,14 @@ export default async function GuidePage({ params }: Props) {
                   )}
 
                   {section.tips && section.tips.length > 0 && (
-                    <div className="bg-teal/5 border border-teal/20 rounded-2xl p-6">
-                      <p className="font-semibold text-teal-700 text-sm uppercase tracking-wider mb-3">
+                    <div className="bg-dust/5 border border-dust/20 rounded-2xl p-6">
+                      <p className="font-medium text-dust-700 text-sm uppercase tracking-wider mb-3">
                         Pro Tips
                       </p>
                       <ul className="space-y-2">
                         {section.tips.map((tip) => (
                           <li key={tip} className="flex items-start gap-2 text-sm text-charcoal">
-                            <span className="text-teal mt-0.5">→</span>
+                            <span className="text-dust-700 mt-0.5">→</span>
                             {tip}
                           </li>
                         ))}
@@ -188,13 +188,13 @@ export default async function GuidePage({ params }: Props) {
             <div className="space-y-6">
               {/* What's Included */}
               <div className="card-base p-6">
-                <h3 className="font-display font-semibold text-navy text-lg mb-4">
+                <h3 className="font-display font-medium text-charcoal text-lg mb-4">
                   What&apos;s Included
                 </h3>
                 <ul className="space-y-3">
                   {guide.includes.map((inc) => (
                     <li key={inc} className="flex items-start gap-2.5 text-sm text-charcoal">
-                      <CheckCircle className="w-4 h-4 text-sage mt-0.5 shrink-0" />
+                      <CheckCircle className="w-4 h-4 text-sage-600 mt-0.5 shrink-0" />
                       {inc}
                     </li>
                   ))}
@@ -202,8 +202,8 @@ export default async function GuidePage({ params }: Props) {
               </div>
 
               {/* Sticky Buy Box */}
-              <div className="card-base p-6 border-2 border-terra/20 sticky top-24">
-                <p className="font-display font-bold text-3xl text-navy mb-1">
+              <div className="card-base p-6 border-2 border-terra-200 sticky top-24">
+                <p className="font-display font-medium text-3xl text-charcoal mb-1">
                   {formatPrice(guide.price)}
                 </p>
                 <p className="text-charcoal-muted text-sm mb-6">

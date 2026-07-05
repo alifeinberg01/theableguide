@@ -11,18 +11,18 @@ const perks = [
 
 export default function FreeGuideCallout() {
   return (
-    <section className="section-padding bg-navy overflow-hidden relative">
+    <section className="section-padding bg-charcoal overflow-hidden relative">
       {/* Decorative blob */}
-      <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-teal/10 blur-3xl pointer-events-none" />
+      <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-dust/10 blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-terra/15 blur-3xl pointer-events-none" />
 
       <div className="container-site relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           {/* Left — Copy */}
           <div>
-            <div className="inline-flex items-center gap-2 bg-amber/20 border border-amber/30 rounded-full px-4 py-2 mb-6">
-              <Gift className="w-4 h-4 text-amber" />
-              <span className="text-amber text-xs font-semibold tracking-wide uppercase">
+            <div className="inline-flex items-center gap-2 bg-amber-100/20 border border-amber-200/30 rounded-full px-4 py-2 mb-6">
+              <Gift className="w-4 h-4 text-amber-300" />
+              <span className="text-amber-200 text-xs font-medium tracking-wide uppercase">
                 100% Free — No Credit Card Required
               </span>
             </div>
@@ -48,7 +48,7 @@ export default function FreeGuideCallout() {
               ))}
             </ul>
 
-            <Link href="/free-guide" className="btn bg-terra text-white hover:bg-terra-700 px-8 py-4 text-base rounded-full font-semibold inline-flex items-center gap-2 shadow-lg">
+            <Link href="/free-guide" className="btn bg-terra text-white hover:bg-terra-600 px-8 py-4 text-base rounded-full font-medium inline-flex items-center gap-2 shadow-lg">
               <Gift className="w-4 h-4" />
               Download the Free Guide
             </Link>
@@ -66,7 +66,7 @@ export default function FreeGuideCallout() {
               />
               {/* Overlay pill */}
               <div className="absolute bottom-6 inset-x-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-card">
-                <p className="font-display font-bold text-navy text-sm leading-tight">
+                <p className="font-display font-medium text-charcoal text-sm leading-tight">
                   Sensory-Friendly Travel Starter Guide
                 </p>
                 <p className="text-charcoal-muted text-xs mt-1">25+ pages · Free forever</p>

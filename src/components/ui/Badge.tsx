@@ -9,11 +9,11 @@ interface BadgeProps {
 }
 
 const colorMap: Record<BadgeColor, string> = {
-  navy:  "bg-navy/10 text-navy",
-  teal:  "bg-teal/10 text-teal-700",
-  terra: "bg-terra/10 text-terra-700",
-  sage:  "bg-sage/10 text-sage-700",
-  amber: "bg-amber/10 text-amber-700",
+  navy:  "bg-charcoal/8 text-charcoal",
+  teal:  "bg-dust/15 text-dust-700",
+  terra: "bg-terra-100 text-terra-600",
+  sage:  "bg-sage-100 text-sage-700",
+  amber: "bg-amber-100 text-amber-700",
 };
 
 export default function Badge({ color = "navy", children, className }: BadgeProps) {

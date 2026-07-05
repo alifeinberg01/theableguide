@@ -24,20 +24,21 @@ export default function FreeGuidePage() {
   return (
     <>
       {/* Header */}
-      <section className="bg-navy pt-32 pb-0 overflow-hidden">
-        <div className="container-site py-12">
+      <section className="bg-terra pt-[calc(72px+64px)] pb-20 overflow-hidden">
+        <div className="container-site">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-amber/20 border border-amber/30 rounded-full px-4 py-2 mb-6">
-                <Gift className="w-4 h-4 text-amber" />
-                <span className="text-amber text-sm font-semibold">Free — No Credit Card Required</span>
+              <div className="inline-flex items-center gap-2 bg-white/15 border border-white/25 rounded-full px-4 py-2 mb-6">
+                <Gift className="w-4 h-4 text-white" />
+                <span className="text-white text-sm font-medium">Free — No Credit Card Required</span>
               </div>
 
               <h1 className="heading-xl text-white mb-4">
                 Your Free Sensory Travel
-                <span className="text-amber-300"> Starter Guide</span>
+                <br />
+                <em className="italic text-terra-100">Starter Guide</em>
               </h1>
-              <p className="body-lg text-white/75 mb-8">
+              <p className="body-lg text-white/80 mb-8">
                 25+ pages of practical, honest guidance for families who are new
                 to traveling with a child with autism or sensory differences.
                 Start here. Build from here.
@@ -45,8 +46,8 @@ export default function FreeGuidePage() {
 
               <ul className="space-y-3 mb-8">
                 {includes.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-white/80">
-                    <CheckCircle className="w-5 h-5 text-sage mt-0.5 shrink-0" />
+                  <li key={item} className="flex items-start gap-3 text-white/85">
+                    <CheckCircle className="w-5 h-5 text-sage-200 mt-0.5 shrink-0" />
                     <span className="text-sm">{item}</span>
                   </li>
                 ))}
@@ -65,9 +66,6 @@ export default function FreeGuidePage() {
             </div>
           </div>
         </div>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
-          <path d="M0 40V20C360 0 720 40 1080 20C1260 10 1380 28 1440 32V40H0Z" fill="#FEFDF8" />
-        </svg>
       </section>
 
       {/* Download form */}
@@ -75,7 +73,7 @@ export default function FreeGuidePage() {
         <div className="container-site max-w-xl">
           <div className="text-center mb-10">
             <SectionLabel className="justify-center mb-3" color="terra">Download Now</SectionLabel>
-            <h2 className="heading-lg text-navy mb-3">Get Your Free Guide</h2>
+            <h2 className="heading-lg text-charcoal mb-3">Get Your Free Guide</h2>
             <p className="text-charcoal-muted">
               Enter your name and email and we&apos;ll send the guide straight to your inbox.
               No spam. Unsubscribe anytime.

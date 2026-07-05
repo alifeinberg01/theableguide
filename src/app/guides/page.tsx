@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Clock, Tag, Filter } from "lucide-react";
+import { ArrowRight, Clock, Tag } from "lucide-react";
 import { getPublishedGuides } from "@/lib/firestore/guides";
 import { formatPrice } from "@/lib/utils";
 import Badge from "@/components/ui/Badge";
@@ -29,39 +29,36 @@ export default async function GuidesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy pt-32 pb-20">
-        <div className="container-site text-center">
-          <SectionLabel className="justify-center mb-4 text-white/60" color="teal">Our Library</SectionLabel>
-          <h1 className="heading-xl text-white mb-4">All Travel Guides</h1>
-          <p className="body-lg text-white/70 max-w-2xl mx-auto">
+      <section className="bg-terra-50 pt-[calc(72px+64px)] pb-16 border-b border-border">
+        <div className="container-site">
+          <SectionLabel className="mb-4" color="terra">Our Library</SectionLabel>
+          <h1 className="heading-xl text-charcoal mb-4 max-w-2xl">
+            Trips designed for <em className="italic text-terra">your</em> family
+          </h1>
+          <p className="body-lg text-charcoal-muted max-w-xl">
             Destination-specific, sensory-rated, and written for families
             who need more than a generic travel blog.
           </p>
         </div>
       </section>
 
-      {/* Wave */}
-      <div className="bg-navy">
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
-          <path d="M0 40V20C360 0 720 40 1080 20C1260 10 1380 28 1440 32V40H0Z" fill="#FEFDF8" />
-        </svg>
+      {/* Filter bar */}
+      <div className="bg-white border-b border-border py-5 sticky top-[72px] z-40">
+        <div className="container-site flex flex-wrap gap-2">
+          {categories.map((cat) => (
+            <span
+              key={cat.id}
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium bg-transparent border border-border text-charcoal-muted cursor-pointer hover:bg-terra hover:border-terra hover:text-white transition-colors"
+            >
+              {cat.label}
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* Guides Grid */}
       <section className="section-padding bg-cream">
         <div className="container-site">
-          {/* Category filter pills */}
-          <div className="flex flex-wrap gap-2 mb-12 justify-center">
-            {categories.map((cat) => (
-              <span
-                key={cat.id}
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium bg-white border border-navy/15 text-charcoal cursor-pointer hover:border-navy hover:text-navy transition-colors shadow-pill"
-              >
-                {cat.label}
-              </span>
-            ))}
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {guides.map((guide) => (
               <Link
@@ -82,7 +79,7 @@ export default async function GuidesPage() {
                     {guide.price === "free" ? (
                       <span className="badge bg-sage text-white">Free</span>
                     ) : (
-                      <span className="badge bg-white/95 text-navy shadow-pill">
+                      <span className="badge bg-white/95 text-charcoal shadow-pill">
                         {formatPrice(guide.price)}
                       </span>
                     )}
@@ -97,14 +94,14 @@ export default async function GuidesPage() {
                     ))}
                   </div>
 
-                  <h2 className="font-display font-semibold text-lg text-navy mb-2 group-hover:text-terra transition-colors line-clamp-2">
+                  <h2 className="font-display font-medium text-lg text-charcoal mb-2 group-hover:text-terra transition-colors line-clamp-2">
                     {guide.title}
                   </h2>
                   <p className="text-charcoal-muted text-sm leading-relaxed flex-1 line-clamp-3 mb-4">
                     {guide.description}
                   </p>
 
-                  <div className="flex items-center justify-between pt-4 border-t border-navy/8">
+                  <div className="flex items-center justify-between pt-4 border-t border-border">
                     <div className="flex items-center gap-3 text-xs text-charcoal-muted">
                       <span className="flex items-center gap-1">
                         <Clock className="w-3.5 h-3.5" /> {guide.readTime} min
@@ -113,7 +110,7 @@ export default async function GuidesPage() {
                         <Tag className="w-3.5 h-3.5" /> {guide.destination}
                       </span>
                     </div>
-                    <span className="text-terra font-semibold text-sm flex items-center gap-1">
+                    <span className="text-terra font-medium text-sm flex items-center gap-1">
                       View <ArrowRight className="w-3.5 h-3.5" />
                     </span>
                   </div>

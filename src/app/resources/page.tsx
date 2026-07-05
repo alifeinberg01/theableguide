@@ -35,36 +35,32 @@ export default function ResourcesPage() {
   return (
     <>
       {/* Header */}
-      <section className="bg-navy pt-32 pb-20">
-        <div className="container-site text-center">
-          <SectionLabel className="justify-center mb-4 text-white/60" color="sage">Resource Library</SectionLabel>
-          <h1 className="heading-xl text-white mb-4">Free Resources for Every Family</h1>
-          <p className="body-lg text-white/70 max-w-2xl mx-auto">
+      <section className="bg-terra-50 pt-[calc(72px+64px)] pb-16 border-b border-border">
+        <div className="container-site">
+          <SectionLabel className="mb-4" color="sage">Resource Library</SectionLabel>
+          <h1 className="heading-xl text-charcoal mb-4 max-w-2xl">
+            Tools that <em className="italic text-terra">actually work</em>
+          </h1>
+          <p className="body-lg text-charcoal-muted max-w-xl">
             Tools, links, programs, and organizations that make accessible travel easier —
             all vetted and organized in one place.
           </p>
         </div>
       </section>
 
-      <div className="bg-navy">
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
-          <path d="M0 40V20C360 0 720 40 1080 20C1260 10 1380 28 1440 32V40H0Z" fill="#FEFDF8" />
-        </svg>
-      </div>
-
       <section className="section-padding bg-cream">
         <div className="container-site">
           {/* Category filter */}
-          <div className="flex flex-wrap gap-2 mb-12 justify-center">
+          <div className="flex flex-wrap gap-2 mb-12">
             {resourceCategories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
                 className={cn(
-                  "px-5 py-2.5 rounded-full text-sm font-semibold transition-all",
+                  "px-5 py-2.5 rounded-full text-sm font-medium transition-all",
                   activeCategory === cat
-                    ? "bg-navy text-white shadow-pill"
-                    : "bg-white border border-navy/15 text-charcoal hover:border-navy hover:text-navy"
+                    ? "bg-terra text-white"
+                    : "bg-transparent border border-border text-charcoal-muted hover:border-terra hover:text-terra"
                 )}
               >
                 {cat}
@@ -89,7 +85,7 @@ export default function ResourcesPage() {
                     </div>
                   </div>
 
-                  <h3 className="font-display font-semibold text-navy text-lg mb-2">
+                  <h3 className="font-display font-medium text-charcoal text-lg mb-2">
                     {resource.title}
                   </h3>
                   <p className="text-charcoal-muted text-sm leading-relaxed flex-1 mb-4">
@@ -98,7 +94,7 @@ export default function ResourcesPage() {
 
                   <div className="flex flex-wrap gap-1.5 mb-4">
                     {resource.tags.map((tag) => (
-                      <span key={tag} className="text-xs bg-navy/5 text-charcoal-muted rounded-full px-2 py-0.5">
+                      <span key={tag} className="text-xs bg-charcoal/5 text-charcoal-muted rounded-full px-2 py-0.5">
                         #{tag}
                       </span>
                     ))}
@@ -109,7 +105,7 @@ export default function ResourcesPage() {
                       href={resource.url}
                       target={resource.url.startsWith("http") ? "_blank" : undefined}
                       rel={resource.url.startsWith("http") ? "noreferrer" : undefined}
-                      className="inline-flex items-center gap-1.5 text-teal font-semibold text-sm hover:text-teal-700 transition-colors"
+                      className="inline-flex items-center gap-1.5 text-dust-700 font-medium text-sm hover:text-dust-800 transition-colors"
                     >
                       Visit Resource
                       <ExternalLink className="w-3.5 h-3.5" />

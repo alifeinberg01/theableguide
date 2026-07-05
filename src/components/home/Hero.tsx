@@ -1,86 +1,110 @@
 import Link from "next/link";
-import Image from "next/image";
-import { ArrowRight, Star, ShieldCheck, FileText } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
+
+const steps = [
+  {
+    title: "Pre-visit preparation",
+    detail: "Social story + visual schedule (print at home)",
+  },
+  {
+    title: "DAS Pass + arrival strategy",
+    detail: "Quiet entry, orientation time, first 2 hrs",
+  },
+  {
+    title: "Sensory break schedule",
+    detail: "Quiet zones, feeling check-ins, rest plan",
+  },
+];
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="https://images.unsplash.com/photo-1575783970733-1aaedde1db74?w=1600&q=80"
-          alt="Happy family with child wearing Mickey ears at a theme park"
-          fill
-          priority
-          className="object-cover object-center"
-          sizes="100vw"
-        />
-        <div className="hero-overlay absolute inset-0" />
-      </div>
+    <section className="relative bg-terra-50 overflow-hidden pt-[calc(72px+80px)] pb-20 px-4 sm:px-6 lg:px-8">
+      {/* Decorative glows */}
+      <div className="absolute -top-24 -right-24 w-[600px] h-[600px] rounded-full bg-terra-100/60 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-20 -left-20 w-96 h-96 rounded-full bg-sage-100/60 blur-3xl pointer-events-none" />
 
-      {/* Content */}
-      <div className="relative z-10 container-site w-full pt-24 pb-20">
-        <div className="max-w-3xl">
-          {/* Label */}
-          <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-4 py-2 mb-8">
-            <Star className="w-3.5 h-3.5 text-amber fill-amber" />
-            <span className="text-white text-xs font-semibold tracking-wide uppercase">
-              Trusted by 10,000+ families
+      <div className="container-site relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+        {/* Left — Copy */}
+        <div>
+          <div className="inline-flex items-center gap-2 bg-white border border-border rounded-full px-4 py-1.5 mb-8 shadow-card">
+            <span className="w-1.5 h-1.5 rounded-full bg-sage" />
+            <span className="text-charcoal-muted text-xs font-medium">
+              Built by a special education teacher
             </span>
           </div>
 
-          {/* Headline */}
-          <h1 className="heading-xl text-white mb-6">
-            Every Family Deserves
+          <h1 className="heading-xl text-charcoal mb-6">
+            Travel <em className="italic text-terra">confidently</em>
             <br />
-            <span className="text-amber-300">to Explore the World.</span>
+            with your child.
           </h1>
 
-          <p className="body-lg text-white/85 mb-10 max-w-xl">
-            Expert travel guides for families raising children with autism,
-            sensory differences, and other disabilities. Theme parks, airports,
-            cruises — planned with care, written by people who get it.
+          <p className="body-lg text-charcoal-muted mb-10 max-w-xl">
+            The Able Guide helps families of children with disabilities plan calm,
+            predictable, and genuinely joyful trips — step by step.
           </p>
 
-          {/* CTA Row */}
-          <div className="flex flex-wrap gap-4 mb-14">
-            <Link
-              href="/guides"
-              className="btn-primary px-8 py-4 text-base shadow-lg group"
-            >
-              Browse All Guides
+          <div className="flex flex-wrap gap-4 mb-12">
+            <Link href="/free-guide" className="btn-primary">
+              ✦ Get your free guide
+            </Link>
+            <Link href="/guides" className="btn-secondary group">
+              Browse guides
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link
-              href="/free-guide"
-              className="btn inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/30 text-white hover:bg-white/25 px-8 py-4 text-base rounded-full font-semibold"
-            >
-              <FileText className="w-4 h-4" />
-              Free Starter Guide
-            </Link>
           </div>
 
-          {/* Trust Badges */}
-          <div className="flex flex-wrap gap-6">
-            {[
-              { icon: ShieldCheck, text: "30-Day Money-Back Guarantee" },
-              { icon: Star,        text: "4.9 / 5 Average Rating" },
-              { icon: FileText,    text: "Lifetime Guide Updates" },
-            ].map(({ icon: Icon, text }) => (
-              <div key={text} className="flex items-center gap-2 text-white/80">
-                <Icon className="w-4 h-4 text-amber-300" />
-                <span className="text-sm font-medium">{text}</span>
-              </div>
-            ))}
+          <div className="flex items-center gap-4">
+            <div className="flex -space-x-3">
+              {["AM", "JT", "PK", "SR", "ML"].map((initials) => (
+                <div
+                  key={initials}
+                  className="w-9 h-9 rounded-full bg-terra-200 border-2 border-terra-50 flex items-center justify-center text-[10px] font-medium text-terra-700"
+                >
+                  {initials}
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-charcoal-muted">
+              Join <strong className="text-charcoal font-medium">3,500+</strong> families already traveling with confidence
+            </p>
           </div>
         </div>
-      </div>
 
-      {/* Bottom Wave */}
-      <div className="absolute bottom-0 inset-x-0 z-10">
-        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
-          <path d="M0 80V40C360 0 720 80 1080 40C1260 20 1380 48 1440 56V80H0Z" fill="#FEFDF8" />
-        </svg>
+        {/* Right — Sample itinerary preview */}
+        <div className="relative">
+          <div className="absolute -top-4 left-6 bg-white rounded-full px-4 py-2 shadow-card-hover text-xs font-medium text-charcoal flex items-center gap-2 z-10">
+            <Check className="w-3.5 h-3.5 text-sage" /> Sensory-verified guides
+          </div>
+
+          <div className="card-base p-8 pt-10">
+            <p className="label-tag mb-3">✈ Sample itinerary preview</p>
+            <h3 className="font-display text-2xl font-medium text-charcoal mb-2">
+              Disneyland: First Visit
+            </h3>
+            <p className="text-sm text-charcoal-muted mb-6 leading-relaxed">
+              A complete sensory-friendly day guide designed for children with autism &amp; sensory needs.
+            </p>
+
+            <div className="flex flex-col gap-4">
+              {steps.map((step, i) => (
+                <div key={step.title} className="flex gap-4">
+                  <div className="w-7 h-7 rounded-full bg-terra-100 text-terra-600 flex items-center justify-center text-xs font-medium shrink-0">
+                    {i + 1}
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-charcoal">{step.title}</p>
+                    <p className="text-xs text-charcoal-muted mt-0.5">{step.detail}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="absolute -bottom-4 right-6 bg-white rounded-full px-4 py-2 shadow-card-hover text-xs font-medium text-charcoal flex items-center gap-2">
+            🧠 Visual supports included
+          </div>
+        </div>
       </div>
     </section>
   );

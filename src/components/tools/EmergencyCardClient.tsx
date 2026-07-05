@@ -37,10 +37,10 @@ interface FieldProps {
 }
 
 function Field({ label, value, onChange, placeholder, multiline }: FieldProps) {
-  const cls = "w-full px-3 py-2 rounded-lg border border-navy/20 text-sm text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-teal/30";
+  const cls = "w-full px-3 py-2 rounded-lg border border-border text-sm text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-terra/30";
   return (
     <div>
-      <label className="block text-xs font-semibold text-navy mb-1">{label}</label>
+      <label className="block text-xs font-medium text-charcoal mb-1">{label}</label>
       {multiline ? (
         <textarea
           rows={2}
@@ -72,7 +72,7 @@ export default function EmergencyCardClient() {
         {/* Form */}
         <div className="space-y-6 no-print">
           <div className="card-base p-6">
-            <h3 className="font-display font-semibold text-navy text-lg mb-4">Child Information</h3>
+            <h3 className="font-display font-medium text-charcoal text-lg mb-4">Child Information</h3>
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <Field label="Child's Full Name *" value={card.childName} onChange={(v) => set("childName", v)} placeholder="First Last" />
@@ -90,7 +90,7 @@ export default function EmergencyCardClient() {
           </div>
 
           <div className="card-base p-6">
-            <h3 className="font-display font-semibold text-navy text-lg mb-4">Emergency Contacts</h3>
+            <h3 className="font-display font-medium text-charcoal text-lg mb-4">Emergency Contacts</h3>
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <Field label="Parent/Guardian 1 Name" value={card.parent1Name} onChange={(v) => set("parent1Name", v)} placeholder="Name" />
@@ -114,14 +114,14 @@ export default function EmergencyCardClient() {
 
         {/* Card Preview */}
         <div className="space-y-4">
-          <p className="text-sm font-semibold text-charcoal-muted uppercase tracking-wider no-print">Card Preview</p>
+          <p className="text-sm font-medium text-charcoal-muted uppercase tracking-wider no-print">Card Preview</p>
 
           {/* Front */}
-          <div className="bg-navy text-white rounded-2xl p-6 shadow-card-hover aspect-[3.5/2] flex flex-col justify-between print:shadow-none">
+          <div className="bg-charcoal text-white rounded-2xl p-6 shadow-card-hover aspect-[3.5/2] flex flex-col justify-between print:shadow-none">
             <div className="flex items-start justify-between">
               <div>
                 <p className="text-white/50 text-xs uppercase tracking-widest mb-0.5">Emergency Information</p>
-                <h2 className="font-display font-bold text-2xl">{card.childName || "Child's Name"}</h2>
+                <h2 className="font-display font-medium text-2xl">{card.childName || "Child's Name"}</h2>
                 {card.dob && <p className="text-white/60 text-sm">DOB: {card.dob}</p>}
               </div>
               <div className="bg-terra rounded-xl p-2">
@@ -145,7 +145,7 @@ export default function EmergencyCardClient() {
               )}
               {card.allergies && (
                 <div>
-                  <p className="text-amber text-xs uppercase tracking-widest font-bold mb-0.5">⚠ Allergies</p>
+                  <p className="text-amber-300 text-xs uppercase tracking-widest font-medium mb-0.5">⚠ Allergies</p>
                   <p className="text-xs">{card.allergies}</p>
                 </div>
               )}
@@ -153,44 +153,44 @@ export default function EmergencyCardClient() {
           </div>
 
           {/* Back */}
-          <div className="bg-white border-2 border-navy rounded-2xl p-6 shadow-card aspect-[3.5/2] flex flex-col justify-between print:shadow-none">
+          <div className="bg-white border-2 border-charcoal rounded-2xl p-6 shadow-card aspect-[3.5/2] flex flex-col justify-between print:shadow-none">
             <div className="grid grid-cols-2 gap-x-6 gap-y-3">
               {card.calmsDown && (
                 <div>
-                  <p className="text-sage font-bold text-xs uppercase tracking-widest mb-0.5">✓ Helps</p>
+                  <p className="text-sage-600 font-medium text-xs uppercase tracking-widest mb-0.5">✓ Helps</p>
                   <p className="text-xs text-charcoal">{card.calmsDown}</p>
                 </div>
               )}
               {card.makesWorse && (
                 <div>
-                  <p className="text-terra font-bold text-xs uppercase tracking-widest mb-0.5">✗ Avoid</p>
+                  <p className="text-terra-600 font-medium text-xs uppercase tracking-widest mb-0.5">✗ Avoid</p>
                   <p className="text-xs text-charcoal">{card.makesWorse}</p>
                 </div>
               )}
               {card.medications && (
                 <div>
-                  <p className="text-navy font-bold text-xs uppercase tracking-widest mb-0.5">Medications</p>
+                  <p className="text-charcoal font-medium text-xs uppercase tracking-widest mb-0.5">Medications</p>
                   <p className="text-xs text-charcoal">{card.medications}</p>
                 </div>
               )}
             </div>
 
-            <div className="border-t border-navy/10 pt-3 grid grid-cols-2 gap-3">
+            <div className="border-t border-charcoal/10 pt-3 grid grid-cols-2 gap-3">
               {card.parent1Name && (
                 <div>
-                  <p className="text-xs font-semibold text-navy">{card.parent1Name}</p>
+                  <p className="text-xs font-medium text-charcoal">{card.parent1Name}</p>
                   <p className="text-xs text-charcoal-muted">{card.parent1Phone}</p>
                 </div>
               )}
               {card.parent2Name && (
                 <div>
-                  <p className="text-xs font-semibold text-navy">{card.parent2Name}</p>
+                  <p className="text-xs font-medium text-charcoal">{card.parent2Name}</p>
                   <p className="text-xs text-charcoal-muted">{card.parent2Phone}</p>
                 </div>
               )}
               {card.doctorName && (
                 <div>
-                  <p className="text-xs font-semibold text-navy">{card.doctorName}</p>
+                  <p className="text-xs font-medium text-charcoal">{card.doctorName}</p>
                   <p className="text-xs text-charcoal-muted">{card.doctorPhone}</p>
                 </div>
               )}

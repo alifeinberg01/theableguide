@@ -319,6 +319,90 @@ And give yourself grace too. Advocacy is exhausting. You're doing something hard
     readTime: 8,
     featured: false,
   },
+  {
+    id: "7",
+    slug: "hotel-questions-sensory-child",
+    title: "12 Questions to Ask Any Hotel Before Booking with a Sensory Child",
+    excerpt:
+      "Hotels say \"accessible\" but rarely mean what you need. Print this list and call before you book — it has saved dozens of families from the wrong room.",
+    content: `
+## Why the Website Isn't Enough
+
+Hotel listing sites are built for the average traveler. "Quiet" can mean anything from "no nightclub on-site" to "directly above a 2 a.m. ice machine." The only way to know what a room actually feels like is to call the property directly and ask specific questions.
+
+## The 12 Questions
+
+1. Is our room away from elevators, ice machines, and the pool deck?
+2. Is there a connecting room available, or can we book two adjoining rooms?
+3. What floor tends to be quietest, and can you note that on our reservation?
+4. Is there a mini-fridge in the room, or can one be added for medication or specific foods?
+5. Do you have blackout curtains, and are they fully opaque?
+6. Is there a bathtub, or only a shower? (Some kids need the tub for regulation.)
+7. What time does housekeeping typically start on our floor?
+8. Is there a quiet lobby or seating area away from live music or events?
+9. Does the pool have specific quiet hours or a "kids off" period?
+10. Can staff be briefed in advance that our child may need extra patience or a specific accommodation?
+11. What is your cancellation policy if the room doesn't work for our family?
+12. Is early check-in or a "room ready" text available so we're not waiting in the lobby?
+
+## Call, Don't Just Book Online
+
+Ask for a manager or the accessibility desk specifically. Front desk staff who take the reservation aren't always the ones who can guarantee a specific room. Get the answer in writing — an email confirming the room request — whenever possible.
+
+## Have a Backup Plan
+
+Even with perfect preparation, a room can be wrong. Know your hotel's reassignment policy before you arrive, and don't be afraid to ask to move rooms the first night if something isn't working.
+    `,
+    category: "tips",
+    tags: ["hotels", "booking", "sensory", "planning"],
+    coverImage: "/images/blog/hotel-questions.jpg",
+    coverImageAlt: "Hotel lobby with a family checking in at the front desk",
+    author: "The Able Guide Team",
+    publishedAt: "2024-08-05",
+    readTime: 5,
+    featured: false,
+  },
+  {
+    id: "8",
+    slug: "meltdown-in-public-what-to-do",
+    title: "What to Do When Your Child Has a Meltdown in Public",
+    excerpt:
+      "A calm, practical guide from a special education perspective. What to do, what not to do, and what to say to bystanders who think they're helping.",
+    content: `
+## First: It's Not Misbehavior
+
+A meltdown is a nervous system in overload, not a choice. The goal in the moment isn't to stop the behavior — it's to reduce the input causing it and help your child get back to a regulated state.
+
+## In the Moment
+
+- Get to a lower-stimulation space if you can — a corner, a family restroom, outside.
+- Lower your own voice and slow your own movements. Kids co-regulate off the adults around them.
+- Offer a known comfort tool — headphones, a fidget, a weighted item — without demanding they "calm down" first.
+- Give space. Some kids need distance, not closer contact, when overwhelmed.
+
+## What Not to Do
+
+- Don't narrate the meltdown to bystanders ("he's just tired") — it centers their comfort over your child's need for space.
+- Don't bargain or negotiate mid-meltdown. The reasoning part of the brain is offline; save the conversation for after.
+- Don't rush the recovery. Pushing a still-dysregulated child back into the triggering environment usually restarts the cycle.
+
+## If a Stranger Tries to Help
+
+Most people mean well. A short, calm line works for almost any situation: "We've got this, thank you." You don't owe anyone an explanation, a diagnosis, or an apology.
+
+## After It Passes
+
+Once your child is regulated, a brief, warm reconnection goes further than a debrief. Save the "what happened back there" conversation for later, at home, when everyone's nervous system has settled.
+    `,
+    category: "advocacy",
+    tags: ["behavior", "meltdowns", "public", "regulation"],
+    coverImage: "/images/blog/meltdown-support.jpg",
+    coverImageAlt: "Parent kneeling down to comfort a child in a calm corner of a public space",
+    author: "The Able Guide Team",
+    publishedAt: "2024-07-18",
+    readTime: 7,
+    featured: false,
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

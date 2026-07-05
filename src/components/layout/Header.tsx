@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, Compass } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const nav = [
@@ -32,6 +32,7 @@ export default function Header() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
+    onScroll();
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -44,27 +45,20 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 inset-x-0 z-50 transition-all duration-300",
-        scrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-pill"
-          : "bg-transparent"
+        "fixed top-0 inset-x-0 z-50 h-[72px] bg-cream/95 backdrop-blur-md border-b border-border transition-shadow duration-300",
+        scrolled && "shadow-card"
       )}
     >
-      <div className="container-site">
-        <div className="flex items-center justify-between h-16 md:h-20">
+      <div className="container-site h-full">
+        <div className="flex items-center justify-between h-full">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-xl bg-navy flex items-center justify-center shadow-md group-hover:bg-terra transition-colors duration-200">
-              <Compass className="w-5 h-5 text-white" />
+            <div className="w-9 h-9 rounded-full bg-terra flex items-center justify-center flex-shrink-0">
+              <span className="font-display italic text-white text-lg leading-none">A</span>
             </div>
-            <div className="flex flex-col leading-none">
-              <span className={cn("font-display font-bold text-lg tracking-tight transition-colors", scrolled ? "text-navy" : "text-white")}>
-                The Able Guide
-              </span>
-              <span className={cn("text-xs font-sans tracking-wide transition-colors", scrolled ? "text-charcoal-muted" : "text-white/70")}>
-                Travel for Every Family
-              </span>
-            </div>
+            <span className="font-display text-[22px] font-medium tracking-tight text-charcoal">
+              The Able <em className="italic text-terra not-italic md:italic">Guide</em>
+            </span>
           </Link>
 
           {/* Desktop Nav */}
@@ -78,23 +72,18 @@ export default function Header() {
                   onMouseLeave={() => setDropdown(null)}
                 >
                   <button
-                    className={cn(
-                      "flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium transition-colors",
-                      scrolled
-                        ? "text-charcoal hover:text-navy hover:bg-navy/8"
-                        : "text-white/90 hover:text-white hover:bg-white/15"
-                    )}
+                    className="flex items-center gap-1 px-4 py-2 text-[13px] font-medium uppercase tracking-wide text-charcoal-muted hover:text-terra transition-colors"
                   >
                     {item.label}
                     <ChevronDown className={cn("w-3.5 h-3.5 transition-transform", dropdown === item.label && "rotate-180")} />
                   </button>
                   {dropdown === item.label && (
-                    <div className="absolute top-full left-0 mt-2 w-52 bg-white rounded-2xl shadow-card-hover border border-navy/8 py-2 animate-fade-in">
+                    <div className="absolute top-full left-0 mt-1 w-52 bg-white rounded-2xl shadow-card-hover border border-border py-2 animate-fade-in">
                       {item.children.map((child) => (
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="flex items-center px-4 py-2.5 text-sm text-charcoal hover:bg-cloud hover:text-navy font-medium transition-colors"
+                          className="flex items-center px-4 py-2.5 text-sm text-charcoal-light hover:bg-terra-50 hover:text-terra font-normal transition-colors"
                         >
                           {child.label}
                         </Link>
@@ -107,12 +96,10 @@ export default function Header() {
                   key={item.label}
                   href={item.href}
                   className={cn(
-                    "px-4 py-2 rounded-full text-sm font-medium transition-colors",
+                    "px-4 py-2 text-[13px] font-medium uppercase tracking-wide transition-colors",
                     pathname === item.href
-                      ? scrolled ? "text-navy font-semibold" : "text-white font-semibold"
-                      : scrolled
-                      ? "text-charcoal hover:text-navy hover:bg-navy/8"
-                      : "text-white/90 hover:text-white hover:bg-white/15"
+                      ? "text-terra"
+                      : "text-charcoal-muted hover:text-terra"
                   )}
                 >
                   {item.label}
@@ -122,28 +109,22 @@ export default function Header() {
           </nav>
 
           {/* CTA */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-5">
             <Link
               href="/free-guide"
-              className={cn(
-                "text-sm font-semibold transition-colors",
-                scrolled ? "text-navy hover:text-terra" : "text-white/90 hover:text-white"
-              )}
+              className="text-[13px] font-medium uppercase tracking-wide text-charcoal-muted hover:text-terra transition-colors"
             >
               Free Guide
             </Link>
-            <Link
-              href="/custom"
-              className="btn-primary text-sm px-5 py-2.5"
-            >
-              Custom Itinerary
+            <Link href="/custom" className="btn-primary text-sm px-6 py-2.5">
+              ✦ Custom Plan
             </Link>
           </div>
 
           {/* Mobile toggle */}
           <button
             onClick={() => setOpen(!open)}
-            className={cn("md:hidden p-2 rounded-xl transition-colors", scrolled ? "text-navy" : "text-white")}
+            className="md:hidden p-2 text-charcoal"
             aria-label="Toggle menu"
           >
             {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -153,13 +134,13 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-white border-t border-navy/10 shadow-card-hover animate-fade-in">
+        <div className="md:hidden bg-cream border-t border-border shadow-card-hover animate-fade-in">
           <div className="container-site py-4 flex flex-col gap-1">
             {nav.map((item) => (
               <div key={item.label}>
                 <Link
                   href={item.href}
-                  className="flex items-center px-4 py-3 text-charcoal font-medium hover:text-navy hover:bg-cloud rounded-xl transition-colors"
+                  className="flex items-center px-4 py-3 text-charcoal font-medium hover:text-terra hover:bg-terra-50 rounded-xl transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -169,7 +150,7 @@ export default function Header() {
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="flex items-center px-4 py-2 text-sm text-charcoal-muted hover:text-navy hover:bg-cloud rounded-xl transition-colors"
+                        className="flex items-center px-4 py-2 text-sm text-charcoal-muted hover:text-terra hover:bg-terra-50 rounded-xl transition-colors"
                       >
                         {child.label}
                       </Link>
@@ -178,12 +159,12 @@ export default function Header() {
                 )}
               </div>
             ))}
-            <div className="pt-3 border-t border-navy/10 flex flex-col gap-2 mt-2">
-              <Link href="/free-guide" className="btn-outline text-center py-3">
+            <div className="pt-3 border-t border-border flex flex-col gap-2 mt-2">
+              <Link href="/free-guide" className="btn-secondary text-center py-3">
                 Download Free Guide
               </Link>
               <Link href="/custom" className="btn-primary text-center py-3">
-                Custom Itinerary
+                ✦ Custom Plan
               </Link>
             </div>
           </div>

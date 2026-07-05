@@ -30,10 +30,10 @@ export default function CustomItinerary() {
             {/* Floating card */}
             <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-card-hover p-5 max-w-xs">
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-9 h-9 rounded-xl bg-teal/10 flex items-center justify-center">
-                  <Clock className="w-5 h-5 text-teal" />
+                <div className="w-9 h-9 rounded-xl bg-dust/15 flex items-center justify-center">
+                  <Clock className="w-5 h-5 text-dust-700" />
                 </div>
-                <p className="font-semibold text-navy text-sm">Delivered in 5–7 days</p>
+                <p className="font-medium text-charcoal text-sm">Delivered in 5–7 days</p>
               </div>
               <p className="text-charcoal-muted text-xs leading-relaxed">
                 Tell us about your child and your destination. We'll handle the rest.
@@ -44,10 +44,10 @@ export default function CustomItinerary() {
           {/* Copy side */}
           <div>
             <SectionLabel className="mb-3" color="terra">Custom Itineraries</SectionLabel>
-            <h2 className="heading-lg text-navy mb-4">
+            <h2 className="heading-lg text-charcoal mb-4">
               Your Trip, Planned by
               <br />
-              <span className="text-terra">People Who Understand</span>
+              <em className="italic text-terra">People Who Understand</em>
             </h2>
             <p className="body-md text-charcoal-muted mb-8">
               Every child is different. A custom itinerary goes beyond our pre-written

@@ -22,22 +22,18 @@ export default async function BlogPage() {
   return (
     <>
       {/* Header */}
-      <section className="bg-navy pt-32 pb-20">
+      <section className="bg-terra-50 pt-[calc(72px+64px)] pb-16 border-b border-border">
         <div className="container-site text-center">
-          <SectionLabel className="justify-center mb-4 text-white/60" color="teal">The Blog</SectionLabel>
-          <h1 className="heading-xl text-white mb-4">Tips, Stories & Insights</h1>
-          <p className="body-lg text-white/70 max-w-2xl mx-auto">
+          <SectionLabel className="justify-center mb-4" color="teal">The Blog</SectionLabel>
+          <h1 className="heading-xl text-charcoal mb-4">
+            The <em className="italic text-terra">knowledge base</em> every family deserves
+          </h1>
+          <p className="body-lg text-charcoal-muted max-w-2xl mx-auto">
             Practical advice, honest accounts, and inspiration for every family
             that refuses to let a diagnosis define their adventures.
           </p>
         </div>
       </section>
-
-      <div className="bg-navy">
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
-          <path d="M0 40V20C360 0 720 40 1080 20C1260 10 1380 28 1440 32V40H0Z" fill="#FEFDF8" />
-        </svg>
-      </div>
 
       <section className="section-padding bg-cream">
         <div className="container-site">
@@ -59,7 +55,7 @@ export default async function BlogPage() {
               </div>
               <div className="p-8 flex flex-col justify-center">
                 <Badge color="terra" className="mb-4 w-fit">{hero.category}</Badge>
-                <h2 className="heading-md text-navy group-hover:text-terra transition-colors mb-3">
+                <h2 className="heading-md text-charcoal group-hover:text-terra transition-colors mb-3">
                   {hero.title}
                 </h2>
                 <p className="text-charcoal-muted body-md mb-6">{hero.excerpt}</p>
@@ -95,7 +91,7 @@ export default async function BlogPage() {
                       <Clock className="w-3 h-3" /> {post.readTime} min
                     </span>
                   </div>
-                  <h3 className="font-display font-semibold text-lg text-navy group-hover:text-terra transition-colors mb-2 line-clamp-2">
+                  <h3 className="font-display font-medium text-lg text-charcoal group-hover:text-terra transition-colors mb-2 line-clamp-2">
                     {post.title}
                   </h3>
                   <p className="text-charcoal-muted text-sm line-clamp-3 flex-1 mb-4">{post.excerpt}</p>

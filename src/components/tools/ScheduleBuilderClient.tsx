@@ -6,8 +6,8 @@ import Button from "@/components/ui/Button";
 import type { ScheduleBlock } from "@/types";
 
 const DEFAULT_COLORS = [
-  "#1E3A5C", "#0891B2", "#C8603A", "#4A7C59",
-  "#F59E0B", "#8B5CF6", "#EC4899", "#64748B",
+  "#C4714A", "#6B8F6E", "#7A9BB5", "#28201A",
+  "#EFC36A", "#8B5CF6", "#EC4899", "#7A6A58",
 ];
 
 const ICONS = ["🌅", "🥞", "✈️", "🚗", "🏰", "🎢", "🍔", "🌮", "🍦", "🎠", "🛌", "🛁", "📱", "📚", "🎉"];
@@ -19,9 +19,9 @@ function genId() {
 export default function ScheduleBuilderClient() {
   const [title, setTitle] = useState("Our Disney World Day!");
   const [blocks, setBlocks] = useState<ScheduleBlock[]>([
-    { id: genId(), time: "8:00 AM", activity: "Breakfast at the hotel", duration: 45, notes: "Bring headphones", color: "#0891B2", icon: "🥞" },
-    { id: genId(), time: "9:00 AM", activity: "Arrive at Magic Kingdom", duration: 30, notes: "Rope drop!", color: "#C8603A", icon: "🏰" },
-    { id: genId(), time: "9:30 AM", activity: "Seven Dwarfs Mine Train (DAS)", duration: 60, notes: "", color: "#4A7C59", icon: "🎢" },
+    { id: genId(), time: "8:00 AM", activity: "Breakfast at the hotel", duration: 45, notes: "Bring headphones", color: "#7A9BB5", icon: "🥞" },
+    { id: genId(), time: "9:00 AM", activity: "Arrive at Magic Kingdom", duration: 30, notes: "Rope drop!", color: "#C4714A", icon: "🏰" },
+    { id: genId(), time: "9:30 AM", activity: "Seven Dwarfs Mine Train (DAS)", duration: 60, notes: "", color: "#6B8F6E", icon: "🎢" },
   ]);
 
   const addBlock = () => {
@@ -53,15 +53,15 @@ export default function ScheduleBuilderClient() {
     <div className="max-w-4xl mx-auto">
       {/* Controls */}
       <div className="card-base p-6 mb-8 no-print">
-        <h2 className="font-display font-semibold text-navy text-xl mb-4">Schedule Settings</h2>
+        <h2 className="font-display font-medium text-charcoal text-xl mb-4">Schedule Settings</h2>
         <div className="flex flex-col sm:flex-row gap-4">
           <div className="flex-1">
-            <label className="block text-sm font-semibold text-navy mb-1.5">Schedule Title</label>
+            <label className="block text-sm font-medium text-charcoal mb-1.5">Schedule Title</label>
             <input
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="w-full px-4 py-2.5 rounded-xl border border-navy/20 text-charcoal focus:outline-none focus:ring-2 focus:ring-teal/30"
+              className="w-full px-4 py-2.5 rounded-xl border border-border text-charcoal focus:outline-none focus:ring-2 focus:ring-terra/30"
             />
           </div>
           <div className="flex items-end gap-3">
@@ -77,7 +77,7 @@ export default function ScheduleBuilderClient() {
 
       {/* Printable schedule */}
       <div className="card-base p-8" id="printable-schedule">
-        <h1 className="font-display font-bold text-navy text-3xl mb-2 text-center">{title}</h1>
+        <h1 className="font-display font-medium text-charcoal text-3xl mb-2 text-center">{title}</h1>
         <p className="text-center text-charcoal-muted text-sm mb-8">Made with The Able Guide · theableguide.com</p>
 
         <div className="space-y-4">
@@ -94,7 +94,7 @@ export default function ScheduleBuilderClient() {
                       placeholder="9:00 AM"
                       value={block.time}
                       onChange={(e) => updateBlock(block.id, "time", e.target.value)}
-                      className="w-full px-3 py-2 rounded-lg border border-navy/15 text-sm focus:outline-none focus:ring-1 focus:ring-teal/40"
+                      className="w-full px-3 py-2 rounded-lg border border-border text-sm focus:outline-none focus:ring-1 focus:ring-terra/40"
                     />
                   </div>
                   <div className="md:col-span-2">
@@ -104,7 +104,7 @@ export default function ScheduleBuilderClient() {
                       placeholder="Activity name"
                       value={block.activity}
                       onChange={(e) => updateBlock(block.id, "activity", e.target.value)}
-                      className="w-full px-3 py-2 rounded-lg border border-navy/15 text-sm focus:outline-none focus:ring-1 focus:ring-teal/40"
+                      className="w-full px-3 py-2 rounded-lg border border-border text-sm focus:outline-none focus:ring-1 focus:ring-terra/40"
                     />
                   </div>
                   <div>
@@ -115,7 +115,7 @@ export default function ScheduleBuilderClient() {
                       step={5}
                       value={block.duration}
                       onChange={(e) => updateBlock(block.id, "duration", Number(e.target.value))}
-                      className="w-full px-3 py-2 rounded-lg border border-navy/15 text-sm focus:outline-none focus:ring-1 focus:ring-teal/40"
+                      className="w-full px-3 py-2 rounded-lg border border-border text-sm focus:outline-none focus:ring-1 focus:ring-terra/40"
                     />
                   </div>
                   <div className="md:col-span-3">
@@ -125,7 +125,7 @@ export default function ScheduleBuilderClient() {
                       placeholder="Any notes for this block..."
                       value={block.notes || ""}
                       onChange={(e) => updateBlock(block.id, "notes", e.target.value)}
-                      className="w-full px-3 py-2 rounded-lg border border-navy/15 text-sm focus:outline-none focus:ring-1 focus:ring-teal/40"
+                      className="w-full px-3 py-2 rounded-lg border border-border text-sm focus:outline-none focus:ring-1 focus:ring-terra/40"
                     />
                   </div>
                   <div>
@@ -155,8 +155,8 @@ export default function ScheduleBuilderClient() {
                 <div className="text-3xl">{block.icon}</div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3">
-                    <span className="font-semibold text-navy">{block.time}</span>
-                    <span className="font-display font-bold text-navy text-lg">{block.activity}</span>
+                    <span className="font-medium text-charcoal">{block.time}</span>
+                    <span className="font-display font-medium text-charcoal text-lg">{block.activity}</span>
                     <span className="text-sm text-charcoal-muted">({block.duration} min)</span>
                   </div>
                   {block.notes && <p className="text-sm text-charcoal-muted mt-0.5">{block.notes}</p>}
@@ -175,8 +175,8 @@ export default function ScheduleBuilderClient() {
       </div>
 
       {/* Tips */}
-      <div className="card-base p-6 mt-8 bg-teal/5 border border-teal/20">
-        <h3 className="font-semibold text-teal-700 mb-3">Schedule Builder Tips</h3>
+      <div className="card-base p-6 mt-8 bg-dust/5 border border-dust/20">
+        <h3 className="font-medium text-dust-700 mb-3">Schedule Builder Tips</h3>
         <ul className="space-y-2 text-sm text-charcoal-muted">
           <li>→ Review the schedule with your child the night before using the printed copy.</li>
           <li>→ Laminate it so it survives the park day (sunscreen + water + excitement).</li>

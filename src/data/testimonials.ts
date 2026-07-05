@@ -66,4 +66,36 @@ export const testimonials: Testimonial[] = [
     avatarInitials: "CO",
     date: "2024-11-08",
   },
+  {
+    id: "7",
+    name: "Diana H.",
+    location: "Denver, CO",
+    quote:
+      "My son is non-verbal and I was terrified of flying. The visual schedule and feeling check-in cards kept him regulated the entire flight. He held the cards and crossed off each step. He was so proud of himself.",
+    rating: 5,
+    guideTitle: "Flying with Autism & Sensory Differences",
+    avatarInitials: "DH",
+    date: "2024-08-19",
+  },
+  {
+    id: "8",
+    name: "Kara W.",
+    location: "San Diego, CA",
+    quote:
+      "I'm a special ed teacher myself and I was blown away by how thorough this was. The behavior strategies are evidence-based, the social stories are exactly the right level, and the sensory ratings for each Disneyland land are spot on.",
+    rating: 5,
+    guideTitle: "Disneyland Accessibility Guide",
+    avatarInitials: "KW",
+    date: "2024-07-30",
+  },
+  {
+    id: "9",
+    name: "Tanya F.",
+    location: "Maui, HI",
+    quote:
+      "My husband was skeptical — we'd tried before and it always fell apart. This time it didn't. The transition warnings, the break schedule, the staff scripts — we used all of it. He cried on the way home. He said, 'We can do this.'",
+    rating: 5,
+    avatarInitials: "TF",
+    date: "2024-06-22",
+  },
 ];

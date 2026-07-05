@@ -3,22 +3,23 @@
 @tailwind utilities;
 
 /* ─── Google Fonts ─────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600;700&display=swap');
 
 /* ─── CSS Custom Properties ─────────────────────────────────────── */
 :root {
-  --font-playfair: 'Playfair Display', Georgia, serif;
-  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-jost: 'Jost', system-ui, sans-serif;
 
   /* Brand tokens */
-  --color-navy:    #1E3A5C;
-  --color-teal:    #0891B2;
-  --color-terra:   #C8603A;
-  --color-sage:    #4A7C59;
-  --color-amber:   #F59E0B;
-  --color-cream:   #FEFDF8;
-  --color-cloud:   #F0F7FF;
-  --color-charcoal:#1E293B;
+  --color-terra:   #C4714A;
+  --color-sage:    #6B8F6E;
+  --color-dust:    #7A9BB5;
+  --color-cream:   #FDF9F5;
+  --color-warm:    #F5EDE2;
+  --color-charcoal:#28201A;
+  --color-ink:     #3D3028;
+  --color-muted:   #7A6A58;
+  --color-border:  #E8DDD0;
 }
 
 /* ─── Base Resets ────────────────────────────────────────────────── */
@@ -30,7 +31,7 @@
   }
 
   body {
-    @apply font-sans text-charcoal bg-cream;
+    @apply font-sans text-charcoal-light bg-cream;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -38,12 +39,12 @@
   }
 
   ::selection {
-    @apply bg-teal/20 text-navy;
+    @apply bg-terra/20 text-charcoal;
   }
 
   /* Focus ring for accessibility */
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-teal;
+    @apply outline-2 outline-offset-2 outline-terra;
   }
 }
 
@@ -58,108 +59,108 @@
   }
 
   .heading-xl {
-    @apply font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight;
+    @apply font-display text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.05] tracking-tight;
   }
 
   .heading-lg {
-    @apply font-display text-3xl md:text-4xl font-bold leading-tight;
+    @apply font-display text-4xl md:text-5xl font-medium leading-tight;
   }
 
   .heading-md {
-    @apply font-display text-2xl md:text-3xl font-semibold;
+    @apply font-display text-2xl md:text-3xl font-medium;
   }
 
   .heading-sm {
-    @apply font-display text-xl md:text-2xl font-semibold;
+    @apply font-display text-xl md:text-2xl font-medium;
   }
 
   .body-lg {
-    @apply font-sans text-lg leading-relaxed;
+    @apply font-sans text-lg leading-relaxed font-light;
   }
 
   .body-md {
-    @apply font-sans text-base leading-relaxed;
+    @apply font-sans text-base leading-relaxed font-light;
   }
 
   .label-tag {
-    @apply inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest;
+    @apply inline-flex items-center gap-1.5 text-[11px] font-medium uppercase tracking-[0.2em] text-terra;
   }
 
   /* Card styles */
   .card-base {
-    @apply bg-white rounded-2xl shadow-card transition-shadow duration-300;
+    @apply bg-white rounded-3xl border border-border shadow-card transition-all duration-300;
   }
 
   .card-hover {
     @apply hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300;
   }
 
-  /* Button base */
+  /* Button base — pill shaped, matches mockup */
   .btn {
-    @apply inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2;
+    @apply inline-flex items-center justify-center gap-2 font-medium rounded-full transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2;
   }
 
   .btn-primary {
-    @apply btn bg-terra text-white hover:bg-terra-700 focus-visible:outline-terra px-6 py-3 text-sm;
+    @apply btn bg-terra text-white hover:bg-terra-600 hover:-translate-y-0.5 hover:shadow-pill focus-visible:outline-terra px-7 py-3.5 text-[15px];
   }
 
   .btn-secondary {
-    @apply btn bg-navy text-white hover:bg-navy-700 focus-visible:outline-navy px-6 py-3 text-sm;
+    @apply btn bg-transparent text-charcoal border-[1.5px] border-border hover:border-terra hover:text-terra focus-visible:outline-terra px-7 py-3.5 text-sm;
   }
 
   .btn-outline {
-    @apply btn border-2 border-navy text-navy hover:bg-navy hover:text-white focus-visible:outline-navy px-6 py-3 text-sm;
+    @apply btn border-[1.5px] border-charcoal text-charcoal hover:bg-charcoal hover:text-white focus-visible:outline-charcoal px-7 py-3.5 text-sm;
   }
 
   .btn-ghost {
-    @apply btn text-navy hover:bg-navy/10 focus-visible:outline-navy px-4 py-2 text-sm;
+    @apply btn text-terra hover:gap-3 focus-visible:outline-terra px-0 py-3 text-sm rounded-none;
   }
 
   .btn-teal {
-    @apply btn bg-teal text-white hover:bg-teal-700 focus-visible:outline-teal px-6 py-3 text-sm;
+    @apply btn bg-dust text-white hover:bg-dust-600 focus-visible:outline-dust px-7 py-3.5 text-sm;
   }
 
-  /* Badge */
+  /* Badge / pill tag */
   .badge {
-    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold;
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-medium;
   }
 
-  .badge-navy  { @apply badge bg-navy/10 text-navy; }
-  .badge-teal  { @apply badge bg-teal/10 text-teal-700; }
-  .badge-terra { @apply badge bg-terra/10 text-terra-700; }
-  .badge-sage  { @apply badge bg-sage/10 text-sage-700; }
-  .badge-amber { @apply badge bg-amber/10 text-amber-700; }
+  .badge-navy  { @apply badge bg-charcoal/8 text-charcoal; }
+  .badge-teal  { @apply badge bg-dust/15 text-dust-700; }
+  .badge-terra { @apply badge bg-terra-100 text-terra-600; }
+  .badge-sage  { @apply badge bg-sage-100 text-sage-700; }
+  .badge-amber { @apply badge bg-amber-100 text-amber-700; }
 
   /* Section divider */
   .divider {
-    @apply w-16 h-1 rounded-full bg-terra;
+    @apply w-14 h-[3px] rounded-full bg-terra;
   }
 
   /* Gradient overlays */
   .hero-overlay {
     background: linear-gradient(
       135deg,
-      rgba(30, 58, 92, 0.82) 0%,
-      rgba(8, 145, 178, 0.55) 60%,
-      rgba(200, 96, 58, 0.30) 100%
+      rgba(40, 32, 26, 0.75) 0%,
+      rgba(196, 113, 74, 0.55) 60%,
+      rgba(107, 143, 110, 0.30) 100%
     );
   }
 
   .section-gradient {
-    background: linear-gradient(180deg, #FEFDF8 0%, #F0F7FF 100%);
+    background: linear-gradient(180deg, #FDF9F5 0%, #F5EDE2 100%);
   }
 
   /* Prose styles for blog / guide content */
   .prose-guide {
-    @apply max-w-prose mx-auto font-sans text-charcoal;
+    @apply max-w-prose mx-auto font-sans text-charcoal-light;
   }
 
   .prose-guide h2 {
-    @apply heading-md text-navy mt-10 mb-4;
+    @apply heading-md text-charcoal mt-10 mb-4;
   }
 
   .prose-guide h3 {
-    @apply font-display text-xl font-semibold text-navy mt-8 mb-3;
+    @apply font-display text-xl font-medium text-charcoal mt-8 mb-3;
   }
 
   .prose-guide p {
@@ -175,27 +176,27 @@
   }
 
   .prose-guide strong {
-    @apply font-semibold text-charcoal;
+    @apply font-medium text-charcoal;
   }
 
   .prose-guide a {
-    @apply text-teal underline underline-offset-2 hover:text-teal-700;
+    @apply text-terra underline underline-offset-2 hover:text-terra-600;
   }
 
   .prose-guide blockquote {
-    @apply border-l-4 border-terra pl-4 italic text-charcoal-muted my-6;
+    @apply border-l-[3px] border-terra pl-5 italic font-display text-lg text-charcoal-muted my-6;
   }
 
   .prose-guide img {
-    @apply rounded-2xl shadow-card my-8 w-full object-cover;
+    @apply rounded-3xl shadow-card my-8 w-full object-cover;
   }
 }
 
 /* ─── Scrollbar ──────────────────────────────────────────────────── */
 ::-webkit-scrollbar        { width: 6px; }
-::-webkit-scrollbar-track  { background: #F0F7FF; }
-::-webkit-scrollbar-thumb  { background: #A9C1DF; border-radius: 9999px; }
-::-webkit-scrollbar-thumb:hover { background: #1E3A5C; }
+::-webkit-scrollbar-track  { background: #FDF9F5; }
+::-webkit-scrollbar-thumb  { background: #EEC9B2; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #C4714A; }
 
 /* ─── Print ──────────────────────────────────────────────────────── */
 @media print {

@@ -8,7 +8,7 @@ const steps = [
     title: "Find Your Destination",
     description:
       "Browse our library of guides by destination, park type, or accessibility need. Not sure where to start? Our free starter guide lays the foundation.",
-    color: "bg-navy/10 text-navy",
+    color: "bg-charcoal/8 text-charcoal",
   },
   {
     icon: Download,
@@ -16,7 +16,7 @@ const steps = [
     title: "Download Your Guide",
     description:
       "Purchase securely via Stripe. Your guide is delivered instantly as a PDF with printable maps, sensory ratings, and day-by-day itineraries.",
-    color: "bg-teal/10 text-teal-700",
+    color: "bg-dust/15 text-dust-700",
   },
   {
     icon: MapPin,
@@ -42,7 +42,7 @@ export default function HowItWorks() {
       <div className="container-site">
         <div className="text-center mb-14">
           <SectionLabel className="justify-center mb-3" color="teal">How It Works</SectionLabel>
-          <h2 className="heading-lg text-navy mb-4">
+          <h2 className="heading-lg text-charcoal mb-4">
             From Overwhelmed to Fully Prepared
           </h2>
           <p className="body-lg text-charcoal-muted max-w-2xl mx-auto">
@@ -56,7 +56,7 @@ export default function HowItWorks() {
             <div key={step.step} className="relative">
               {/* Connector line (desktop) */}
               {i < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-8 left-[calc(100%_-_1rem)] w-8 h-px bg-navy/15 z-10" />
+                <div className="hidden lg:block absolute top-8 left-[calc(100%_-_1rem)] w-8 h-px bg-border z-10" />
               )}
 
               <div className="card-base p-6 h-full">
@@ -65,12 +65,12 @@ export default function HowItWorks() {
                   <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ${step.color}`}>
                     <step.icon className="w-5 h-5" />
                   </div>
-                  <span className="font-display font-bold text-3xl text-navy/20">
+                  <span className="font-display font-medium text-3xl text-charcoal/20">
                     {step.step}
                   </span>
                 </div>
 
-                <h3 className="font-display font-semibold text-lg text-navy mb-2">
+                <h3 className="font-display font-medium text-lg text-charcoal mb-2">
                   {step.title}
                 </h3>
                 <p className="text-sm text-charcoal-muted leading-relaxed">

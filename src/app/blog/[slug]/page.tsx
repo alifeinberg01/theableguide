@@ -42,14 +42,14 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-24 bg-navy pb-0 overflow-hidden">
-        <div className="container-site py-12 max-w-4xl">
+      <section className="relative pt-[calc(72px+48px)] bg-terra pb-12 overflow-hidden">
+        <div className="container-site max-w-4xl">
           <Link href="/blog" className="inline-flex items-center gap-2 text-white/60 hover:text-white text-sm mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" /> Back to Blog
           </Link>
           <Badge color="teal" className="mb-4">{post.category}</Badge>
           <h1 className="heading-xl text-white mb-4">{post.title}</h1>
-          <div className="flex flex-wrap items-center gap-4 text-white/55 text-sm">
+          <div className="flex flex-wrap items-center gap-4 text-white/70 text-sm">
             <span className="flex items-center gap-1.5">
               <Clock className="w-4 h-4" /> {post.readTime} min read
             </span>
@@ -59,9 +59,6 @@ export default async function BlogPostPage({ params }: Props) {
             <span>By {post.author}</span>
           </div>
         </div>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
-          <path d="M0 40V20C360 0 720 40 1080 20C1260 10 1380 28 1440 32V40H0Z" fill="#FEFDF8" />
-        </svg>
       </section>
 
       {/* Cover image */}
@@ -89,7 +86,7 @@ export default async function BlogPostPage({ params }: Props) {
                 return <h3 key={i}>{para.replace("### ", "")}</h3>;
               }
               if (para.startsWith("---")) {
-                return <hr key={i} className="border-navy/10 my-8" />;
+                return <hr key={i} className="border-border my-8" />;
               }
               // Bullet list
               if (para.includes("\n- ")) {
@@ -106,7 +103,7 @@ export default async function BlogPostPage({ params }: Props) {
           </article>
 
           {/* Tags */}
-          <div className="flex flex-wrap gap-2 mt-12 pt-8 border-t border-navy/10">
+          <div className="flex flex-wrap gap-2 mt-12 pt-8 border-t border-border">
             {post.tags.map((tag) => (
               <Badge key={tag} color="navy">{tag}</Badge>
             ))}

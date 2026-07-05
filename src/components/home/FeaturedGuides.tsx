@@ -15,7 +15,7 @@ export default function FeaturedGuides() {
         {/* Header */}
         <div className="text-center mb-14">
           <SectionLabel className="justify-center mb-3">Our Guides</SectionLabel>
-          <h2 className="heading-lg text-navy mb-4">
+          <h2 className="heading-lg text-charcoal mb-4">
             The Guides Every Family Is Talking About
           </h2>
           <p className="body-lg text-charcoal-muted max-w-2xl mx-auto">
@@ -43,7 +43,7 @@ export default function FeaturedGuides() {
                 />
                 {/* Price pill */}
                 <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-sm rounded-full px-3 py-1 shadow-pill">
-                  <span className="font-semibold text-navy text-sm">
+                  <span className="font-medium text-charcoal text-sm">
                     {formatPrice(guide.price)}
                   </span>
                 </div>
@@ -57,14 +57,14 @@ export default function FeaturedGuides() {
                   ))}
                 </div>
 
-                <h3 className="heading-sm text-navy mb-2 group-hover:text-terra transition-colors line-clamp-2">
+                <h3 className="heading-sm text-charcoal mb-2 group-hover:text-terra transition-colors line-clamp-2">
                   {guide.title}
                 </h3>
                 <p className="text-charcoal-muted text-sm leading-relaxed mb-4 flex-1 line-clamp-3">
                   {guide.description}
                 </p>
 
-                <div className="flex items-center justify-between pt-4 border-t border-navy/8">
+                <div className="flex items-center justify-between pt-4 border-t border-border">
                   <div className="flex items-center gap-3 text-xs text-charcoal-muted">
                     <span className="flex items-center gap-1">
                       <Clock className="w-3.5 h-3.5" />
@@ -75,7 +75,7 @@ export default function FeaturedGuides() {
                       {guide.destination}
                     </span>
                   </div>
-                  <span className="text-terra font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <span className="text-terra font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
                     View Guide <ArrowRight className="w-3.5 h-3.5" />
                   </span>
                 </div>

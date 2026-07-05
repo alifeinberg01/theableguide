@@ -11,19 +11,18 @@ export const metadata: Metadata = {
 export default function EmergencyCardPage() {
   return (
     <>
-      <section className="bg-navy pt-32 pb-0 overflow-hidden">
-        <div className="container-site py-12 text-center">
-          <SectionLabel className="justify-center mb-4 text-white/60" color="terra">Free Tool</SectionLabel>
-          <h1 className="heading-xl text-white mb-4">Emergency Information Card</h1>
-          <p className="body-lg text-white/70 max-w-2xl mx-auto">
+      <section className="bg-terra-50 pt-[calc(72px+64px)] pb-16 border-b border-border">
+        <div className="container-site text-center">
+          <SectionLabel className="justify-center mb-4" color="terra">Free Printable Resource</SectionLabel>
+          <h1 className="heading-xl text-charcoal mb-4">
+            Emergency Travel <em className="italic text-terra">ID Card</em>
+          </h1>
+          <p className="body-lg text-charcoal-muted max-w-2xl mx-auto">
             A wallet-sized card that travels with your child and gives first responders,
             staff, and good Samaritans everything they need to help — without you
             having to explain it in a high-stress moment.
           </p>
         </div>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
-          <path d="M0 40V20C360 0 720 40 1080 20C1260 10 1380 28 1440 32V40H0Z" fill="#FEFDF8" />
-        </svg>
       </section>
 
       <section className="section-padding bg-cream">

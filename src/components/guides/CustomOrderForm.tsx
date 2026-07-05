@@ -51,8 +51,8 @@ export default function CustomOrderForm() {
   if (submitted) {
     return (
       <div className="card-base p-10 text-center">
-        <CheckCircle className="w-12 h-12 text-sage mx-auto mb-4" />
-        <h3 className="heading-md text-navy mb-2">Order Received!</h3>
+        <CheckCircle className="w-12 h-12 text-sage-600 mx-auto mb-4" />
+        <h3 className="heading-md text-charcoal mb-2">Order Received!</h3>
         <p className="text-charcoal-muted">We&apos;ll reach out within 24 hours to confirm details and begin your plan.</p>
       </div>
     );
@@ -63,68 +63,68 @@ export default function CustomOrderForm() {
       {/* Name + Email */}
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-semibold text-navy mb-1.5">Your Name *</label>
+          <label className="block text-sm font-medium text-charcoal mb-1.5">Your Name *</label>
           <input
             required
             type="text"
             placeholder="First name"
             value={form.name}
             onChange={(e) => set("name", e.target.value)}
-            className="w-full px-4 py-3 rounded-xl border border-navy/20 text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-border text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-terra text-sm"
           />
         </div>
         <div>
-          <label className="block text-sm font-semibold text-navy mb-1.5">Email *</label>
+          <label className="block text-sm font-medium text-charcoal mb-1.5">Email *</label>
           <input
             required
             type="email"
             placeholder="your@email.com"
             value={form.email}
             onChange={(e) => set("email", e.target.value)}
-            className="w-full px-4 py-3 rounded-xl border border-navy/20 text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-border text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-terra text-sm"
           />
         </div>
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-navy mb-1.5">Destination *</label>
+        <label className="block text-sm font-medium text-charcoal mb-1.5">Destination *</label>
         <input
           required
           type="text"
           placeholder="e.g. Walt Disney World, Universal Orlando..."
           value={form.destination}
           onChange={(e) => set("destination", e.target.value)}
-          className="w-full px-4 py-3 rounded-xl border border-navy/20 text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal text-sm"
+          className="w-full px-4 py-3 rounded-xl border border-border text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-terra text-sm"
         />
       </div>
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-semibold text-navy mb-1.5">Travel Dates *</label>
+          <label className="block text-sm font-medium text-charcoal mb-1.5">Travel Dates *</label>
           <input
             required
             type="text"
             placeholder="e.g. June 10–14, 2025"
             value={form.travelDates}
             onChange={(e) => set("travelDates", e.target.value)}
-            className="w-full px-4 py-3 rounded-xl border border-navy/20 text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-border text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-terra text-sm"
           />
         </div>
         <div>
-          <label className="block text-sm font-semibold text-navy mb-1.5">Child&apos;s Age *</label>
+          <label className="block text-sm font-medium text-charcoal mb-1.5">Child&apos;s Age *</label>
           <input
             required
             type="text"
             placeholder="e.g. 8 years old"
             value={form.childAge}
             onChange={(e) => set("childAge", e.target.value)}
-            className="w-full px-4 py-3 rounded-xl border border-navy/20 text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal text-sm"
+            className="w-full px-4 py-3 rounded-xl border border-border text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-terra text-sm"
           />
         </div>
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-navy mb-1.5">
+        <label className="block text-sm font-medium text-charcoal mb-1.5">
           Child&apos;s Needs & Challenges *
         </label>
         <textarea
@@ -133,16 +133,16 @@ export default function CustomOrderForm() {
           placeholder="Describe your child's diagnosis, sensory sensitivities, behavioral challenges, what helps them, what makes things harder..."
           value={form.childNeeds}
           onChange={(e) => set("childNeeds", e.target.value)}
-          className="w-full px-4 py-3 rounded-xl border border-navy/20 text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal text-sm resize-none"
+          className="w-full px-4 py-3 rounded-xl border border-border text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-terra text-sm resize-none"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-navy mb-1.5">Daily Budget Range</label>
+        <label className="block text-sm font-medium text-charcoal mb-1.5">Daily Budget Range</label>
         <select
           value={form.budget}
           onChange={(e) => set("budget", e.target.value)}
-          className="w-full px-4 py-3 rounded-xl border border-navy/20 text-charcoal focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal text-sm bg-white"
+          className="w-full px-4 py-3 rounded-xl border border-border text-charcoal focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-terra text-sm bg-white"
         >
           <option value="">Select a range...</option>
           <option value="budget">Budget (under $150/day)</option>
@@ -153,13 +153,13 @@ export default function CustomOrderForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-navy mb-1.5">Anything Else We Should Know?</label>
+        <label className="block text-sm font-medium text-charcoal mb-1.5">Anything Else We Should Know?</label>
         <textarea
           rows={3}
           placeholder="Must-do attractions, things to avoid, travel experience level, other children in the group..."
           value={form.notes}
           onChange={(e) => set("notes", e.target.value)}
-          className="w-full px-4 py-3 rounded-xl border border-navy/20 text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal text-sm resize-none"
+          className="w-full px-4 py-3 rounded-xl border border-border text-charcoal placeholder-charcoal-muted focus:outline-none focus:ring-2 focus:ring-terra/30 focus:border-terra text-sm resize-none"
         />
       </div>
 

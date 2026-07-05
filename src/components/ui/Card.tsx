@@ -18,7 +18,7 @@ export default function Card({ children, className, hover = false, padding = "md
   return (
     <div
       className={cn(
-        "bg-white rounded-2xl shadow-card",
+        "bg-white rounded-3xl border border-border shadow-card",
         hover && "transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1",
         paddingMap[padding],
         className

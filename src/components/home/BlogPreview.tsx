@@ -15,9 +15,9 @@ export default function BlogPreview() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div>
             <SectionLabel className="mb-3" color="navy">From the Blog</SectionLabel>
-            <h2 className="heading-lg text-navy">Tips, Stories & Insights</h2>
+            <h2 className="heading-lg text-charcoal">Tips, Stories & Insights</h2>
           </div>
-          <Link href="/blog" className="text-navy font-semibold text-sm flex items-center gap-1 hover:text-terra transition-colors">
+          <Link href="/blog" className="text-charcoal font-medium text-sm flex items-center gap-1 hover:text-terra transition-colors">
             View all posts <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -48,7 +48,7 @@ export default function BlogPreview() {
                   </span>
                 </div>
 
-                <h3 className="font-display font-semibold text-lg text-navy mb-2 group-hover:text-terra transition-colors line-clamp-2">
+                <h3 className="font-display font-medium text-lg text-charcoal mb-2 group-hover:text-terra transition-colors line-clamp-2">
                   {post.title}
                 </h3>
                 <p className="text-charcoal-muted text-sm leading-relaxed flex-1 line-clamp-3 mb-4">

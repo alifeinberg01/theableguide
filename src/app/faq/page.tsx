@@ -15,22 +15,18 @@ export default function FAQPage() {
   return (
     <>
       {/* Header */}
-      <section className="bg-navy pt-32 pb-20">
+      <section className="bg-terra-50 pt-[calc(72px+64px)] pb-16 border-b border-border">
         <div className="container-site text-center">
-          <SectionLabel className="justify-center mb-4 text-white/60" color="teal">FAQs</SectionLabel>
-          <h1 className="heading-xl text-white mb-4">Frequently Asked Questions</h1>
-          <p className="body-lg text-white/70 max-w-2xl mx-auto">
+          <SectionLabel className="justify-center mb-4" color="teal">FAQs</SectionLabel>
+          <h1 className="heading-xl text-charcoal mb-4">
+            Answers to what <em className="italic text-terra">every parent asks</em>
+          </h1>
+          <p className="body-lg text-charcoal-muted max-w-2xl mx-auto">
             Everything you need to know about our guides, custom itineraries,
             accessibility programs, and more.
           </p>
         </div>
       </section>
-
-      <div className="bg-navy">
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
-          <path d="M0 40V20C360 0 720 40 1080 20C1260 10 1380 28 1440 32V40H0Z" fill="#FEFDF8" />
-        </svg>
-      </div>
 
       <section className="section-padding bg-cream">
         <div className="container-site max-w-4xl">
@@ -41,10 +37,10 @@ export default function FAQPage() {
                 key={cat.id}
                 onClick={() => { setActiveCategory(cat.id); setOpenId(null); }}
                 className={cn(
-                  "px-5 py-2.5 rounded-full text-sm font-semibold transition-all",
+                  "px-5 py-2.5 rounded-full text-sm font-medium transition-all",
                   activeCategory === cat.id
-                    ? "bg-navy text-white shadow-pill"
-                    : "bg-white border border-navy/15 text-charcoal hover:border-navy hover:text-navy"
+                    ? "bg-terra text-white"
+                    : "bg-transparent border border-border text-charcoal-muted hover:border-terra hover:text-terra"
                 )}
               >
                 {cat.label}
@@ -60,7 +56,7 @@ export default function FAQPage() {
                   onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
                   className="w-full flex items-center justify-between gap-4 p-6 text-left"
                 >
-                  <span className="font-display font-semibold text-navy text-lg leading-snug">
+                  <span className="font-display font-medium text-charcoal text-lg leading-snug">
                     {faq.question}
                   </span>
                   <ChevronDown
@@ -87,7 +83,7 @@ export default function FAQPage() {
 
           {/* Still have questions */}
           <div className="mt-16 text-center card-base p-10">
-            <h3 className="heading-md text-navy mb-2">Still have questions?</h3>
+            <h3 className="heading-md text-charcoal mb-2">Still have questions?</h3>
             <p className="text-charcoal-muted mb-6">
               We typically respond within one business day.
             </p>
