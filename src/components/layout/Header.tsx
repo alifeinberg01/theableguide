@@ -21,7 +21,6 @@ const nav = [
   { label: "Resources", href: "/resources" },
   { label: "Emergency Card", href: "/tools/emergency-card" },
   { label: "Schedule Builder", href: "/tools/schedule-builder" },
-  { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
 ];
 
