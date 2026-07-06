@@ -11,11 +11,9 @@ export async function getPublishedGuides(): Promise<Guide[]> {
   try {
     const snap = await adminDb
       .collection(COL)
-      .where("status", "!=", "draft")
-      .orderBy("status")
       .orderBy("publishedAt", "desc")
       .get();
-    if (!snap.empty) return snap.docs.map(docToGuide);
+    if (!snap.empty) return snap.docs.map(docToGuide).filter((g) => g.status !== "draft");
   } catch { /* fall through */ }
   return staticGuides;
 }
