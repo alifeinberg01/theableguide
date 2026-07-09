@@ -2431,6 +2431,996 @@ export const guides: Guide[] = [
       },
     ],
   },
+  {
+    id: "70",
+    slug: "new-york-city-accessibility-guide",
+    title: "New York City: Accessibility & Sensory Travel Guide",
+    subtitle: "Subways, sidewalks, and a truly 24-hour city",
+    description:
+      "New York moves fast and loud, but its museums, parks, and neighborhoods offer more low-key options than its reputation suggests. This guide covers subway accessibility gaps, Central Park as a built-in reset, and realistic pacing for a city that never really slows down.",
+    category: "city",
+    tags: ["autism", "sensory", "advanced"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Subways, sidewalks, and a truly 24-hour city",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 24,
+    destination: "New York, NY",
+    highlights: ["Honest subway elevator gaps — only about a third of stations are fully accessible", "Central Park's large, calm sections away from the busiest tourist zones", "Sensory-friendly museum mornings and quiet-hour programs", "Realistic crosswalk and traffic noise preparation", "Quieter hotel neighborhoods away from Times Square", "A backup plan for subway overstimulation"],
+    includes: ["Full PDF guide", "Printable accessible subway map", "Sample 4-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "The Subway's Real Accessibility Gaps",
+        content:
+          "New York's subway is extensive but genuinely uneven in accessibility — many stations have stairs only, and elevator outages are common. Planning routes on the MTA's accessible station map before you go saves real frustration.",
+        tips: ["Only about a third of NYC subway stations are fully elevator-accessible — check the MTA accessible station map before planning a route.", "Elevator outages happen regularly; have a backup station in mind for any planned route.", "Buses are fully accessible system-wide and a reliable alternative when subway accessibility is uncertain."],
+      },
+      {
+        title: "Central Park and Neighborhood Quiet",
+        content:
+          "Central Park is enormous, and its quieter northern and western sections feel worlds away from the crowded areas near the main entrances, offering a genuine reset within the city's busiest borough.",
+        tips: ["The park's North Woods and Conservatory Garden are noticeably calmer than the areas near 59th Street.", "Choosing a hotel base on the Upper West Side or in Brooklyn Heights offers a quieter home base than Midtown.", "Several major museums offer designated sensory-friendly mornings — check individual museum websites before visiting."],
+      },
+    ],
+  },
+  {
+    id: "71",
+    slug: "los-angeles-accessibility-guide",
+    title: "Los Angeles: Accessibility & Sensory Travel Guide",
+    subtitle: "Spread out, car-dependent, and easier to pace because of it",
+    description:
+      "Los Angeles' sprawl means more driving than walking, which can actually work in favor of a family that needs control over transitions and breaks. This guide covers realistic drive-time planning, beach and park options for a reset, and neighborhood-by-neighborhood pacing.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Spread out, car-dependent, and easier to pace because of it",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 23,
+    destination: "Los Angeles, CA",
+    highlights: ["Rental car versus rideshare, weighed honestly for a sensory-sensitive family", "LA's beaches, including quieter alternatives to Santa Monica", "Realistic drive-time buffers between major sights", "Griffith Park and other calm green spaces", "Quieter neighborhood hotel bases away from the busiest tourist corridors", "A backup plan for a long drive that isn't working"],
+    includes: ["Full PDF guide", "Printable drive-time planning chart", "Sample 4-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "Driving as an Accessibility Tool",
+        content:
+          "In a city built around cars, having your own vehicle gives real control over the environment and the timing of breaks — an advantage LA offers that denser cities don't.",
+        tips: ["A rental car gives full control over climate, music, and stopping whenever a break is needed.", "Build realistic traffic-time buffers into any plan — LA distances that look short on a map can take much longer in traffic.", "Rideshare is a reasonable backup for a single outing without committing to a rental for the whole trip."],
+      },
+      {
+        title: "Beaches and Parks for a Reset",
+        content:
+          "Santa Monica gets crowded, but LA's coastline and Griffith Park both offer quieter alternatives within a short drive.",
+        tips: ["Quieter beach stretches exist just north and south of the main Santa Monica Pier crowds.", "Griffith Park is large and spread out, with plenty of low-crowd trails and open space.", "Midday heat and crowds both peak around the same hours — early mornings are calmer at nearly every outdoor spot."],
+      },
+    ],
+  },
+  {
+    id: "72",
+    slug: "chicago-accessibility-guide",
+    title: "Chicago: Accessibility & Sensory Travel Guide",
+    subtitle: "The L, the lakefront, and a genuinely walkable downtown",
+    description:
+      "Chicago's elevated train system is loud but visually predictable, and its lakefront path offers miles of flat, calm walking within the city's busiest core. This guide covers L accessibility, lakefront quiet zones, and realistic winter/summer planning for a city with real seasonal extremes.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "The L, the lakefront, and a genuinely walkable downtown",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 22,
+    destination: "Chicago, IL",
+    highlights: ["L train accessibility and honest noise expectations", "The Lakefront Trail as a calm, flat walking reset", "Millennium Park and other free, open downtown spaces", "Realistic planning for Chicago's real seasonal extremes", "Museum quiet-hour programs", "A backup plan for a windy, loud downtown day"],
+    includes: ["Full PDF guide", "Printable accessible L map", "Sample 3-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "The L: Loud but Predictable",
+        content:
+          "Chicago's elevated trains are visually and audibly prominent but run on a predictable schedule, and most downtown stations have elevator access.",
+        tips: ["The L is visually loud but its arrival pattern is predictable once you've ridden it once or twice.", "Check the CTA accessible stations list before planning a route, since not every stop has elevator access.", "Buses offer a quieter, street-level alternative for shorter distances."],
+      },
+      {
+        title: "The Lakefront as a Calm Constant",
+        content:
+          "The Lakefront Trail runs for miles along Lake Michigan, flat and open, offering a reliable reset no matter which part of downtown you're visiting.",
+        tips: ["The Lakefront Trail is flat, wide, and rarely as crowded as the streets a few blocks inland.", "Millennium Park's Lurie Garden is a quieter corner away from the Bean's crowds.", "Chicago's winters are genuinely cold and summers genuinely hot — pack for the season you're actually visiting, not just typical fall weather."],
+      },
+    ],
+  },
+  {
+    id: "73",
+    slug: "san-francisco-accessibility-guide",
+    title: "San Francisco: Accessibility & Sensory Travel Guide",
+    subtitle: "Steep hills, cable cars, and genuine microclimates",
+    description:
+      "San Francisco's hills and fog create real physical and sensory planning challenges that flat-city guides don't cover, alongside some of the most accessible public parks in the country. This guide covers realistic hill/terrain planning, Golden Gate Park's calm zones, and how neighborhood microclimates affect a day's comfort.",
+    category: "city",
+    tags: ["autism", "sensory", "advanced"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Steep hills, cable cars, and genuine microclimates",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 23,
+    destination: "San Francisco, CA",
+    highlights: ["Honest hill-terrain planning for mobility equipment", "Cable car sensory intensity and accessible alternatives (buses, streetcars)", "Golden Gate Park's calm, spread-out layout", "Microclimate and layering planning — fog and sun in the same day", "Quieter neighborhood options away from Fisherman's Wharf", "A backup plan for a steep-hill day that's too much"],
+    includes: ["Full PDF guide", "Printable MUNI accessible route map", "Sample 3-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "Hills, Fog, and Realistic Terrain Planning",
+        content:
+          "San Francisco's hills are a genuine physical factor for walking and mobility equipment alike, and its microclimates mean fog and sun can both appear in the same day depending on neighborhood.",
+        tips: ["San Francisco's hills are steep enough to meaningfully affect a walking route — check elevation before planning one on foot.", "Pack layers regardless of season; fog in one neighborhood and sun in another on the same day is genuinely common.", "MUNI buses and streetcars offer accessible routes that avoid the steepest walking segments."],
+      },
+      {
+        title: "Golden Gate Park's Calm, Spread-Out Layout",
+        content:
+          "Golden Gate Park is large enough that genuine quiet is easy to find, especially compared to the density of Fisherman's Wharf.",
+        tips: ["The Japanese Tea Garden and Botanical Garden are calmer corners within the larger park.", "Fisherman's Wharf is the most crowded, sensory-intense part of the city — a short visit rather than a full day works well for many families.", "Golden Gate Park's western end, near the ocean, is noticeably less crowded than the eastern end near downtown."],
+      },
+    ],
+  },
+  {
+    id: "74",
+    slug: "washington-dc-accessibility-guide",
+    title: "Washington, D.C.: Accessibility & Sensory Travel Guide",
+    subtitle: "Free museums, flat terrain, and one of the most accessible capitals",
+    description:
+      "Washington D.C. combines free, air-conditioned Smithsonian museums with a flat, walkable National Mall, making it one of the more naturally accessible major US cities for a family managing sensory needs. This guide covers museum quiet spaces, realistic Mall-walking distances, and Metro accessibility.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Free museums, flat terrain, and one of the most accessible capitals",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 22,
+    destination: "Washington, D.C.",
+    highlights: ["Free Smithsonian museums as reliable indoor, climate-controlled resets", "Flat National Mall terrain and realistic distance planning", "Metro's strong accessibility compared to older US transit systems", "Quiet museum rooms and reduced-crowd visiting windows", "Family-friendly, quieter neighborhood hotel bases", "A backup plan for Mall heat and crowds in summer"],
+    includes: ["Full PDF guide", "Printable Mall distance map", "Sample 3-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "Free Museums as Built-In Resets",
+        content:
+          "The Smithsonian museums are free, air-conditioned, and several offer dedicated quiet rooms — a genuinely reliable resource for a family that needs frequent breaks.",
+        tips: ["Smithsonian museums are free to enter, with no ticket pressure to see everything in one visit.", "Several Smithsonian locations offer dedicated sensory-friendly quiet rooms — check individual museum websites in advance.", "Weekday mornings are consistently the calmest time to visit any major museum."],
+      },
+      {
+        title: "The Mall's Flat, Walkable Distances",
+        content:
+          "The National Mall spans nearly two miles end to end — flat and easy underfoot, but a real distance that deserves honest planning.",
+        tips: ["The Mall is flat but long — plan realistic rest stops rather than trying to walk it end to end in one stretch.", "DC Metro is generally well-accessible, with elevators at most stations.", "Summer heat and humidity are significant — plan Mall time for morning or early evening where possible."],
+      },
+    ],
+  },
+  {
+    id: "75",
+    slug: "boston-accessibility-guide",
+    title: "Boston: Accessibility & Sensory Travel Guide",
+    subtitle: "Historic, compact, and easier to navigate on foot than by car",
+    description:
+      "Boston's dense historic core is compact enough to explore mostly on foot, with the Freedom Trail's flat, well-marked path and the Public Garden offering a genuine break from downtown density. This guide covers the T's accessibility limitations, walkable pacing, and realistic New England weather planning.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Historic, compact, and easier to navigate on foot than by car",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 21,
+    destination: "Boston, MA",
+    highlights: ["The T's older-system accessibility limitations and workarounds", "The Freedom Trail as a flat, structured walking route", "Boston Public Garden and Common as central quiet zones", "Realistic New England seasonal weather planning", "Compact neighborhood hotel bases within walking distance of major sights", "A backup plan for a rainy Boston day"],
+    includes: ["Full PDF guide", "Printable Freedom Trail map", "Sample 3-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "The T: An Older System",
+        content:
+          "Boston's subway is one of the oldest in the US, and accessibility varies meaningfully station by station — worth checking before relying on a specific stop.",
+        tips: ["Accessibility varies station by station on the T — check the MBTA accessible stations list before planning a route.", "Buses offer a more consistently accessible alternative to the subway for many routes.", "The Green Line in particular has more accessibility gaps than the Red, Orange, or Blue lines."],
+      },
+      {
+        title: "Walking Boston Instead of Driving It",
+        content:
+          "Boston's historic core is compact enough that walking is often easier than driving or transit, with the Freedom Trail providing a literal path to follow.",
+        tips: ["The Freedom Trail is a flat, clearly marked walking route connecting many of the city's major historic sites.", "Boston Public Garden and Boston Common offer a genuine green-space break right in the middle of downtown.", "New England weather changes quickly — check the forecast the morning of, not just the week before."],
+      },
+    ],
+  },
+  {
+    id: "76",
+    slug: "seattle-accessibility-guide",
+    title: "Seattle: Accessibility & Sensory Travel Guide",
+    subtitle: "Coffee, rain gear, and a genuinely walkable waterfront",
+    description:
+      "Seattle's compact downtown, extensive public markets, and waterfront parks offer real variety within walking distance, balanced against the city's famously persistent rain. This guide covers realistic rain planning, Pike Place Market's sensory intensity, and quieter park alternatives.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Coffee, rain gear, and a genuinely walkable waterfront",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 21,
+    destination: "Seattle, WA",
+    highlights: ["Realistic rain-gear and layering planning for Seattle's persistent drizzle", "Pike Place Market's crowd and noise intensity, rated honestly", "Waterfront parks and quieter alternatives to the market", "Link light rail accessibility", "Quieter neighborhood hotel bases", "A backup plan for a rainy day that needs an indoor pivot"],
+    includes: ["Full PDF guide", "Printable waterfront walking map", "Sample 3-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "Rain as a Planning Constant, Not an Exception",
+        content:
+          "Seattle rain is frequent but usually light rather than dramatic, making the right gear more important than avoiding outdoor plans altogether.",
+        tips: ["Seattle rain is typically light and steady rather than heavy downpours — a good rain jacket usually beats an umbrella.", "Indoor backup options (Pike Place Market's covered areas, the Seattle Aquarium) are worth having on standby.", "Link light rail is generally well-accessible and connects the airport to downtown directly."],
+      },
+      {
+        title: "Pike Place Market and Quieter Alternatives",
+        content:
+          "Pike Place Market is genuinely loud and crowded, especially near the fish-throwing stand — worth a shorter visit paired with calmer waterfront time.",
+        tips: ["Pike Place Market is loud, crowded, and sensory-intense, especially near the famous fish stand — a brief visit works better than a long one for many children.", "The Olympic Sculpture Park and waterfront path offer open, calmer alternatives nearby.", "Early morning market visits (before 10am) are noticeably calmer than midday."],
+      },
+    ],
+  },
+  {
+    id: "77",
+    slug: "san-diego-accessibility-guide",
+    title: "San Diego: Accessibility & Sensory Travel Guide",
+    subtitle: "Mild weather, real beaches, and a slower California pace",
+    description:
+      "San Diego's consistently mild climate and wide, less-crowded beaches make it one of the more forgiving California cities to plan around, without Los Angeles' scale or San Francisco's hills. This guide covers beach accessibility, Balboa Park's museum cluster, and realistic zoo pacing.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Mild weather, real beaches, and a slower California pace",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 21,
+    destination: "San Diego, CA",
+    highlights: ["Consistently mild weather that reduces the need for extreme heat or cold planning", "Wide, less-crowded beach options", "Balboa Park's cluster of museums and gardens as a flexible one-stop day", "San Diego Zoo accessibility and realistic pacing", "Quieter coastal neighborhood hotel bases", "A backup plan for a beach day that isn't working"],
+    includes: ["Full PDF guide", "Printable Balboa Park map", "Sample 4-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "Mild Weather, Real Beach Options",
+        content:
+          "San Diego's climate is genuinely consistent year-round, and its beaches offer quieter alternatives away from the busiest tourist strips.",
+        tips: ["San Diego's mild, consistent climate reduces the need for major seasonal contingency planning.", "Beaches away from the main Mission Beach boardwalk tend to be noticeably less crowded.", "Coronado Beach is calmer and more spacious than the more central beach areas."],
+      },
+      {
+        title: "Balboa Park's Flexible Museum Cluster",
+        content:
+          "Balboa Park houses many museums and gardens within a single walkable area, making it easy to do a little or a lot depending on the day.",
+        tips: ["Balboa Park's cluster of museums makes it easy to visit just one or two rather than committing to a whole day.", "The park's garden areas offer a calm reset between museum visits.", "The San Diego Zoo, adjacent to the park, benefits from an early arrival before crowds build."],
+      },
+    ],
+  },
+  {
+    id: "78",
+    slug: "nashville-accessibility-guide",
+    title: "Nashville: Accessibility & Sensory Travel Guide",
+    subtitle: "Live music, Southern hospitality, and real noise planning downtown",
+    description:
+      "Nashville's downtown core is genuinely loud, with live music spilling from open doors on nearly every block, but the city's parks and quieter neighborhoods offer real contrast close by. This guide covers downtown's realistic noise levels, quieter park alternatives, and family-friendly attractions beyond Broadway.",
+    category: "city",
+    tags: ["autism", "sensory", "advanced"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Live music, Southern hospitality, and real noise planning downtown",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 20,
+    destination: "Nashville, TN",
+    highlights: ["Honest noise-level expectations for downtown Broadway", "Centennial Park and other quieter green spaces nearby", "Family-oriented museums and attractions away from the entertainment district", "Realistic Southern summer heat planning", "Quieter neighborhood hotel bases outside the downtown core", "A backup plan for sensory overload from live music density"],
+    includes: ["Full PDF guide", "Printable downtown noise-level map", "Sample 3-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "Broadway's Real Noise Level",
+        content:
+          "Downtown Nashville is genuinely loud, with live music playing from nearly every open doorway along Broadway — worth experiencing briefly rather than planning as a full day.",
+        tips: ["Broadway is loud continuously throughout the day and evening — a short visit works better than an extended one for many children.", "Side streets just a block or two off Broadway are noticeably quieter.", "Late morning tends to be calmer than afternoon and evening on Broadway."],
+      },
+      {
+        title: "Centennial Park and Family Attractions",
+        content:
+          "Nashville's Centennial Park and its family-oriented museums offer a genuine break from downtown's concentrated music-venue noise.",
+        tips: ["Centennial Park is spacious and calm, with a replica Parthenon as a quieter cultural stop.", "Family museums and attractions outside the downtown core offer the city's culture without the same noise density.", "Southern summer heat and humidity are real — plan outdoor time for morning or evening."],
+      },
+    ],
+  },
+  {
+    id: "79",
+    slug: "new-orleans-accessibility-guide",
+    title: "New Orleans: Accessibility & Sensory Travel Guide",
+    subtitle: "The French Quarter's intensity, and where to find real quiet nearby",
+    description:
+      "New Orleans' French Quarter is one of the most sensory-intense districts in the US — music, crowds, and smells in constant overlap — but City Park and the Garden District offer a completely different, calmer pace close by. This guide covers realistic French Quarter pacing, quieter alternatives, and honest heat and humidity planning.",
+    category: "city",
+    tags: ["autism", "sensory", "advanced"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "The French Quarter's intensity, and where to find real quiet nearby",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 21,
+    destination: "New Orleans, LA",
+    highlights: ["Honest sensory-intensity rating for the French Quarter, especially Bourbon Street", "City Park's calm, spread-out alternative", "Garden District's quieter, walkable streets", "Realistic Gulf Coast heat and humidity planning", "Family-oriented hotel bases away from the Quarter's loudest blocks", "A backup plan for sensory overload in the Quarter"],
+    includes: ["Full PDF guide", "Printable French Quarter noise-level map", "Sample 3-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "The French Quarter: Genuinely Intense",
+        content:
+          "Bourbon Street in particular combines constant music, crowds, and strong smells — an honest description matters more here than in most US destinations.",
+        tips: ["Bourbon Street is genuinely intense — constant music, crowds, and strong smells overlap most hours of the day.", "Quieter Quarter side streets, just a block or two from Bourbon, offer a noticeably calmer version of the same historic architecture.", "Late morning is the calmest window to see the Quarter before evening crowds build."],
+      },
+      {
+        title: "City Park and the Garden District",
+        content:
+          "City Park's sculpture garden and the Garden District's quiet historic streets both offer a genuine change of pace from the French Quarter's density.",
+        tips: ["City Park is large, calm, and spread out, with a sculpture garden worth the walk.", "The Garden District's quiet, tree-lined streets are a strong contrast to the Quarter's density.", "Gulf Coast humidity is significant for much of the year — plan outdoor time accordingly and hydrate proactively."],
+      },
+    ],
+  },
+  {
+    id: "80",
+    slug: "amsterdam-accessibility-guide",
+    title: "Amsterdam, Netherlands: Accessibility & Sensory Travel Guide",
+    subtitle: "Canals, cobblestones, and one of Europe's best bike-friendly cities",
+    description:
+      "Amsterdam's canal-lined streets are beautiful but come with real cobblestone and bike-traffic considerations that don't show up in typical travel guides. This guide covers realistic terrain and bike-lane safety planning, the city's calm parks, and honest pacing for its compact but crowded center.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Canals, cobblestones, and one of Europe's best bike-friendly cities",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 21,
+    destination: "Amsterdam, Netherlands",
+    highlights: ["Honest cobblestone and canal-path terrain planning for mobility equipment", "Bike-lane safety awareness — a real, constant consideration in Amsterdam", "Vondelpark as a large, calm green space", "The city's compact center and realistic walking distances", "Quieter neighborhood hotel bases outside the main tourist ring", "A backup plan for a crowded, narrow-street day"],
+    includes: ["Full PDF guide", "Printable canal-district walking map", "Sample 3-day itinerary", "Emergency information card template (bilingual)", "Lifetime updates"],
+    sections: [
+      {
+        title: "Cobblestones, Canals, and Bike Lanes",
+        content:
+          "Amsterdam's charm comes with real terrain considerations, and its dedicated bike lanes are a genuine, constant safety factor that deserves specific preparation.",
+        tips: ["Cobblestones and canal-side paths require real terrain planning for mobility equipment.", "Dedicated bike lanes run alongside most streets and sidewalks — teach children to check for bikes specifically, not just cars.", "Trams offer an accessible alternative to walking the full length of the historic center."],
+      },
+      {
+        title: "Vondelpark and Quieter Neighborhoods",
+        content:
+          "Vondelpark is large, calm, and close to the center, and several residential neighborhoods offer a genuinely quieter home base than the busiest canal rings.",
+        tips: ["Vondelpark is spacious and calm, a strong contrast to the busy Museum Quarter nearby.", "Neighborhoods like De Pijp offer a quieter, more residential home base within easy reach of the center.", "Weekday mornings are the calmest time to walk the main canal rings."],
+      },
+    ],
+  },
+  {
+    id: "81",
+    slug: "berlin-accessibility-guide",
+    title: "Berlin, Germany: Accessibility & Sensory Travel Guide",
+    subtitle: "Spacious, well-organized, and genuinely accessible transit",
+    description:
+      "Berlin's wide boulevards, extensive parks, and well-organized U-Bahn and S-Bahn system make it one of the more spacious, easier-to-navigate major European capitals. This guide covers transit accessibility, Tiergarten as a central reset, and realistic pacing for the city's historically significant but sometimes heavy sites.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Spacious, well-organized, and genuinely accessible transit",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 22,
+    destination: "Berlin, Germany",
+    highlights: ["U-Bahn and S-Bahn accessibility, generally strong by European standards", "Tiergarten's large, calm central park", "Honest guidance on visiting historically heavy sites with a child", "Wide boulevards and generally spacious sidewalks", "Quieter neighborhood hotel bases", "A backup plan for a day that needs an emotional as well as sensory reset"],
+    includes: ["Full PDF guide", "Printable U-Bahn/S-Bahn accessibility map", "Sample 4-day itinerary", "Emergency information card template (bilingual)", "Lifetime updates"],
+    sections: [
+      {
+        title: "Getting Around: A Genuinely Accessible System",
+        content:
+          "Berlin's transit is spacious and well-signed compared to many older European cities, with most stations offering elevator access and wide platforms.",
+        tips: ["Most U-Bahn and S-Bahn stations have elevators — a genuine strength compared to older European systems.", "Wide platforms and station layouts reduce crowd density compared to more cramped systems.", "Buses cover gaps where specific stations lack elevator access."],
+      },
+      {
+        title: "Tiergarten and Thoughtful Historical Sites",
+        content:
+          "Berlin's central park offers a genuine reset, and its historical sites — some genuinely heavy in subject matter — are worth preparing a child for in age-appropriate ways.",
+        tips: ["Tiergarten is large, calm, and centrally located, a reliable reset between sightseeing.", "Some of Berlin's most significant historical sites (Holocaust memorials) are emotionally heavy — prepare your child in age-appropriate language beforehand.", "Wide boulevards throughout the city generally mean less crowding than narrower historic European streets."],
+      },
+    ],
+  },
+  {
+    id: "82",
+    slug: "vienna-accessibility-guide",
+    title: "Vienna, Austria: Accessibility & Sensory Travel Guide",
+    subtitle: "Elegant, orderly, and easy to keep calm",
+    description:
+      "Vienna's orderly public transit, extensive palace gardens, and general cultural quietness make it one of the calmer major European capitals to navigate with a sensory-sensitive child. This guide covers tram and U-Bahn accessibility, palace garden quiet zones, and realistic pacing for a city built around unhurried culture.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Elegant, orderly, and easy to keep calm",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 20,
+    destination: "Vienna, Austria",
+    highlights: ["Vienna's orderly, quiet public transit culture", "Schönbrunn and Belvedere palace gardens as spacious, calm outdoor spaces", "The city's generally unhurried cultural pace", "Realistic classical music and opera outings, rated for sensory intensity", "Quieter neighborhood hotel bases", "A backup plan for a museum day that runs long"],
+    includes: ["Full PDF guide", "Printable palace gardens map", "Sample 3-day itinerary", "Emergency information card template (bilingual)", "Lifetime updates"],
+    sections: [
+      {
+        title: "Orderly Transit, Orderly Culture",
+        content:
+          "Vienna's trams and U-Bahn run calmly and predictably, and the city's general public culture is quieter than many other major European capitals.",
+        tips: ["Vienna's trams and U-Bahn are calm, clean, and predictable — a genuinely easier system to navigate than busier capitals.", "Public spaces in Vienna tend to be quieter overall than in cities like Rome or Paris.", "Trams offer step-level or near-level boarding on most modern lines."],
+      },
+      {
+        title: "Palace Gardens as Spacious Resets",
+        content:
+          "Schönbrunn and Belvedere both offer expansive, manicured gardens that are genuinely restful, even amid a busy sightseeing schedule.",
+        tips: ["Schönbrunn's gardens are vast and rarely feel crowded, even when the palace interior is busy.", "Belvedere's grounds offer similar calm with dramatic garden views.", "A shorter, lower-pressure classical music performance (rather than a full opera) can be a gentler introduction for a first visit."],
+      },
+    ],
+  },
+  {
+    id: "83",
+    slug: "dublin-accessibility-guide",
+    title: "Dublin, Ireland: Accessibility & Sensory Travel Guide",
+    subtitle: "Compact, friendly, and easy to pace on foot",
+    description:
+      "Dublin's compact city center means most major sights are within walking distance, with Phoenix Park and St Stephen's Green offering real green space close to the busiest streets. This guide covers realistic walking distances, Ireland's generally patient, low-pressure service culture, and honest weather planning.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Compact, friendly, and easy to pace on foot",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 19,
+    destination: "Dublin, Ireland",
+    highlights: ["Dublin's compact center means minimal transit dependency", "Phoenix Park, one of Europe's largest enclosed parks, and St Stephen's Green as calm options", "Ireland's generally patient, unhurried service culture", "Honest planning for frequent, light rain", "Quieter neighborhood hotel bases", "A backup plan for a busy Temple Bar district day"],
+    includes: ["Full PDF guide", "Printable walking-distance map", "Sample 3-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "A Genuinely Walkable City Center",
+        content:
+          "Most of Dublin's major sights sit within a compact core, meaning minimal need for transit and straightforward, realistic walking-distance planning.",
+        tips: ["Most major Dublin sights are within a compact, walkable center — minimal transit dependency for most itineraries.", "Ireland's service culture is generally patient and unhurried, which many families find easier to navigate than busier destinations.", "Temple Bar is the city's loudest district — a brief visit works better than extended time there for many children."],
+      },
+      {
+        title: "Phoenix Park and Weather Realities",
+        content:
+          "Phoenix Park is one of the largest enclosed parks in Europe, offering real space to roam, while Dublin's frequent light rain is worth planning around as a near-certainty.",
+        tips: ["Phoenix Park is enormous and calm, with deer roaming freely in parts of it.", "Frequent light rain is a near-certainty in Dublin — a good rain jacket matters more than trying to avoid rain days entirely.", "St Stephen's Green offers a smaller, more central green space for a quicker reset."],
+      },
+    ],
+  },
+  {
+    id: "84",
+    slug: "edinburgh-accessibility-guide",
+    title: "Edinburgh, Scotland: Accessibility & Sensory Travel Guide",
+    subtitle: "Dramatic, hilly, and genuinely quiet outside festival season",
+    description:
+      "Edinburgh's dramatic hills and historic Old Town streets require real terrain planning, but the city is notably calmer outside its famous August festival season. This guide covers realistic hill and cobblestone planning, Holyrood Park's quiet alternative, and honest guidance on when to visit for a calmer trip.",
+    category: "city",
+    tags: ["autism", "sensory", "advanced"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Dramatic, hilly, and genuinely quiet outside festival season",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 20,
+    destination: "Edinburgh, Scotland",
+    highlights: ["Honest hill and cobblestone terrain planning for the Old Town and Royal Mile", "Holyrood Park's large, open green space as a genuine reset", "The dramatic seasonal difference between festival season (August) and the rest of the year", "Realistic Scottish weather layering", "Quieter New Town neighborhood as a hotel base", "A backup plan for a steep, crowded Royal Mile day"],
+    includes: ["Full PDF guide", "Printable Old Town terrain map", "Sample 3-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "Hills, Cobblestones, and the Royal Mile",
+        content:
+          "Edinburgh's dramatic topography is part of its charm, but the Old Town's hills and cobblestones deserve real, honest planning rather than an assumption of flat, easy walking.",
+        tips: ["The Royal Mile and much of the Old Town involve genuine hills and cobblestones — factor real terrain difficulty into your route.", "The Royal Mile gets very crowded, especially near the Castle esplanade — early mornings are noticeably calmer.", "New Town's grid layout is flatter and easier to navigate than the Old Town's medieval street pattern."],
+      },
+      {
+        title: "Timing Around Festival Season",
+        content:
+          "The Edinburgh Festival Fringe in August dramatically changes the city's crowd level and noise — visiting outside this window offers a meaningfully calmer trip.",
+        tips: ["August's Fringe Festival brings enormous crowds and near-constant street performance noise — a very different city than the rest of the year.", "Visiting in spring or early autumn offers a much calmer version of the same sights.", "Holyrood Park, with its open hills and trails, is a genuine escape from the Old Town's density any time of year."],
+      },
+    ],
+  },
+  {
+    id: "85",
+    slug: "lisbon-accessibility-guide",
+    title: "Lisbon, Portugal: Accessibility & Sensory Travel Guide",
+    subtitle: "Hills, trams, and a genuinely relaxed Portuguese pace",
+    description:
+      "Lisbon's steep hills and vintage trams create real terrain and accessibility considerations, softened by Portugal's generally unhurried, welcoming culture. This guide covers realistic hill planning, tram accessibility limitations, and quieter miradouro viewpoints away from the busiest tourist trails.",
+    category: "city",
+    tags: ["autism", "sensory", "advanced"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Hills, trams, and a genuinely relaxed Portuguese pace",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 20,
+    destination: "Lisbon, Portugal",
+    highlights: ["Honest hill terrain planning — Lisbon is one of Europe's hilliest capitals", "Vintage tram accessibility limitations and modern bus alternatives", "Quieter miradouros (viewpoints) away from the most crowded ones", "Portugal's generally relaxed, patient service culture", "Quieter neighborhood hotel bases", "A backup plan for a steep-hill day that's too demanding"],
+    includes: ["Full PDF guide", "Printable hill and funicular map", "Sample 3-day itinerary", "Emergency information card template (bilingual)", "Lifetime updates"],
+    sections: [
+      {
+        title: "Lisbon's Real Hills",
+        content:
+          "Lisbon is genuinely one of Europe's hilliest capital cities, and funiculars and elevators offer real accessible alternatives to the steepest stairs and streets.",
+        tips: ["Lisbon's hills are steep and constant — realistic pacing matters more here than in flatter European capitals.", "Funiculars and the Santa Justa elevator offer accessible alternatives to climbing the steepest streets on foot.", "Plan routes that minimize elevation change where possible, especially for a first day adjusting to the city."],
+      },
+      {
+        title: "Trams, Buses, and Quiet Viewpoints",
+        content:
+          "The famous Tram 28 is charming but not very accessible; modern buses and a search for less-crowded miradouros both offer better options for many families.",
+        tips: ["Vintage Tram 28 is iconic but cramped and not very accessible — modern buses cover similar routes more comfortably.", "Miradouro viewpoints away from the most Instagram-famous ones (like Miradouro de Santa Catarina) tend to be calmer.", "Portugal's generally relaxed, patient service culture makes it an easier destination for a family that needs extra time."],
+      },
+    ],
+  },
+  {
+    id: "86",
+    slug: "copenhagen-accessibility-guide",
+    title: "Copenhagen, Denmark: Accessibility & Sensory Travel Guide",
+    subtitle: "Calm, bike-friendly, and genuinely family-oriented",
+    description:
+      "Copenhagen consistently ranks among the world's most livable cities, with a bike-first culture, extensive parks, and a generally calm, orderly public atmosphere well suited to a sensory-sensitive family. This guide covers bike-lane safety, Tivoli Gardens' sensory intensity, and the city's many quiet green spaces.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Calm, bike-friendly, and genuinely family-oriented",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 20,
+    destination: "Copenhagen, Denmark",
+    highlights: ["Copenhagen's bike-first culture and real safety awareness needed around bike lanes", "Tivoli Gardens' rides and evening lights, rated honestly for sensory intensity", "Kongens Have and other calm central parks", "The city's generally quiet, orderly public atmosphere", "Family-friendly neighborhood hotel bases", "A backup plan for a Tivoli visit that becomes too stimulating"],
+    includes: ["Full PDF guide", "Printable bike-lane safety guide", "Sample 3-day itinerary", "Emergency information card template (bilingual)", "Lifetime updates"],
+    sections: [
+      {
+        title: "Bikes First: A Real Safety Consideration",
+        content:
+          "Copenhagen's bike lanes are extensive and fast-moving, and teaching a child to specifically watch for bikes — not just cars — matters here in a way it doesn't in most US cities.",
+        tips: ["Copenhagen's dedicated bike lanes carry fast-moving traffic — teach children to look both ways for bikes specifically before crossing.", "Bike lanes are often between the sidewalk and the road, an unfamiliar layout for visitors used to car-only streets.", "Copenhagen's public transit (Metro and buses) is generally calm and well-accessible."],
+      },
+      {
+        title: "Tivoli Gardens and Quiet Parks",
+        content:
+          "Tivoli is charming but can be genuinely intense in the evening with lights, crowds, and ride noise — Kongens Have offers a calmer alternative any time of day.",
+        tips: ["Tivoli Gardens gets noticeably more intense in the evening, with lights, music, and larger crowds — a daytime visit is calmer.", "Kongens Have (the King's Garden) is a quiet, central park well suited to a midday reset.", "Copenhagen's general public atmosphere is calm and orderly compared to many larger European capitals."],
+      },
+    ],
+  },
+  {
+    id: "87",
+    slug: "prague-accessibility-guide",
+    title: "Prague, Czech Republic: Accessibility & Sensory Travel Guide",
+    subtitle: "Fairy-tale architecture, real cobblestones, and affordable calm",
+    description:
+      "Prague's stunning historic center comes with genuine cobblestone and crowd considerations in its most famous squares, balanced by quieter parks and a generally affordable, unhurried pace outside peak tourist hours. This guide covers realistic terrain planning, Petřín Hill's calm alternative, and honest crowd-timing guidance.",
+    category: "city",
+    tags: ["autism", "sensory", "advanced"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Fairy-tale architecture, real cobblestones, and affordable calm",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 20,
+    destination: "Prague, Czech Republic",
+    highlights: ["Honest cobblestone terrain planning for the Old Town and Charles Bridge", "Realistic crowd-timing guidance for the Astronomical Clock and other major sights", "Petřín Hill and its gardens as a calm, less-crowded alternative", "Prague's generally affordable, unhurried pace outside the most famous squares", "Quieter neighborhood hotel bases", "A backup plan for a Charles Bridge crowd crush"],
+    includes: ["Full PDF guide", "Printable Old Town crowd-timing guide", "Sample 3-day itinerary", "Emergency information card template (bilingual)", "Lifetime updates"],
+    sections: [
+      {
+        title: "Cobblestones and Crowd Timing",
+        content:
+          "The Old Town's beauty comes with genuinely uneven cobblestone terrain, and its most famous sights draw serious crowds at predictable times worth planning around.",
+        tips: ["Old Town Square and Charles Bridge have real cobblestone terrain — factor this into mobility equipment planning.", "The Astronomical Clock draws large crowds right before each hour for its show — arrive well before or well after for a calmer view.", "Early morning is consistently the calmest time to walk Charles Bridge."],
+      },
+      {
+        title: "Petřín Hill: A Genuine Escape",
+        content:
+          "Petřín Hill, reachable by funicular, offers gardens and a lookout tower with a noticeably calmer atmosphere than the Old Town below.",
+        tips: ["A funicular reaches Petřín Hill without requiring a strenuous climb.", "The hill's gardens and lookout tower are noticeably calmer than the crowded Old Town squares below.", "Prague is generally more affordable than Western European capitals, making a slower, less-rushed pace easier to sustain over a longer trip."],
+      },
+    ],
+  },
+  {
+    id: "88",
+    slug: "vancouver-accessibility-guide",
+    title: "Vancouver, Canada: Accessibility & Sensory Travel Guide",
+    subtitle: "Mountains, ocean, and one of North America's most walkable downtowns",
+    description:
+      "Vancouver combines a compact, walkable downtown with immediate access to Stanley Park's forest trails and seawall, giving families genuine nature access without leaving the city. This guide covers Stanley Park's accessible seawall path, realistic rain planning, and the city's strong transit accessibility.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Mountains, ocean, and one of North America's most walkable downtowns",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 20,
+    destination: "Vancouver, Canada",
+    highlights: ["Stanley Park's flat, fully accessible seawall path as a reliable calm reset", "Vancouver's SkyTrain and bus system, among North America's more accessible transit networks", "Realistic Pacific Northwest rain planning", "Granville Island's market atmosphere, rated for sensory intensity", "Quieter neighborhood hotel bases", "A backup plan for a rainy day that needs an indoor pivot"],
+    includes: ["Full PDF guide", "Printable Stanley Park seawall map", "Sample 3-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "Stanley Park's Seawall: A Reliable Reset",
+        content:
+          "Stanley Park's seawall is flat, fully accessible, and wraps around the park's perimeter, offering a dependable calm option no matter how the rest of the day is going.",
+        tips: ["The Stanley Park seawall is flat and fully accessible for its entire length around the park's perimeter.", "Forest trails within the park offer a quieter, more enclosed alternative to the open seawall.", "SkyTrain is generally well-accessible and connects the airport directly to downtown."],
+      },
+      {
+        title: "Getting Around: Strong Transit Accessibility",
+        content:
+          "Vancouver's transit system is among the more accessible in North America, and realistic rain-gear planning matters given the city's famously wet climate.",
+        tips: ["SkyTrain and most bus routes are well-accessible, with clear announcements and level boarding.", "Rain is frequent for much of the year — real rain gear matters more than trying to avoid rainy days entirely.", "Granville Island's public market is lively and can be crowded — a shorter visit works well for sensory-sensitive children."],
+      },
+    ],
+  },
+  {
+    id: "89",
+    slug: "toronto-accessibility-guide",
+    title: "Toronto, Canada: Accessibility & Sensory Travel Guide",
+    subtitle: "Diverse, orderly, and genuinely easy to navigate",
+    description:
+      "Toronto's grid layout, extensive subway system, and numerous well-maintained parks make it one of the more straightforward major cities to plan a calm family trip around. This guide covers TTC accessibility, High Park and the Toronto Islands as green-space options, and realistic seasonal weather planning.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Diverse, orderly, and genuinely easy to navigate",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 20,
+    destination: "Toronto, Canada",
+    highlights: ["TTC subway and streetcar accessibility, with real notes on which lines are fully accessible", "High Park and the Toronto Islands as spacious, calm green-space options", "Toronto's grid layout, which makes wayfinding genuinely simpler than older cities", "Realistic seasonal planning for real Canadian winters and warm summers", "Quieter neighborhood hotel bases", "A backup plan for a subway day that isn't working"],
+    includes: ["Full PDF guide", "Printable TTC accessible route map", "Sample 3-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "TTC Accessibility: What's Reliable",
+        content:
+          "Toronto's subway lines vary in elevator access, and streetcars are step-level in many cases — checking the TTC's accessibility map before planning a route saves real time.",
+        tips: ["Subway line accessibility varies — check the TTC accessible station map before planning a specific route.", "Many streetcars now offer step-level, accessible boarding, an improvement over older equipment still in use on some lines.", "Toronto's grid street layout makes wayfinding genuinely simpler than older, less regular city plans."],
+      },
+      {
+        title: "High Park, the Islands, and Real Seasons",
+        content:
+          "High Park and a ferry ride to the Toronto Islands both offer spacious, calm green space, while Toronto's real winters and summers both deserve honest seasonal planning.",
+        tips: ["High Park is large and calm, with trails well away from downtown's density.", "The Toronto Islands, reached by a short ferry ride, offer a genuine escape with car-free paths.", "Toronto has real winters and real summer humidity — pack for the season you're actually visiting."],
+      },
+    ],
+  },
+  {
+    id: "90",
+    slug: "montreal-accessibility-guide",
+    title: "Montreal, Canada: Accessibility & Sensory Travel Guide",
+    subtitle: "European flavor, bilingual signage, and real winter planning",
+    description:
+      "Montreal blends European-style architecture and pace with Canadian civic order, plus a genuinely cold winter that shapes how the city operates for several months a year. This guide covers the city's underground pedestrian network, bilingual communication tips, and Mount Royal Park as a central green reset.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "European flavor, bilingual signage, and real winter planning",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 20,
+    destination: "Montreal, Canada",
+    highlights: ["Montreal's underground pedestrian city (RÉSO) as a weather-proof walking option", "Bilingual French/English signage and communication tips", "Mount Royal Park's trails and lookout as a central calm space", "Genuinely cold winter planning if visiting outside summer", "Quieter neighborhood hotel bases", "A backup plan for a very cold day that needs to move entirely indoors"],
+    includes: ["Full PDF guide", "Printable underground city map", "Sample 3-day itinerary", "Emergency information card template (bilingual)", "Lifetime updates"],
+    sections: [
+      {
+        title: "The Underground City: A Weather-Proof Option",
+        content:
+          "Montreal's RÉSO network connects much of downtown without going outside, a genuinely useful option in both winter cold and summer heat.",
+        tips: ["The RÉSO underground network connects shops, Metro stations, and buildings across much of downtown without stepping outside.", "This is especially useful during Montreal's genuinely cold winters, but also helps on hot, humid summer days.", "Signage throughout Montreal is bilingual French/English, though French is the primary spoken language."],
+      },
+      {
+        title: "Mount Royal Park and Bilingual Basics",
+        content:
+          "Mount Royal Park offers trails and a lookout point as a central calm space, and a few simple French phrases go a long way in daily interactions.",
+        tips: ["Mount Royal Park's trails and lookout offer genuine quiet minutes above the city.", "A few simple French phrases (\"Bonjour,\" \"Merci,\" \"Pardon\") are appreciated even though most service staff speak English.", "Winter visits require real cold-weather gear — Montreal winters are genuinely cold, not just chilly."],
+      },
+    ],
+  },
+  {
+    id: "91",
+    slug: "mexico-city-accessibility-guide",
+    title: "Mexico City, Mexico: Accessibility & Sensory Travel Guide",
+    subtitle: "Vast, vibrant, and best explored one district at a time",
+    description:
+      "Mexico City is one of the largest cities in the Americas, which makes a district-by-district approach far more manageable than trying to see everything at once. This guide covers realistic Metro accessibility, Chapultepec Park as the city's central green space, and honest altitude planning at over 7,000 feet.",
+    category: "city",
+    tags: ["autism", "sensory", "advanced"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Vast, vibrant, and best explored one district at a time",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 22,
+    destination: "Mexico City, Mexico",
+    highlights: ["Honest altitude planning — Mexico City sits over 7,000 feet above sea level, which affects energy and appetite", "Chapultepec Park, one of the largest urban parks in the world, as a calm central base", "District-by-district planning rather than trying to cover the whole vast city", "Metro accessibility and realistic crowd planning", "Quieter neighborhood hotel bases (Condesa, Roma)", "A backup plan for altitude-related fatigue"],
+    includes: ["Full PDF guide", "Printable district planning map", "Sample 4-day itinerary", "Emergency information card template (bilingual)", "Lifetime updates"],
+    sections: [
+      {
+        title: "Altitude: A Real, Often Overlooked Factor",
+        content:
+          "Mexico City sits over 7,000 feet above sea level, which genuinely affects energy, sleep, and appetite for the first several days — worth pacing the beginning of the trip more gently than usual.",
+        tips: ["Altitude at over 7,000 feet can cause fatigue, appetite changes, and disrupted sleep for the first few days — pace accordingly.", "Extra hydration helps with altitude adjustment more than most families expect.", "A gentler first day or two, rather than a packed itinerary from arrival, helps the whole family adjust."],
+      },
+      {
+        title: "Chapultepec Park and District-by-District Planning",
+        content:
+          "Chapultepec Park is one of the largest urban parks in the world and a natural home base, while focusing on one or two districts per day keeps the city's vast scale manageable.",
+        tips: ["Chapultepec Park includes a zoo, museums, and extensive green space — enough for its own dedicated day.", "Focus on one or two neighborhoods per day (Condesa, Roma, Centro Histórico) rather than trying to cover the whole sprawling city.", "The Metro is extensive and affordable but can be very crowded at peak hours — off-peak travel is noticeably calmer."],
+      },
+    ],
+  },
+  {
+    id: "92",
+    slug: "singapore-accessibility-guide",
+    title: "Singapore: Accessibility & Sensory Travel Guide",
+    subtitle: "Ultra-modern, ultra-accessible, and genuinely easy for families",
+    description:
+      "Singapore is widely regarded as one of the most accessible cities in Asia, with an extensive covered walkway network, excellent public transit, and a culture of order that many sensory-sensitive families find genuinely easier to navigate. This guide covers MRT accessibility, Gardens by the Bay's quieter corners, and realistic heat and humidity planning.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Ultra-modern, ultra-accessible, and genuinely easy for families",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 21,
+    destination: "Singapore",
+    highlights: ["Singapore's MRT system, among the most consistently accessible metro systems in the world", "Extensive covered walkways connecting many attractions, useful in both heat and rain", "Gardens by the Bay's quieter garden domes away from the main light show crowds", "Consistently high heat and humidity, requiring real hydration planning", "Family-oriented neighborhood hotel bases", "A backup plan for a hot, crowded Marina Bay evening"],
+    includes: ["Full PDF guide", "Printable covered walkway map", "Sample 4-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "The MRT: A Genuinely Accessible System",
+        content:
+          "Singapore's MRT offers elevators and tactile guidance at nearly every station, and extensive covered walkways connect much of the city center without ever stepping into direct heat or rain.",
+        tips: ["The MRT has elevators and tactile guidance paths at nearly every station — one of the more consistently accessible systems anywhere.", "Covered walkways connect many attractions and shopping areas, genuinely useful given Singapore's heat and frequent rain.", "Staff throughout Singapore's transit and attractions are generally well-trained in assisting visitors with disabilities."],
+      },
+      {
+        title: "Gardens by the Bay and Consistent Heat",
+        content:
+          "The Cloud Forest and Flower Dome offer air-conditioned, quieter alternatives to the crowded evening light show, and Singapore's consistent heat and humidity deserve real hydration planning any time of year.",
+        tips: ["The Cloud Forest and Flower Dome domes are air-conditioned and calmer than the crowded outdoor light show area in the evening.", "Singapore's heat and humidity are consistent year-round — plan hydration and shade breaks regardless of season.", "Hawker centers offer air-conditioned or covered dining options as a reliable midday reset."],
+      },
+    ],
+  },
+  {
+    id: "93",
+    slug: "hong-kong-accessibility-guide",
+    title: "Hong Kong: Accessibility & Sensory Travel Guide",
+    subtitle: "Dense, vertical, and surprisingly full of green space",
+    description:
+      "Hong Kong's density and vertical layout can feel overwhelming at first, but its efficient MTR system and surprising amount of accessible parkland and hiking trails offer real relief close to the busiest districts. This guide covers MTR accessibility, Victoria Peak and park alternatives, and realistic crowd planning in its densest neighborhoods.",
+    category: "city",
+    tags: ["autism", "sensory", "advanced"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Dense, vertical, and surprisingly full of green space",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 21,
+    destination: "Hong Kong",
+    highlights: ["Hong Kong's MTR system, fast, clean, and generally well-accessible", "Honest crowd and noise density ratings for Mong Kok and other busy districts", "Hong Kong Park and nearby hiking trails as genuine green-space escapes", "The Star Ferry as a calmer, scenic transit alternative", "Quieter neighborhood hotel bases away from the busiest shopping districts", "A backup plan for sensory overload in a dense shopping district"],
+    includes: ["Full PDF guide", "Printable MTR accessibility map", "Sample 4-day itinerary", "Emergency information card template (bilingual)", "Lifetime updates"],
+    sections: [
+      {
+        title: "The MTR: Fast, Clean, Accessible",
+        content:
+          "Hong Kong's MTR is efficient and generally well-accessible, though the busiest interchange stations at peak hours are worth avoiding when possible.",
+        tips: ["The MTR is fast, clean, and generally well-accessible, with elevators at most stations.", "Avoid the busiest interchange stations (Central, Mong Kok) during weekday rush hours if possible.", "The Star Ferry crossing Victoria Harbour is a calm, scenic alternative to the MTR for that specific route."],
+      },
+      {
+        title: "Green Space in a Vertical City",
+        content:
+          "Hong Kong Park and nearby hiking trails offer real quiet just minutes from the city's densest shopping streets, a genuine surprise for a city known mainly for its skyline.",
+        tips: ["Hong Kong Park and the nearby Peak trails offer genuine quiet only minutes from Central's density.", "Mong Kok and Causeway Bay are among the most crowded shopping districts — a shorter visit works better for sensory-sensitive children.", "Victoria Peak is popular but crowded at sunset — a midday visit is calmer, if less dramatic."],
+      },
+    ],
+  },
+  {
+    id: "94",
+    slug: "seoul-accessibility-guide",
+    title: "Seoul, South Korea: Accessibility & Sensory Travel Guide",
+    subtitle: "Efficient, orderly, and full of quiet palace grounds",
+    description:
+      "Seoul's subway system is among the most extensive and accessible in the world, and its historic palace grounds offer genuinely calm, spacious breaks within the city center. This guide covers subway accessibility, Gyeongbokgung Palace and other quiet historic sites, and realistic guidance for a culture with different personal-space norms.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Efficient, orderly, and full of quiet palace grounds",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 21,
+    destination: "Seoul, South Korea",
+    highlights: ["Seoul's subway system, extensive, clean, and generally well-accessible with English signage", "Gyeongbokgung Palace and other historic palace grounds as spacious, calm breaks", "Honest guidance on Seoul's more crowded personal-space norms in markets and transit", "Family-friendly neighborhood hotel bases", "Simple Korean phrases for requesting assistance", "A backup plan for sensory overload in a crowded market district"],
+    includes: ["Full PDF guide", "Printable subway accessibility map", "Sample 4-day itinerary", "Emergency information card template (bilingual)", "Lifetime updates"],
+    sections: [
+      {
+        title: "The Subway: Extensive and Accessible",
+        content:
+          "Seoul's subway system is one of the most extensive and accessible in the world, with clear English signage throughout most of the network.",
+        tips: ["Seoul's subway offers elevators at most stations and clear English signage alongside Korean.", "Rush hour crowds can be intense — off-peak travel is noticeably calmer.", "Priority seating and quieter subway cars exist and are generally respected for visible or explained needs."],
+      },
+      {
+        title: "Palace Grounds as Genuine Quiet",
+        content:
+          "Gyeongbokgung and other historic palaces offer wide, calm courtyards, a real contrast to the density of the city's busiest commercial districts.",
+        tips: ["Gyeongbokgung Palace's wide courtyards offer real, spacious quiet compared to nearby shopping streets.", "Markets like Myeongdong can be genuinely crowded and loud — a shorter visit works better for many sensory-sensitive children.", "A few simple Korean phrases (\"Annyeonghaseyo\" for hello, \"Gamsahamnida\" for thank you) are appreciated by staff."],
+      },
+    ],
+  },
+  {
+    id: "95",
+    slug: "dubai-accessibility-guide",
+    title: "Dubai, UAE: Accessibility & Sensory Travel Guide",
+    subtitle: "Ultra-modern, ultra-air-conditioned, and extreme heat outside",
+    description:
+      "Dubai's extreme heat for much of the year makes indoor, air-conditioned planning essential rather than optional, balanced by a genuinely modern, accessible metro system and family-oriented attractions built with comfort in mind. This guide covers realistic heat planning, Metro accessibility, and honest guidance on cultural norms.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Ultra-modern, ultra-air-conditioned, and extreme heat outside",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 20,
+    destination: "Dubai, UAE",
+    highlights: ["Honest, serious heat planning — outdoor time needs to be genuinely limited for much of the year", "Dubai Metro's modern, accessible, air-conditioned system", "Family-oriented indoor attractions built specifically around comfort (aquariums, indoor ski facilities)", "Basic cultural and dress-code awareness for a respectful visit", "Family-friendly neighborhood hotel bases", "A backup plan for a day when outdoor plans become unsafe due to heat"],
+    includes: ["Full PDF guide", "Printable indoor-attraction planning guide", "Sample 4-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "Heat as the Defining Planning Factor",
+        content:
+          "Dubai's heat for much of the year genuinely limits safe outdoor time, and planning around air-conditioned spaces as the default — not a backup — is the realistic approach.",
+        tips: ["Outdoor time needs real limits for much of the year, especially May through September — treat air conditioning as the default plan, not the exception.", "The Dubai Metro is modern, air-conditioned, and generally well-accessible.", "Basic modest dress is appropriate in many public and religious spaces — light layers work well given the heat."],
+      },
+      {
+        title: "The Metro and Family-Oriented Attractions",
+        content:
+          "Dubai's family attractions are built specifically around indoor comfort, from aquariums to an indoor ski facility, giving genuine variety without extended outdoor exposure.",
+        tips: ["Dubai Aquarium, Ski Dubai, and similar indoor attractions offer real variety without extended heat exposure.", "The Metro connects many major attractions directly, reducing the need for extended outdoor walking.", "Evening hours are cooler than midday if any outdoor time is planned."],
+      },
+    ],
+  },
+  {
+    id: "96",
+    slug: "auckland-accessibility-guide",
+    title: "Auckland, New Zealand: Accessibility & Sensory Travel Guide",
+    subtitle: "Relaxed, coastal, and genuinely uncrowded by big-city standards",
+    description:
+      "Auckland offers a notably relaxed pace compared to other major cities on this list, with easy access to beaches, volcanic parks, and a walkable waterfront that rarely feels crowded. This guide covers realistic ferry and bus accessibility, volcanic cone parks as calm green space, and honest long-flight jet lag planning.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Relaxed, coastal, and genuinely uncrowded by big-city standards",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 19,
+    destination: "Auckland, New Zealand",
+    highlights: ["Auckland's genuinely relaxed pace and lower crowd density than most major cities", "Volcanic cone parks (Mount Eden, One Tree Hill) as calm, walkable green space", "Ferries to nearby islands as a scenic, low-stimulation outing", "Honest jet lag planning for the long flight from the US", "Family-friendly neighborhood hotel bases", "A backup plan for adjusting to New Zealand's opposite seasons"],
+    includes: ["Full PDF guide", "Printable volcanic parks map", "Sample 3-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "A Genuinely Relaxed Pace",
+        content:
+          "Auckland's crowd density and general pace are noticeably lower than most major cities on this list, with an easy-going service culture that many families find genuinely restful.",
+        tips: ["Auckland's crowd density is lower than most major cities, even in its busiest downtown areas.", "New Zealand's generally relaxed, easy-going service culture reduces pressure on families needing extra time or patience.", "Ferries to nearby islands (like Waiheke) offer a calm, scenic day trip without much sensory demand."],
+      },
+      {
+        title: "Volcanic Parks and the Long Flight",
+        content:
+          "Auckland's volcanic cone parks offer genuine calm walkable green space, while the long flight from the US and New Zealand's reversed seasons both deserve honest planning.",
+        tips: ["Mount Eden and One Tree Hill are volcanic cone parks with walkable paths and real quiet away from downtown.", "The flight from the US is long — plan a light first 24–48 hours after arrival for jet lag adjustment.", "New Zealand's seasons are reversed from the Northern Hemisphere — check what season you'll actually be arriving into."],
+      },
+    ],
+  },
+  {
+    id: "97",
+    slug: "reykjavik-accessibility-guide",
+    title: "Reykjavik, Iceland: Accessibility & Sensory Travel Guide",
+    subtitle: "Small, walkable, and built around dramatic natural landscapes",
+    description:
+      "Reykjavik is compact enough to explore almost entirely on foot, making it a genuinely manageable base for families more interested in Iceland's natural landscapes than a typical big-city itinerary. This guide covers realistic weather and daylight planning, the city's calm pace, and honest guidance on nearby natural attractions.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Small, walkable, and built around dramatic natural landscapes",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 19,
+    destination: "Reykjavik, Iceland",
+    highlights: ["Reykjavik's small, walkable scale means minimal transit dependency within the city", "Honest, serious weather and daylight planning — conditions and daylight hours vary dramatically by season", "The city's generally calm, uncrowded pace", "Nearby natural attractions (waterfalls, geothermal areas) rated for realistic drive time and terrain", "Family-friendly hotel bases within the compact center", "A backup plan for a weather day that cancels outdoor plans"],
+    includes: ["Full PDF guide", "Printable seasonal daylight chart", "Sample 3-day itinerary", "Emergency information card template", "Lifetime updates"],
+    sections: [
+      {
+        title: "A Small, Walkable City",
+        content:
+          "Reykjavik's compact core is easy to explore on foot, with minimal need for transit and a generally calm, uncrowded atmosphere even in the city center.",
+        tips: ["Reykjavik's compact downtown is easily walkable, with minimal need for buses or taxis within the city itself.", "The city's overall pace is calm and uncrowded compared to larger European capitals.", "Family-friendly hotels within the compact center put most attractions within easy walking distance."],
+      },
+      {
+        title: "Weather, Daylight, and Nearby Nature",
+        content:
+          "Iceland's conditions and daylight hours vary dramatically by season, and nearby natural attractions require real drive-time and terrain planning beyond the city itself.",
+        tips: ["Daylight hours swing dramatically by season — check specifics for your travel dates before planning a daily schedule.", "Weather can change quickly; layers and waterproof gear matter even in summer.", "Popular natural sites (Golden Circle waterfalls, geothermal areas) require real drive time and some uneven terrain — plan accordingly."],
+      },
+    ],
+  },
+  {
+    id: "98",
+    slug: "zurich-accessibility-guide",
+    title: "Zurich, Switzerland: Accessibility & Sensory Travel Guide",
+    subtitle: "Orderly, punctual, and genuinely easy to predict",
+    description:
+      "Zurich's famously punctual, well-organized public transit and generally calm public culture make it one of the more predictable major European cities to plan a sensory-friendly trip around. This guide covers tram and train accessibility, the lake and river as central calm spaces, and honest cost planning for one of the world's more expensive cities.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Orderly, punctual, and genuinely easy to predict",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 19,
+    destination: "Zurich, Switzerland",
+    highlights: ["Zurich's famously punctual, predictable public transit system", "Lake Zurich and the Limmat River as central, calm walking spaces", "The city's generally quiet, orderly public culture", "Honest cost planning — Zurich is genuinely one of the more expensive cities on this list", "Family-friendly neighborhood hotel bases", "A backup plan for a museum day that runs long"],
+    includes: ["Full PDF guide", "Printable tram and train map", "Sample 3-day itinerary", "Emergency information card template (bilingual)", "Lifetime updates"],
+    sections: [
+      {
+        title: "Punctual, Predictable Transit",
+        content:
+          "Zurich's trams and trains run on a genuinely reliable schedule, a real asset for a family planning around a visual timer or a predictable daily structure.",
+        tips: ["Zurich's trams and trains run reliably on schedule — a genuine advantage for planning around a visual timer.", "Most transit is step-level or has elevator access, and stations are generally uncrowded outside rush hour.", "Public spaces throughout Zurich tend to be quiet and orderly compared to busier European capitals."],
+      },
+      {
+        title: "The Lake and River as Central Calm",
+        content:
+          "Lake Zurich's promenades and the Limmat River both offer genuine quiet within easy reach of the shopping district, and honest cost planning matters given Zurich's expense.",
+        tips: ["Lake Zurich's promenades offer calm walking with real space to spread out, even close to downtown.", "Zurich is genuinely expensive — budget realistically for meals and activities compared to other European cities.", "The Limmat River walkways offer a quieter alternative to the main Bahnhofstrasse shopping street."],
+      },
+    ],
+  },
+  {
+    id: "99",
+    slug: "munich-accessibility-guide",
+    title: "Munich, Germany: Accessibility & Sensory Travel Guide",
+    subtitle: "Beer gardens, big parks, and a genuinely family-friendly pace",
+    description:
+      "Munich pairs a historic, walkable center with the English Garden — one of the largest urban parks in the world — giving families a real green-space escape without leaving the city. This guide covers U-Bahn accessibility, the English Garden's calm zones, and honest guidance for visiting during and outside Oktoberfest.",
+    category: "city",
+    tags: ["autism", "sensory", "beginner"],
+    coverImage: "/covers/city.svg",
+    coverImageAlt: "Beer gardens, big parks, and a genuinely family-friendly pace",
+    price: 19.99,
+    featured: false,
+    publishedAt: "2025-03-01",
+    readTime: 19,
+    destination: "Munich, Germany",
+    highlights: ["Munich's U-Bahn and S-Bahn system, generally well-accessible and easy to navigate", "The English Garden, one of the largest urban parks in the world, as a genuine escape", "Honest guidance on the dramatic seasonal difference during Oktoberfest versus the rest of the year", "Family-oriented beer gardens with outdoor space for kids", "Quieter neighborhood hotel bases", "A backup plan for a crowded city-center day"],
+    includes: ["Full PDF guide", "Printable English Garden map", "Sample 3-day itinerary", "Emergency information card template (bilingual)", "Lifetime updates"],
+    sections: [
+      {
+        title: "U-Bahn Accessibility and Getting Around",
+        content:
+          "Munich's U-Bahn and S-Bahn system is generally well-accessible and easy to navigate, with English signage in most stations serving the city's international visitor base.",
+        tips: ["Munich's U-Bahn and S-Bahn are generally well-accessible, with elevators at most major stations.", "English signage is common in stations serving major tourist areas.", "Trams offer a slower, street-level alternative for shorter distances."],
+      },
+      {
+        title: "The English Garden and Oktoberfest Timing",
+        content:
+          "The English Garden is one of the largest urban parks in the world, offering genuine quiet minutes from downtown, while Oktoberfest (mid/late September) dramatically changes the city's crowd level.",
+        tips: ["The English Garden is enormous and calm, with quiet corners well away from the park's busier beer garden areas.", "Oktoberfest (mid to late September) brings huge crowds and noise — visiting outside this window offers a much calmer trip.", "Family-oriented beer gardens often have dedicated outdoor space for children and a relaxed, unhurried atmosphere."],
+      },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string): Guide | undefined {
