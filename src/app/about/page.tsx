@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     "The story behind The Able Guide — why we started, who we are, and what drives us to help families travel with confidence.",
 };
 
+export const revalidate = 300;
+
 const values = [
   {
     icon: GraduationCap,

@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     "Create a printable emergency information card for your child with autism or sensory differences. Wallet-sized and customizable.",
 };
 
+export const revalidate = 300;
+
 export default function EmergencyCardPage() {
   return (
     <>

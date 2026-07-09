@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+export const dynamic = "force-dynamic";
+
 export default function PurchaseSuccessPage() {
   return (
     <section className="min-h-screen flex items-center justify-center bg-cream pt-20">

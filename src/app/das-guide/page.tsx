@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     "The most complete free guide to Disney's DAS program — who qualifies, how to register, and strategies for using it effectively at both Walt Disney World and Disneyland.",
 };
 
+export const revalidate = 300;
+
 const steps = [
   {
     step: "1",

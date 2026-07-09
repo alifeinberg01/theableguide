@@ -5,6 +5,8 @@ import FreeGuideCallout from "@/components/home/FreeGuideCallout";
 import BlogPreview from "@/components/home/BlogPreview";
 import CustomItinerary from "@/components/home/CustomItinerary";
 
+export const revalidate = 300;
+
 export default function HomePage() {
   return (
     <>

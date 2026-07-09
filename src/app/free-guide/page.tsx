@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     "Download our free Sensory-Friendly Travel Starter Guide — preparation strategies, a sensory kit packing list, and honest advice for your family's first adventure.",
 };
 
+export const revalidate = 300;
+
 const includes = [
   "Pre-trip preparation strategies that actually work",
   "The complete sensory travel kit packing list",

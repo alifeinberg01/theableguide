@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     "Build a printable visual schedule for your trip. Help your child with autism or sensory differences know what to expect, step by step.",
 };
 
+export const revalidate = 300;
+
 export default function ScheduleBuilderPage() {
   return (
     <>

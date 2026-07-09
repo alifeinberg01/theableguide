@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     "Order a custom travel itinerary tailored to your child's specific sensory profile, your destination, and your family's goals. Delivered in 5-7 business days.",
 };
 
+export const revalidate = 300;
+
 const includes = [
   "Day-by-day schedule tailored to your child's sensory profile",
   "Attraction picks matched to their specific needs",
