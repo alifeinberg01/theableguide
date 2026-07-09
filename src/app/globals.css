@@ -10,16 +10,16 @@
   --font-cormorant: 'Cormorant Garamond', Georgia, serif;
   --font-jost: 'Jost', system-ui, sans-serif;
 
-  /* Brand tokens */
-  --color-terra:   #4A7A96;
-  --color-sage:    #6699A8;
-  --color-dust:    #8AB4D4;
-  --color-cream:   #F7FAFC;
-  --color-warm:    #E9F1F6;
-  --color-charcoal:#1E2A38;
-  --color-ink:     #2C3E50;
-  --color-muted:   #5A7184;
-  --color-border:  #D7E3EC;
+  /* Brand tokens (Harbor Brass) */
+  --color-terra:   #C79A4B;
+  --color-sage:    #5C89B0;
+  --color-dust:    #6FA8D8;
+  --color-cream:   #F8F5EC;
+  --color-warm:    #F1EAD3;
+  --color-charcoal:#16273D;
+  --color-ink:     #22344C;
+  --color-muted:   #5B6A7E;
+  --color-border:  #E4DBC4;
 }
 
 /* ─── Base Resets ────────────────────────────────────────────────── */
@@ -140,14 +140,14 @@
   .hero-overlay {
     background: linear-gradient(
       135deg,
-      rgba(30, 42, 56, 0.75) 0%,
-      rgba(74, 122, 150, 0.55) 60%,
-      rgba(102, 153, 168, 0.30) 100%
+      rgba(22, 39, 61, 0.78) 0%,
+      rgba(37, 82, 128, 0.55) 60%,
+      rgba(92, 137, 176, 0.30) 100%
     );
   }
 
   .section-gradient {
-    background: linear-gradient(180deg, #F7FAFC 0%, #E9F1F6 100%);
+    background: linear-gradient(180deg, #F8F5EC 0%, #F1EAD3 100%);
   }
 
   /* Prose styles for blog / guide content */
@@ -194,9 +194,9 @@
 
 /* ─── Scrollbar ──────────────────────────────────────────────────── */
 ::-webkit-scrollbar        { width: 6px; }
-::-webkit-scrollbar-track  { background: #F7FAFC; }
-::-webkit-scrollbar-thumb  { background: #C2DBE6; border-radius: 9999px; }
-::-webkit-scrollbar-thumb:hover { background: #4A7A96; }
+::-webkit-scrollbar-track  { background: #F8F5EC; }
+::-webkit-scrollbar-thumb  { background: #E9D4AA; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #C79A4B; }
 
 /* ─── Print ──────────────────────────────────────────────────────── */
 @media print {

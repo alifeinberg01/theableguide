@@ -1,9 +1,9 @@
 <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#203642"/>
-      <stop offset="55%" stop-color="#396178"/>
-      <stop offset="100%" stop-color="#8AB4D4"/>
+      <stop offset="0%" stop-color="#16273D"/>
+      <stop offset="55%" stop-color="#26405A"/>
+      <stop offset="100%" stop-color="#7CA8CC"/>
     </linearGradient>
     <radialGradient id="glow" cx="70%" cy="15%" r="70%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2"/>
@@ -16,11 +16,11 @@
     <ellipse cx="200" cy="140" rx="70" ry="24"/>
     <ellipse cx="600" cy="460" rx="90" ry="28"/>
   </g>
-  <g stroke="#EAF3F8" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g stroke="#F4F1E5" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M180 340 L560 300 L610 320 L560 340 L340 360 L260 400 L200 400 L240 350 Z"/>
     <path d="M340 360 L330 420 L300 420 L300 380"/>
   </g>
-  <g stroke="#EAF3F8" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.7">
+  <g stroke="#F4F1E5" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.7">
     <path d="M120 470 Q400 430 690 470" stroke-dasharray="2 16"/>
   </g>
 </svg>
