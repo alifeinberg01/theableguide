@@ -18,28 +18,28 @@ const steps = [
 
 export default function Hero() {
   return (
-    <section className="relative bg-terra-50 overflow-hidden pt-[calc(72px+80px)] pb-20 px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-charcoal overflow-hidden pt-[calc(72px+80px)] pb-20 px-4 sm:px-6 lg:px-8">
       {/* Decorative glows */}
-      <div className="absolute -top-24 -right-24 w-[600px] h-[600px] rounded-full bg-terra-100/60 blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-20 -left-20 w-96 h-96 rounded-full bg-sage-100/60 blur-3xl pointer-events-none" />
+      <div className="absolute -top-24 -right-24 w-[600px] h-[600px] rounded-full bg-dust/10 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-20 -left-20 w-96 h-96 rounded-full bg-terra/15 blur-3xl pointer-events-none" />
 
       <div className="container-site relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         {/* Left — Copy */}
         <div>
-          <div className="inline-flex items-center gap-2 bg-white border border-border rounded-full px-4 py-1.5 mb-8 shadow-card">
+          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-sage" />
-            <span className="text-charcoal-muted text-xs font-medium">
+            <span className="text-white/80 text-xs font-medium">
               Built by a special education teacher
             </span>
           </div>
 
-          <h1 className="heading-xl text-charcoal mb-6">
-            Travel <em className="italic text-terra">confidently</em>
+          <h1 className="heading-xl text-white mb-6">
+            Travel <em className="italic text-amber-300">confidently</em>
             <br />
             with your child.
           </h1>
 
-          <p className="body-lg text-charcoal-muted mb-10 max-w-xl">
+          <p className="body-lg text-white/75 mb-10 max-w-xl">
             The Able Guide helps families of children with disabilities plan calm,
             predictable, and genuinely joyful trips — step by step.
           </p>
@@ -48,7 +48,7 @@ export default function Hero() {
             <Link href="/free-guide" className="btn-primary">
               ✦ Get your free guide
             </Link>
-            <Link href="/guides" className="btn-secondary group">
+            <Link href="/guides" className="btn bg-white/10 border border-white/25 text-white hover:bg-white/20 rounded-full px-7 py-3.5 text-sm font-medium inline-flex items-center gap-2 group transition-all">
               Browse guides
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
