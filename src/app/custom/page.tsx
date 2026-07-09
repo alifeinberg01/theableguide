@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Clock, CheckCircle, Star } from "lucide-react";
+import { Clock, CheckCircle } from "lucide-react";
 import SectionLabel from "@/components/ui/SectionLabel";
 import CustomOrderForm from "@/components/guides/CustomOrderForm";
 
@@ -45,8 +45,6 @@ export default function CustomPage() {
                 {[
                   { value: "5–7 days", label: "Turnaround time" },
                   { value: "15–25 pages", label: "Avg. plan length" },
-                  { value: "4.9★", label: "Customer rating" },
-                  { value: "100%", label: "Satisfaction guarantee" },
                 ].map(({ value, label }) => (
                   <div key={label} className="bg-white/10 rounded-2xl p-4">
                     <p className="font-display font-medium text-white text-2xl">{value}</p>
@@ -58,8 +56,8 @@ export default function CustomPage() {
 
             <div className="relative h-[440px] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80"
-                alt="Family reviewing a custom travel plan at home"
+                src="/covers/general.svg"
+                alt="Decorative illustration representing a custom travel plan"
                 fill
                 className="object-cover"
                 priority
@@ -86,18 +84,6 @@ export default function CustomPage() {
                   </li>
                 ))}
               </ul>
-
-              {/* Testimonial snippet */}
-              <div className="card-base p-6 border-l-4 border-terra">
-                <div className="flex gap-1 mb-3">
-                  {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 text-terra fill-terra" />)}
-                </div>
-                <p className="font-display text-charcoal italic text-base mb-3">
-                  &ldquo;We ordered a custom itinerary for our Universal trip and it was incredible.
-                  My son had zero meltdowns and we rode everything. I cried on the way home — happy tears.&rdquo;
-                </p>
-                <p className="font-medium text-charcoal text-sm">— Jason T., Atlanta, GA</p>
-              </div>
             </div>
 
             {/* Order form */}

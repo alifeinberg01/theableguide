@@ -6,8 +6,8 @@ import Button from "@/components/ui/Button";
 import type { ScheduleBlock } from "@/types";
 
 const DEFAULT_COLORS = [
-  "#C4714A", "#6B8F6E", "#7A9BB5", "#28201A",
-  "#EFC36A", "#8B5CF6", "#EC4899", "#7A6A58",
+  "#4A7A96", "#6699A8", "#8AB4D4", "#1E2A38",
+  "#EFC36A", "#8B5CF6", "#EC4899", "#5A7184",
 ];
 
 const ICONS = ["🌅", "🥞", "✈️", "🚗", "🏰", "🎢", "🍔", "🌮", "🍦", "🎠", "🛌", "🛁", "📱", "📚", "🎉"];
@@ -19,9 +19,9 @@ function genId() {
 export default function ScheduleBuilderClient() {
   const [title, setTitle] = useState("Our Disney World Day!");
   const [blocks, setBlocks] = useState<ScheduleBlock[]>([
-    { id: genId(), time: "8:00 AM", activity: "Breakfast at the hotel", duration: 45, notes: "Bring headphones", color: "#7A9BB5", icon: "🥞" },
-    { id: genId(), time: "9:00 AM", activity: "Arrive at Magic Kingdom", duration: 30, notes: "Rope drop!", color: "#C4714A", icon: "🏰" },
-    { id: genId(), time: "9:30 AM", activity: "Seven Dwarfs Mine Train (DAS)", duration: 60, notes: "", color: "#6B8F6E", icon: "🎢" },
+    { id: genId(), time: "8:00 AM", activity: "Breakfast at the hotel", duration: 45, notes: "Bring headphones", color: "#8AB4D4", icon: "🥞" },
+    { id: genId(), time: "9:00 AM", activity: "Arrive at Magic Kingdom", duration: 30, notes: "Rope drop!", color: "#4A7A96", icon: "🏰" },
+    { id: genId(), time: "9:30 AM", activity: "Seven Dwarfs Mine Train (DAS)", duration: 60, notes: "", color: "#6699A8", icon: "🎢" },
   ]);
 
   const addBlock = () => {

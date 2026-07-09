@@ -11,17 +11,14 @@ const guides = [
 ];
 
 const resources = [
-  { label: "DAS Guide",           href: "/das-guide" },
   { label: "Schedule Builder",    href: "/tools/schedule-builder" },
   { label: "Emergency Info Card", href: "/tools/emergency-card" },
   { label: "Resources Library",   href: "/resources" },
-  { label: "Blog",                href: "/blog" },
   { label: "FAQ",                 href: "/faq" },
 ];
 
 const company = [
   { label: "About Us",          href: "/about" },
-  { label: "Testimonials",      href: "/testimonials" },
   { label: "Custom Itinerary",  href: "/custom" },
   { label: "Free Guide",        href: "/free-guide" },
   { label: "Privacy Policy",    href: "/privacy" },

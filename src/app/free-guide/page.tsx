@@ -56,7 +56,7 @@ export default function FreeGuidePage() {
 
             <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?w=800&q=80"
+                src="/covers/general.svg"
                 alt="Preview of the Sensory-Friendly Travel Starter Guide"
                 fill
                 className="object-cover"

@@ -19,8 +19,8 @@ export default function FeaturedGuides() {
             The Guides Every Family Is Talking About
           </h2>
           <p className="body-lg text-charcoal-muted max-w-2xl mx-auto">
-            Written by parents who've been there, reviewed by occupational therapists,
-            and field-tested at the world's most popular destinations.
+            Written by a special education teacher with hands-on ABA experience,
+            covering the world's most popular destinations.
           </p>
         </div>
 

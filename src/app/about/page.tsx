@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Heart, Compass, ShieldCheck, Users } from "lucide-react";
+import { GraduationCap, ShieldCheck, Users } from "lucide-react";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 export const metadata: Metadata = {
@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    icon: Heart,
-    title: "Made by Families, for Families",
+    icon: GraduationCap,
+    title: "Founded by a Special Education Teacher",
     description:
-      "Our team includes parents of children with autism, sensory differences, and intellectual disabilities. We don't write from theory — we write from experience.",
+      "The Able Guide was founded by a special education teacher with years of hands-on experience in Applied Behavior Analysis (ABA). Every schedule, script, and backup plan reflects real classroom and clinical strategy — not guesswork from a travel blog.",
     color: "bg-terra-100 text-terra-600",
   },
   {
@@ -24,13 +24,6 @@ const values = [
     description:
       "We have no sponsorships, no affiliate relationships with parks or airlines. Our recommendations are based purely on what's best for your family.",
     color: "bg-charcoal/8 text-charcoal",
-  },
-  {
-    icon: Compass,
-    title: "Clinically Informed",
-    description:
-      "Our guides are reviewed by pediatric occupational therapists to ensure our sensory ratings and recommendations are accurate and clinically grounded.",
-    color: "bg-dust/15 text-dust-700",
   },
   {
     icon: Users,
@@ -64,8 +57,8 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-[480px] rounded-3xl overflow-hidden shadow-card-hover">
               <Image
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80"
-                alt="Family with special needs child enjoying an outdoor adventure together"
+                src="/covers/general.svg"
+                alt="Decorative illustration representing family travel"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -110,9 +103,9 @@ export default function AboutPage() {
             <h2 className="heading-lg text-charcoal">Our Values</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((val) => (
-              <div key={val.title} className="card-base p-8 flex gap-5">
+              <div key={val.title} className="card-base p-8 flex flex-col gap-5">
                 <div className={`w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 ${val.color}`}>
                   <val.icon className="w-6 h-6" />
                 </div>

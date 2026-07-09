@@ -53,22 +53,6 @@ export default function Hero() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
-
-          <div className="flex items-center gap-4">
-            <div className="flex -space-x-3">
-              {["AM", "JT", "PK", "SR", "ML"].map((initials) => (
-                <div
-                  key={initials}
-                  className="w-9 h-9 rounded-full bg-terra-200 border-2 border-terra-50 flex items-center justify-center text-[10px] font-medium text-terra-700"
-                >
-                  {initials}
-                </div>
-              ))}
-            </div>
-            <p className="text-sm text-charcoal-muted">
-              Join <strong className="text-charcoal font-medium">3,500+</strong> families already traveling with confidence
-            </p>
-          </div>
         </div>
 
         {/* Right — Sample itinerary preview */}

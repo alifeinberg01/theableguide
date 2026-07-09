@@ -15,6 +15,7 @@ const categories: { id: GuideCategory | "all"; label: string }[] = [
   { id: "cruise",         label: "Cruises" },
   { id: "resort",         label: "Resorts" },
   { id: "national-park",  label: "National Parks" },
+  { id: "city",           label: "City Guides" },
 ];
 
 export default function GuidesGrid({ guides }: { guides: Guide[] }) {

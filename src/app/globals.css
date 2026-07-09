@@ -11,15 +11,15 @@
   --font-jost: 'Jost', system-ui, sans-serif;
 
   /* Brand tokens */
-  --color-terra:   #C4714A;
-  --color-sage:    #6B8F6E;
-  --color-dust:    #7A9BB5;
-  --color-cream:   #FDF9F5;
-  --color-warm:    #F5EDE2;
-  --color-charcoal:#28201A;
-  --color-ink:     #3D3028;
-  --color-muted:   #7A6A58;
-  --color-border:  #E8DDD0;
+  --color-terra:   #4A7A96;
+  --color-sage:    #6699A8;
+  --color-dust:    #8AB4D4;
+  --color-cream:   #F7FAFC;
+  --color-warm:    #E9F1F6;
+  --color-charcoal:#1E2A38;
+  --color-ink:     #2C3E50;
+  --color-muted:   #5A7184;
+  --color-border:  #D7E3EC;
 }
 
 /* ─── Base Resets ────────────────────────────────────────────────── */
@@ -140,14 +140,14 @@
   .hero-overlay {
     background: linear-gradient(
       135deg,
-      rgba(40, 32, 26, 0.75) 0%,
-      rgba(196, 113, 74, 0.55) 60%,
-      rgba(107, 143, 110, 0.30) 100%
+      rgba(30, 42, 56, 0.75) 0%,
+      rgba(74, 122, 150, 0.55) 60%,
+      rgba(102, 153, 168, 0.30) 100%
     );
   }
 
   .section-gradient {
-    background: linear-gradient(180deg, #FDF9F5 0%, #F5EDE2 100%);
+    background: linear-gradient(180deg, #F7FAFC 0%, #E9F1F6 100%);
   }
 
   /* Prose styles for blog / guide content */
@@ -194,9 +194,9 @@
 
 /* ─── Scrollbar ──────────────────────────────────────────────────── */
 ::-webkit-scrollbar        { width: 6px; }
-::-webkit-scrollbar-track  { background: #FDF9F5; }
-::-webkit-scrollbar-thumb  { background: #EEC9B2; border-radius: 9999px; }
-::-webkit-scrollbar-thumb:hover { background: #C4714A; }
+::-webkit-scrollbar-track  { background: #F7FAFC; }
+::-webkit-scrollbar-thumb  { background: #C2DBE6; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #4A7A96; }
 
 /* ─── Print ──────────────────────────────────────────────────────── */
 @media print {

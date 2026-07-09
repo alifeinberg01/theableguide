@@ -89,8 +89,8 @@ export default function DASGuidePage() {
             </div>
             <div className="relative h-80 lg:h-96 rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
-                alt="Family using the Lightning Lane entrance at a Disney theme park"
+                src="/covers/theme-park.svg"
+                alt="Decorative illustration representing a theme park visit"
                 fill
                 className="object-cover"
                 priority

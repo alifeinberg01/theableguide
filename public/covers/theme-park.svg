@@ -1,0 +1,32 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2C4B5D"/>
+      <stop offset="55%" stop-color="#4A7A96"/>
+      <stop offset="100%" stop-color="#6699A8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <g opacity="0.16" fill="#ffffff">
+    <circle cx="120" cy="480" r="3"/><circle cx="180" cy="440" r="2.5"/><circle cx="640" cy="120" r="3"/>
+    <circle cx="700" cy="180" r="2"/><circle cx="90" cy="150" r="2.5"/><circle cx="740" cy="420" r="2.5"/>
+  </g>
+  <g stroke="#EAF3F8" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <!-- castle silhouette -->
+    <path d="M260 430 V330 L290 300 V330 L320 300 V430" />
+    <path d="M320 430 V280 L360 240 V280 L400 240 V280 L440 280 V430" />
+    <path d="M440 430 V330 L470 300 V330 L500 300 V430" />
+    <path d="M240 430 H520" />
+    <path d="M355 240 L360 225 L365 240" />
+    <path d="M280 300 L290 288 L300 300" />
+    <path d="M460 300 L470 288 L480 300" />
+  </g>
+  <g stroke="#EAF3F8" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.5">
+    <path d="M150 500 Q400 470 650 500" />
+  </g>
+</svg>
