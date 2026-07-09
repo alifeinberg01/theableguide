@@ -16,6 +16,8 @@ const nav = [
       { label: "Airports & Flying", href: "/guides?category=airport" },
       { label: "Cruises", href: "/guides?category=cruise" },
       { label: "Resorts", href: "/guides?category=resort" },
+      { label: "National Parks", href: "/guides?category=national-park" },
+      { label: "City Guides", href: "/guides?category=city" },
     ],
   },
   { label: "Resources", href: "/resources" },

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getPublishedGuides } from "@/lib/firestore/guides";
 import SectionLabel from "@/components/ui/SectionLabel";
 import GuidesGrid from "@/components/guides/GuidesGrid";
+import type { GuideCategory } from "@/types";
 
 export const metadata: Metadata = {
   title: "All Travel Guides",
@@ -11,8 +12,26 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-dynamic";
 
-export default async function GuidesPage() {
+const VALID_CATEGORIES: GuideCategory[] = [
+  "theme-park",
+  "airport",
+  "cruise",
+  "resort",
+  "national-park",
+  "city",
+];
+
+export default async function GuidesPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ category?: string }>;
+}) {
   const guides = await getPublishedGuides();
+  const { category } = await searchParams;
+  const initialCategory = VALID_CATEGORIES.includes(category as GuideCategory)
+    ? (category as GuideCategory)
+    : "all";
+
   return (
     <>
       {/* Hero */}
@@ -29,7 +48,7 @@ export default async function GuidesPage() {
         </div>
       </section>
 
-      <GuidesGrid guides={guides} />
+      <GuidesGrid guides={guides} initialCategory={initialCategory} key={initialCategory} />
     </>
   );
 }

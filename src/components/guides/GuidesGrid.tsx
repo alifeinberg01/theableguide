@@ -18,8 +18,14 @@ const categories: { id: GuideCategory | "all"; label: string }[] = [
   { id: "city",           label: "City Guides" },
 ];
 
-export default function GuidesGrid({ guides }: { guides: Guide[] }) {
-  const [active, setActive] = useState<GuideCategory | "all">("all");
+export default function GuidesGrid({
+  guides,
+  initialCategory = "all",
+}: {
+  guides: Guide[];
+  initialCategory?: GuideCategory | "all";
+}) {
+  const [active, setActive] = useState<GuideCategory | "all">(initialCategory);
 
   const filtered = active === "all" ? guides : guides.filter((g) => g.category === active);
 
