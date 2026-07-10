@@ -1490,7 +1490,7 @@ export const guides: Guide[] = [
     publishedAt: "2025-01-25",
     readTime: 26,
     destination: "Riviera Maya, Mexico",
-    highlights: ["How this resort's overall pace compares to a high-energy family resort", "Kids' club (Kids Club Coral) accommodation options", "Quiet beach and pool zones across the resort's sections", "Dining accommodations for specific sensory or dietary needs", "Spa and quiet-space options that can double as a family break area", "Realistic daily pacing for a calmer luxury resort style"],
+    highlights: ["How this resort's overall pace compares to a high-energy family resort", "Kids' club (Club Vel@s) accommodation options", "Quiet beach and pool zones across the resort's sections", "Dining accommodations for specific sensory or dietary needs", "Spa and quiet-space options that can double as a family break area", "Realistic daily pacing for a calmer luxury resort style"],
     includes: ["Full PDF guide", "Printable resort map with quiet zones marked", "Pre-arrival accommodation request template", "Emergency information card template", "Lifetime updates"],
     sections: [
       {
