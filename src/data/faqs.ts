@@ -14,7 +14,7 @@ export const faqs: FAQItem[] = [
     category: "general",
     question: "Who creates The Able Guide content?",
     answer:
-      "Our guides are written by a team that includes parents of children with autism and sensory differences, pediatric occupational therapists, and experienced travel planners who specialize in accessible family travel. Every recommendation is based on real-world testing, not just research.",
+      "The Able Guide is created by a special education teacher with hands-on Applied Behavior Analysis (ABA) experience. Every schedule, script, and backup plan reflects real classroom and clinical strategy for supporting children with autism and sensory differences — not guesswork from a generic travel blog.",
   },
   {
     id: "g3",

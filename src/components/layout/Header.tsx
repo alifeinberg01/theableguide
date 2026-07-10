@@ -23,6 +23,7 @@ const nav = [
   { label: "Resources", href: "/resources" },
   { label: "Accessibility Card", href: "/tools/emergency-card" },
   { label: "Schedule Builder", href: "/tools/schedule-builder" },
+  { label: "FAQ", href: "/faq" },
   { label: "About", href: "/about" },
 ];
 
