@@ -13,7 +13,7 @@ const guides = [
 
 const resources = [
   { label: "Schedule Builder",    href: "/tools/schedule-builder" },
-  { label: "Emergency Info Card", href: "/tools/emergency-card" },
+  { label: "Accessibility Card", href: "/tools/emergency-card" },
   { label: "Resources Library",   href: "/resources" },
   { label: "FAQ",                 href: "/faq" },
 ];

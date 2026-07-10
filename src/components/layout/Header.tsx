@@ -21,7 +21,7 @@ const nav = [
     ],
   },
   { label: "Resources", href: "/resources" },
-  { label: "Emergency Card", href: "/tools/emergency-card" },
+  { label: "Accessibility Card", href: "/tools/emergency-card" },
   { label: "Schedule Builder", href: "/tools/schedule-builder" },
   { label: "About", href: "/about" },
 ];

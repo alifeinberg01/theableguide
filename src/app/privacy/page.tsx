@@ -45,7 +45,7 @@ export default function PrivacyPage() {
               </li>
               <li>
                 <strong>Information from our tools</strong> — details you enter into tools like the
-                Emergency Info Card builder or Schedule Builder (for example, a child&apos;s name,
+                Accessibility Card builder or Schedule Builder (for example, a child&apos;s name,
                 diagnosis-related notes, or emergency contact information) are used only to generate the
                 printable output you request in your browser. We do not require an account to use these
                 tools, and we do not intentionally store this information on our servers beyond what is
@@ -95,7 +95,7 @@ export default function PrivacyPage() {
             <p>
               The Site is intended for use by parents, caregivers, and adult professionals — not by
               children. We do not knowingly collect personal information directly from children under
-              13. Information about a child (such as a name entered into an Emergency Info Card
+              13. Information about a child (such as a name entered into an Accessibility Card
               template) is provided by a parent or guardian for the sole purpose of generating that
               parent&apos;s own printable tool, and is treated with the same care as any other personal
               information under this Policy. If you believe a child has provided us with personal

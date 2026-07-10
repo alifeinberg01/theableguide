@@ -108,7 +108,7 @@ export default function EmergencyCardClient() {
           </div>
 
           <Button onClick={() => window.print()} className="w-full justify-center py-4 text-base" variant="primary">
-            <Printer className="w-4 h-4" /> Print Emergency Card
+            <Printer className="w-4 h-4" /> Print Accessibility Card
           </Button>
         </div>
 
@@ -120,7 +120,7 @@ export default function EmergencyCardClient() {
           <div className="bg-charcoal text-white rounded-2xl p-6 shadow-card-hover aspect-[3.5/2] flex flex-col justify-between print:shadow-none">
             <div className="flex items-start justify-between">
               <div>
-                <p className="text-white/50 text-xs uppercase tracking-widest mb-0.5">Emergency Information</p>
+                <p className="text-white/50 text-xs uppercase tracking-widest mb-0.5">Accessibility Card</p>
                 <h2 className="font-display font-medium text-2xl">{card.childName || "Child's Name"}</h2>
                 {card.dob && <p className="text-white/60 text-sm">DOB: {card.dob}</p>}
               </div>
