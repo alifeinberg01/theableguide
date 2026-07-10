@@ -2,12 +2,13 @@ import Link from "next/link";
 import { Mail, Instagram, Facebook, Youtube } from "lucide-react";
 
 const guides = [
-  { label: "Disney World Guide", href: "/guides/disney-world-sensory-guide" },
-  { label: "Disneyland Guide",   href: "/guides/disneyland-accessibility-guide" },
-  { label: "Universal Studios",  href: "/guides/universal-studios-accessibility" },
-  { label: "Airport Guide",      href: "/guides/airport-flying-with-autism" },
-  { label: "Cruise Guide",       href: "/guides/accessible-cruising-guide" },
   { label: "All Guides",         href: "/guides" },
+  { label: "Theme Parks",        href: "/guides?category=theme-park" },
+  { label: "Airports & Flying",  href: "/guides?category=airport" },
+  { label: "Cruises",            href: "/guides?category=cruise" },
+  { label: "Resorts",            href: "/guides?category=resort" },
+  { label: "National Parks",     href: "/guides?category=national-park" },
+  { label: "City Guides",        href: "/guides?category=city" },
 ];
 
 const resources = [
