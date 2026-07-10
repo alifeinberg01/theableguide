@@ -71,7 +71,7 @@ export default function CustomPage() {
       </section>
 
       {/* Main content */}
-      <section className="section-padding bg-cream">
+      <section id="faq" className="section-padding bg-cream">
         <div className="container-site">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* What's included */}
