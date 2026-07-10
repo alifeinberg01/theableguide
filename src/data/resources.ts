@@ -105,7 +105,7 @@ export const resources: Resource[] = [
     title: "Beaches STAR Program",
     description:
       "Beaches Resorts' Sensory Timely Action Resources (STAR) program — trained staff, sensory spaces, and modified programming for families with autism and sensory differences.",
-    url: "https://beaches.com/blog/autism-friendly-beaches/",
+    url: "https://www.beaches.com/all-inclusive/autism-friendly/",
     type: "organization",
     category: "Resorts & Hotels",
     tags: ["resort", "all-inclusive", "Caribbean", "autism-trained"],
