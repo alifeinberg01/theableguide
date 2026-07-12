@@ -31,7 +31,7 @@ const values = [
     icon: Users,
     title: "Community First",
     description:
-      "We give back by making foundational resources free and maintaining a free starter guide that any family can access regardless of budget.",
+      "We give back by making foundational resources free and offering a free guide preview that any family can access regardless of budget.",
     color: "bg-sage-100 text-sage-700",
   },
 ];

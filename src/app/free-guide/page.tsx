@@ -5,21 +5,20 @@ import FreeGuideForm from "@/components/home/FreeGuideForm";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 export const metadata: Metadata = {
-  title: "Free Sensory Travel Starter Guide",
+  title: "Free Guide Preview",
   description:
-    "Download our free Sensory-Friendly Travel Starter Guide — preparation strategies, a sensory kit packing list, and honest advice for your family's first adventure.",
+    "Download a free preview from our Disneyland: First Visit guide — a real sample of how every Able Guide is built, before you buy.",
 };
 
 export const revalidate = 300;
 
 const includes = [
-  "Pre-trip preparation strategies that actually work",
-  "The complete sensory travel kit packing list",
-  "Scripts for preparing your child for travel",
-  "How to scope out a new destination in advance",
-  "What to do when things go sideways",
-  "A printable visual schedule template",
-  "Emergency information card template",
+  "A real sample from our Disneyland: First Visit guide",
+  "Pre-visit preparation: social story + visual schedule",
+  "DAS pass and arrival strategy for the first 2 hours",
+  "A sensory break schedule with quiet-zone planning",
+  "The exact design and format of every paid guide",
+  "No credit card, no obligation — just a real sample",
 ];
 
 export default function FreeGuidePage() {
@@ -36,14 +35,14 @@ export default function FreeGuidePage() {
               </div>
 
               <h1 className="heading-xl text-white mb-4">
-                Your Free Sensory Travel
+                See a Real Guide
                 <br />
-                <em className="italic text-terra-100">Starter Guide</em>
+                <em className="italic text-terra-100">Before You Buy</em>
               </h1>
               <p className="body-lg text-white/80 mb-8">
-                25+ pages of practical, honest guidance for families who are new
-                to traveling with a child with autism or sensory differences.
-                Start here. Build from here.
+                A free preview sample from our Disneyland: First Visit guide —
+                the same design, the same level of detail, the same honest
+                strategy as every one of our 99 destination guides.
               </p>
 
               <ul className="space-y-3 mb-8">
@@ -58,8 +57,8 @@ export default function FreeGuidePage() {
 
             <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/covers/general.svg"
-                alt="Preview of the Sensory-Friendly Travel Starter Guide"
+                src="/covers/theme-park.svg"
+                alt="Preview of the Disneyland: First Visit sample guide"
                 fill
                 className="object-cover"
                 priority

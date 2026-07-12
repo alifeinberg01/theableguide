@@ -33,7 +33,7 @@ export default function Footer() {
       <div className="bg-terra">
         <div className="container-site py-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <p className="font-display text-xl font-medium text-white">Get our free Sensory-Friendly Starter Guide</p>
+            <p className="font-display text-xl font-medium text-white">Get a free preview of our guides</p>
             <p className="text-white/80 text-sm mt-1 font-light">Tips, checklists & destination insights delivered to your inbox.</p>
           </div>
           <form className="flex w-full md:w-auto gap-2" action="/api/subscribe" method="POST">

@@ -65,7 +65,7 @@ export const faqs: FAQItem[] = [
     category: "guides",
     question: "Is there a free guide I can try first?",
     answer:
-      "Yes! Our Sensory-Friendly Travel Starter Guide is completely free. It covers the foundational strategies — packing, preparation, managing transitions, and what to do when things go sideways — and gives you a great sense of how our paid guides are structured.",
+      "Yes! We offer a free preview sample from our Disneyland: First Visit guide — it's not the full guide, but it's built in the exact same format, so you can see the level of detail, the design, and the strategy before you buy anything.",
   },
 
   // Custom Itineraries

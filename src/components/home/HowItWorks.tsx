@@ -7,7 +7,7 @@ const steps = [
     step: "01",
     title: "Find Your Destination",
     description:
-      "Browse our library of guides by destination, park type, or accessibility need. Not sure where to start? Our free starter guide lays the foundation.",
+      "Browse our library of guides by destination, park type, or accessibility need. Not sure what a guide looks like? Download a free preview sample first.",
     color: "bg-charcoal/8 text-charcoal",
   },
   {

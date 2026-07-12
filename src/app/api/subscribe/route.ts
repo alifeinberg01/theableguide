@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { adminDb } from "@/lib/firebase-admin";
 import { resend, FROM_EMAIL, freeGuideEmailHtml } from "@/lib/resend";
 
-const FREE_GUIDE_URL = `${process.env.NEXT_PUBLIC_SITE_URL}/downloads/sensory-travel-starter-guide.pdf`;
+const FREE_GUIDE_URL = `${process.env.NEXT_PUBLIC_SITE_URL}/downloads/disneyland-sample-preview.pdf`;
 
 export async function POST(req: NextRequest) {
   const referer = req.headers.get("referer");
@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: FROM_EMAIL,
       to: email,
-      subject: "Your Free Sensory Travel Starter Guide is here!",
+      subject: "Your Free Guide Preview is here!",
       html: freeGuideEmailHtml("there", FREE_GUIDE_URL),
     });
 

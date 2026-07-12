@@ -3,10 +3,10 @@ import Image from "next/image";
 import { Gift, CheckCircle } from "lucide-react";
 
 const perks = [
-  "Pre-trip preparation strategies",
-  "The sensory travel kit packing list",
-  "Scripts for talking to your child about travel",
-  "What to do when things go sideways",
+  "A real sample from our Disneyland: First Visit guide",
+  "Pre-visit preparation: social story + visual schedule",
+  "DAS pass and arrival strategy for the first 2 hours",
+  "The exact design and format of every paid guide",
 ];
 
 export default function FreeGuideCallout() {
@@ -28,15 +28,15 @@ export default function FreeGuideCallout() {
             </div>
 
             <h2 className="heading-lg text-white mb-4">
-              Start Here: Our Free
+              See a Real Guide,
               <br />
-              <span className="text-amber-300">Sensory Travel Starter Guide</span>
+              <span className="text-amber-300">Free — Before You Buy</span>
             </h2>
 
             <p className="text-white/75 body-md mb-8">
-              Not sure where to begin? This free guide gives you the foundation —
-              preparation strategies, a sensory kit packing list, and honest advice
-              for your family's first adventure.
+              Not sure what our guides actually look like? Download a free preview
+              sample from our Disneyland: First Visit guide — same design, same
+              level of detail, same honest strategy as every paid guide.
             </p>
 
             <ul className="space-y-3 mb-10">
@@ -50,7 +50,7 @@ export default function FreeGuideCallout() {
 
             <Link href="/free-guide" className="btn bg-terra text-white hover:bg-terra-600 px-8 py-4 text-base rounded-full font-medium inline-flex items-center gap-2 shadow-lg">
               <Gift className="w-4 h-4" />
-              Download the Free Guide
+              Download the Free Preview
             </Link>
           </div>
 
@@ -58,8 +58,8 @@ export default function FreeGuideCallout() {
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative w-full max-w-sm aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/covers/general.svg"
-                alt="Preview of the Sensory-Friendly Travel Starter Guide"
+                src="/covers/theme-park.svg"
+                alt="Preview of the Disneyland: First Visit sample guide"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 90vw, 40vw"
@@ -67,9 +67,9 @@ export default function FreeGuideCallout() {
               {/* Overlay pill */}
               <div className="absolute bottom-6 inset-x-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-card">
                 <p className="font-display font-medium text-charcoal text-sm leading-tight">
-                  Sensory-Friendly Travel Starter Guide
+                  Disneyland: First Visit — Free Preview
                 </p>
-                <p className="text-charcoal-muted text-xs mt-1">25+ pages · Free forever</p>
+                <p className="text-charcoal-muted text-xs mt-1">A real sample, free forever</p>
               </div>
             </div>
           </div>

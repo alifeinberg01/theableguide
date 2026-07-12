@@ -18,7 +18,7 @@ export function freeGuideEmailHtml(firstName: string, downloadUrl: string): stri
     <tr>
       <td style="background:#1E3A5C;padding:40px;text-align:center;">
         <p style="color:rgba(255,255,255,0.6);font-size:12px;letter-spacing:3px;text-transform:uppercase;margin:0 0 8px;">The Able Guide</p>
-        <h1 style="color:white;font-size:28px;margin:0;font-weight:700;">Your Free Guide is Here! 🎉</h1>
+        <h1 style="color:white;font-size:28px;margin:0;font-weight:700;">Your Free Guide Preview is Here! 🎉</h1>
       </td>
     </tr>
 
@@ -27,20 +27,22 @@ export function freeGuideEmailHtml(firstName: string, downloadUrl: string): stri
       <td style="padding:40px;">
         <p style="font-size:16px;line-height:1.7;color:#334155;">Hi ${firstName},</p>
         <p style="font-size:16px;line-height:1.7;color:#334155;">
-          Your <strong>Sensory-Friendly Travel Starter Guide</strong> is ready and waiting for you.
-          This guide is your starting point — we built it to give every family a confident foundation,
-          no matter where you are in your travel journey.
+          Here's a real sample from one of our full guides — <strong>Disneyland: First Visit</strong>.
+          It's a short preview, not the full guide, but it's built exactly the same way every one
+          of our 99 destination guides is: real, practical, sensory-specific strategy.
         </p>
 
         <div style="text-align:center;margin:32px 0;">
           <a href="${downloadUrl}" style="display:inline-block;background:#C8603A;color:white;padding:16px 36px;border-radius:9999px;font-weight:700;font-size:16px;text-decoration:none;">
-            Download Your Guide →
+            Download Your Preview →
           </a>
         </div>
 
         <p style="font-size:14px;color:#64748B;line-height:1.7;">
-          Inside you'll find pre-trip preparation strategies, the complete sensory travel kit packing list,
-          visual schedule templates, and honest advice for when things don't go as planned.
+          Inside: pre-visit preparation, a DAS pass + arrival strategy, and a sensory break schedule —
+          three real steps from the full Disneyland guide. When you're ready, the complete guide (and
+          every other destination) adds the full hour-by-hour schedule, a sensory map, staff scripts,
+          and backup plans for the whole day.
         </p>
 
         <hr style="border:none;border-top:1px solid #E2E8F0;margin:32px 0;">

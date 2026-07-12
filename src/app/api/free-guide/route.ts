@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { resend, FROM_EMAIL, freeGuideEmailHtml } from "@/lib/resend";
 
-// URL to the hosted free guide PDF (update when deployed)
-const FREE_GUIDE_URL = `${process.env.NEXT_PUBLIC_SITE_URL}/downloads/sensory-travel-starter-guide.pdf`;
+// URL to the hosted free preview PDF (update when deployed)
+const FREE_GUIDE_URL = `${process.env.NEXT_PUBLIC_SITE_URL}/downloads/disneyland-sample-preview.pdf`;
 
 export async function POST(req: NextRequest) {
   try {
@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: FROM_EMAIL,
       to: email,
-      subject: "Your Free Sensory Travel Starter Guide is here!",
+      subject: "Your Free Guide Preview is here!",
       html: freeGuideEmailHtml(firstName, FREE_GUIDE_URL),
     });
 
