@@ -24,8 +24,8 @@ const typeColors: Record<ResourceType, "navy" | "teal" | "terra" | "sage" | "amb
   organization: "amber",
 };
 
-export default function ResourcesClient() {
-  const [activeCategory, setActiveCategory] = useState("All");
+export default function ResourcesClient({ initialCategory = "All" }: { initialCategory?: string }) {
+  const [activeCategory, setActiveCategory] = useState(initialCategory);
 
   const filtered =
     activeCategory === "All"

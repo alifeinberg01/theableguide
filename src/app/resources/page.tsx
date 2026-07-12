@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ResourcesClient from "@/components/resources/ResourcesClient";
+import { resourceCategories } from "@/data/resources";
 
 export const metadata: Metadata = {
   title: "Resources",
@@ -9,6 +10,13 @@ export const metadata: Metadata = {
 
 export const revalidate = 300;
 
-export default function ResourcesPage() {
-  return <ResourcesClient />;
+interface Props {
+  searchParams: Promise<{ category?: string }>;
+}
+
+export default async function ResourcesPage({ searchParams }: Props) {
+  const { category } = await searchParams;
+  const initialCategory = category && resourceCategories.includes(category) ? category : "All";
+
+  return <ResourcesClient key={initialCategory} initialCategory={initialCategory} />;
 }
