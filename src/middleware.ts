@@ -4,8 +4,11 @@ export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
   const session = req.cookies.get("__session");
 
-  // Redirect unauthenticated users away from all /admin pages except /admin/login
-  if (pathname.startsWith("/admin") && pathname !== "/admin/login") {
+  const PUBLIC_ADMIN_PATHS = ["/admin/login", "/admin/reset-password"];
+
+  // Redirect unauthenticated users away from all /admin pages except the
+  // public login/password-reset pages
+  if (pathname.startsWith("/admin") && !PUBLIC_ADMIN_PATHS.includes(pathname)) {
     if (!session?.value) {
       return NextResponse.redirect(new URL("/admin/login", req.url));
     }
