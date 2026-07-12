@@ -180,37 +180,39 @@ Aulani offers all of Disney's character and magic without the theme park intensi
 
 A sensory travel kit isn't a "throw everything in the bag" exercise. Each item serves a specific purpose — auditory regulation, tactile input, proprioceptive grounding, oral motor needs, or emotional safety. Weight and space matter, so we'll give you the core list and the extras.
 
-## The Core Kit (Non-Negotiables)
+## The Core Kit
 
-**1. Noise-Cancelling Headphones**
-Not noise-reducing earmuffs — true active noise-cancelling headphones. Our top pick for kids is the **Puro BT2200** or the **Sony WH-CH510** (fits most school-age kids). Bose and Sony make excellent adult options that work for teens.
+Not every child needs every item on this list — pick what fits your child's actual needs.
 
-**2. Chewy Jewelry**
+1. Noise-Cancelling Headphones
+Not noise-reducing earmuffs — true active noise-cancelling headphones. Our top pick for kids is the Puro BT2200 or the Sony WH-CH510 (fits most school-age kids). Bose and Sony make excellent adult options that work for teens.
+
+2. Chewy Jewelry
 ARK's Brick Stick and Chewigem are our go-tos. These provide oral motor input that helps regulate the nervous system during times of stress.
 
-**3. Fidget Toolkit**
+3. Fidget Toolkit
 Include 2-3 items, not 10. A Tangle Jr., a silicone pop-it, and one weighted object (palm-sized weighted stuffed animal) cover most fidget needs without bag clutter.
 
-**4. Comfort Object**
-Whatever your child identifies as their safe object. Non-negotiable. It travels everywhere.
+4. Comfort Object
+Whatever your child identifies as their safe object, if they have one. If so, it should travel everywhere with you.
 
-**5. Visual Schedule**
+5. Visual Schedule
 Print your itinerary as a visual schedule — photos or simple icons showing what's happening in sequence. Laminate it or put it in a page protector. A schedule that gets wet or crumpled is useless.
 
-**6. Snacks**
+6. Snacks
 Bring three times as many familiar snacks as you think you need. Travel days are long and food is a universal regulator.
 
-**7. Loaded Tablet or Device**
+7. Loaded Tablet or Device
 Download everything before you leave. Don't rely on airport WiFi or in-flight connectivity. Bring a portable battery pack to keep it charged all day.
 
 ## Nice-to-Haves (When Space Allows)
 
-- **Sunglasses with polarized lenses** — visual overwhelm is real and underaddressed
-- **A small weighted lap pad** — folds flat, invaluable on long flights
-- **Ear plugs** as a backup to headphones
-- **Scented items** that comfort your child (a dab of familiar lotion on a cloth)
-- **Social Story cards** for airports, restaurants, theme parks
-- **A clip-on fan** for temperature regulation in hot climates
+- Sunglasses with polarized lenses — visual overwhelm is real and underaddressed
+- A small weighted lap pad — folds flat, invaluable on long flights
+- Ear plugs as a backup to headphones
+- Scented items that comfort your child (a dab of familiar lotion on a cloth)
+- Social Story cards for airports, restaurants, theme parks
+- A clip-on fan for temperature regulation in hot climates
     `,
     category: "gear",
     tags: ["packing", "sensory-kit", "gear", "preparation"],

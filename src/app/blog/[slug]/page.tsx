@@ -88,7 +88,12 @@ export default async function BlogPostPage({ params }: Props) {
               if (para.startsWith("---")) {
                 return <hr key={i} className="border-border my-8" />;
               }
-              // Bullet list
+              // Bullet list with no leading label text
+              if (para.startsWith("- ")) {
+                const items = para.split("\n- ").map((item) => item.replace(/^- /, ""));
+                return <ul key={i}>{items.map((item, j) => <li key={j}>{item}</li>)}</ul>;
+              }
+              // Bullet list with a label line before the bullets
               if (para.includes("\n- ")) {
                 const [label, ...items] = para.split("\n- ");
                 return (
