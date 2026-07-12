@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Clock, Tag } from "lucide-react";
+import { ArrowRight, Tag } from "lucide-react";
 import { formatPrice, cn } from "@/lib/utils";
 import Badge from "@/components/ui/Badge";
 import type { Guide, GuideCategory } from "@/types";
@@ -101,9 +101,6 @@ export default function GuidesGrid({
 
                   <div className="flex items-center justify-between pt-4 border-t border-border">
                     <div className="flex items-center gap-3 text-xs text-charcoal-muted">
-                      <span className="flex items-center gap-1">
-                        <Clock className="w-3.5 h-3.5" /> {guide.readTime} min
-                      </span>
                       <span className="flex items-center gap-1">
                         <Tag className="w-3.5 h-3.5" /> {guide.destination}
                       </span>

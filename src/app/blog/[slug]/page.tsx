@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Clock, Calendar } from "lucide-react";
+import { ArrowLeft, Calendar } from "lucide-react";
 import { getPublishedPosts, getPostBySlug } from "@/lib/firestore/blog";
 import { formatDate } from "@/lib/utils";
 import Badge from "@/components/ui/Badge";
@@ -50,9 +50,6 @@ export default async function BlogPostPage({ params }: Props) {
           <Badge color="teal" className="mb-4">{post.category}</Badge>
           <h1 className="heading-xl text-white mb-4">{post.title}</h1>
           <div className="flex flex-wrap items-center gap-4 text-white/70 text-sm">
-            <span className="flex items-center gap-1.5">
-              <Clock className="w-4 h-4" /> {post.readTime} min read
-            </span>
             <span className="flex items-center gap-1.5">
               <Calendar className="w-4 h-4" /> {formatDate(post.publishedAt)}
             </span>

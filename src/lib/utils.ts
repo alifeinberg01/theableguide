@@ -30,6 +30,3 @@ export function slugify(str: string): string {
     .replace(/-+/g, "-");
 }
 
-export function readTimeLabel(minutes: number): string {
-  return `${minutes} min read`;
-}

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { blogPosts } from "@/data/blog-posts";
 import { formatDate } from "@/lib/utils";
 import SectionLabel from "@/components/ui/SectionLabel";
@@ -43,9 +43,6 @@ export default function BlogPreview() {
               <div className="p-6 flex flex-col flex-1">
                 <div className="flex items-center gap-2 mb-3">
                   <Badge color="terra">{post.category}</Badge>
-                  <span className="text-charcoal-muted text-xs flex items-center gap-1">
-                    <Clock className="w-3 h-3" /> {post.readTime} min
-                  </span>
                 </div>
 
                 <h3 className="font-display font-medium text-lg text-charcoal mb-2 group-hover:text-terra transition-colors line-clamp-2">

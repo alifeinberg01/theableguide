@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { Clock, Tag, CheckCircle, ArrowLeft, ShoppingCart, Gift } from "lucide-react";
+import { Tag, CheckCircle, ArrowLeft, ShoppingCart, Gift } from "lucide-react";
 import { getPublishedGuides, getGuideBySlug } from "@/lib/firestore/guides";
 import { formatPrice } from "@/lib/utils";
 import Badge from "@/components/ui/Badge";
@@ -63,9 +63,6 @@ export default async function GuidePage({ params }: Props) {
               <p className="text-white/70 body-md mb-6">{guide.subtitle}</p>
 
               <div className="flex items-center gap-4 text-sm text-white/55 mb-8">
-                <span className="flex items-center gap-1.5">
-                  <Clock className="w-4 h-4" /> {guide.readTime} min read
-                </span>
                 <span className="flex items-center gap-1.5">
                   <Tag className="w-4 h-4" /> {guide.destination}
                 </span>

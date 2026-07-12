@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Clock, Tag } from "lucide-react";
+import { ArrowRight, Tag } from "lucide-react";
 import { guides } from "@/data/guides";
 import { formatPrice } from "@/lib/utils";
 import SectionLabel from "@/components/ui/SectionLabel";
@@ -66,10 +66,6 @@ export default function FeaturedGuides() {
 
                 <div className="flex items-center justify-between pt-4 border-t border-border">
                   <div className="flex items-center gap-3 text-xs text-charcoal-muted">
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5" />
-                      {guide.readTime} min read
-                    </span>
                     <span className="flex items-center gap-1">
                       <Tag className="w-3.5 h-3.5" />
                       {guide.destination}

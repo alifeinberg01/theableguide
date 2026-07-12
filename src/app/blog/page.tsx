@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { getPublishedPosts } from "@/lib/firestore/blog";
 import { formatDate } from "@/lib/utils";
 import Badge from "@/components/ui/Badge";
@@ -60,7 +60,6 @@ export default async function BlogPage() {
                 </h2>
                 <p className="text-charcoal-muted body-md mb-6">{hero.excerpt}</p>
                 <div className="flex items-center gap-4 text-sm text-charcoal-muted">
-                  <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> {hero.readTime} min</span>
                   <span>{formatDate(hero.publishedAt)}</span>
                 </div>
               </div>
@@ -87,9 +86,6 @@ export default async function BlogPage() {
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-2 mb-3">
                     <Badge color="navy">{post.category}</Badge>
-                    <span className="text-xs text-charcoal-muted flex items-center gap-1">
-                      <Clock className="w-3 h-3" /> {post.readTime} min
-                    </span>
                   </div>
                   <h3 className="font-display font-medium text-lg text-charcoal group-hover:text-terra transition-colors mb-2 line-clamp-2">
                     {post.title}
