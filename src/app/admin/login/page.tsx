@@ -28,9 +28,20 @@ export default function AdminLoginPage() {
         url: `${window.location.origin}/admin/reset-password`,
         handleCodeInApp: true,
       });
-    } catch {
-      // Intentionally swallow auth/user-not-found — don't reveal whether an
-      // email is a registered admin account.
+    } catch (err: unknown) {
+      const code = (err as { code?: string }).code;
+      // Only "user not found" is swallowed — don't reveal whether an email
+      // is a registered admin account. Real errors (bad config, disabled
+      // provider, rate limits, etc.) still surface so this isn't silently broken.
+      if (code && code !== "auth/user-not-found") {
+        setResetError(
+          code === "auth/too-many-requests"
+            ? "Too many attempts. Please wait a few minutes and try again."
+            : "Something went wrong sending the reset email. Please try again or contact hello@theableguide.com."
+        );
+        setResetLoading(false);
+        return;
+      }
     } finally {
       setResetLoading(false);
       setResetSent(true);
