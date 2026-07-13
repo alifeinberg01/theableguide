@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ShoppingCart, CheckCircle } from "lucide-react";
 import Button from "@/components/ui/Button";
 
-const PRICE = 149;
+const PRICE = 79;
 
 export default function CustomOrderForm() {
   const [loading, setLoading] = useState(false);
